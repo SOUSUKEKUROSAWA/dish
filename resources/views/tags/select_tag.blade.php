@@ -15,7 +15,7 @@
         <div class='tags'>
             @foreach ($tags as $tag)
                 <h2 class='tag'>
-                    <a href="/selectdish/{{ $tag->id }}">{{ $tag->tag_name }}</a>
+                    <a href="/tags/{{ $tag->id }}">{{ $tag->tag_name }}</a>
                 </h2>
             @endforeach
         </div>

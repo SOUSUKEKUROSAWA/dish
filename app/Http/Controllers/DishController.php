@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
-use Illuminate\Foundation\Bus\DispatchesJobs;
-use Illuminate\Foundation\Validation\ValidatesRequests;
-use Illuminate\Routing\Controller as BaseController;
+use App\Dish;
 
-class Controller extends BaseController
+class DishController extends Controller
 {
-    use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+    public function selectdish(Dish $dish)
+    {
+        return view('dishes/select_dish')->with(['dishes' => $dish ]);
+    }
 }
