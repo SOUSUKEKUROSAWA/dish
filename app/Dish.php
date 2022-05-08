@@ -6,9 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Dish extends Model
 {
-    public function getPaginateByLimit(int $limit_count = 5)
+    public function tag()
     {
-        // updated_atで降順に並べたあと、limitで件数制限をかける
-        return $this->orderBy('updated_at', 'DESC')->paginate($limit_count);
+        return $this->belongsTo('App\Tag');
+    }
+
+    public function posts()
+    {
+        return $this->hasMany('App\Post');
     }
 }
