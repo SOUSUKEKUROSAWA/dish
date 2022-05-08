@@ -19,8 +19,13 @@ class TagController extends Controller
     
     public function store(Tag $tag, TagRequest $request)
     {
-        $input = $request['tag_name'];
+        $input = $request['tag'];
         $tag->fill($input)->save();
         return redirect('/tags/' . $tag->id);
+    }
+
+    public function selectdish(Tag $tag)
+    {
+        return view('dishes/select_dish')->with(['tag' => $tag ]);
     }
 }

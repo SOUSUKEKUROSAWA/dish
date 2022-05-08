@@ -6,8 +6,8 @@ use App\Dish;
 
 class DishController extends Controller
 {
-    public function selectdish(Dish $dish)
+    /*public function selectdish(Dish $dish)
     {
-        return view('dishes/select_dish')->with(['dishes' => $dish ]);
-    }
+        return view('dishes/select_dish')->with(['dishes' => $dish ->getPaginateByLimit() ]);
+    }*/
 }
