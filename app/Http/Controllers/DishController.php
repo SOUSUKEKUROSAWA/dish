@@ -3,11 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Dish;
+use App\Http\Requests\DishRequest;
 
 class DishController extends Controller
 {
-    /*public function selectdish(Dish $dish)
+    public function store(Dish $dish, DishRequest $request)
     {
-        return view('dishes/select_dish')->with(['dishes' => $dish ->getPaginateByLimit() ]);
-    }*/
+        $input = $request['dish'];
+        $tag->fill($input)->save();
+        return redirect('/dishes/' . $dish->id);
+    }
 }

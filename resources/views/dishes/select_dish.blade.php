@@ -10,7 +10,7 @@
         <h1 class='title'>{{ $tag->tag_name }}</h1>
         <h2 class='sub_title'>紹介したい料理名を選択</h2>
         <h2 class='create_dish'>
-            <a href="/createdish">自分で料理名を作成</a>
+            <a href="/tags/{{ $tag->id }}/createdish">自分で料理名を作成</a>
         </h2>
         <div class='dishes'>
             @foreach ($dishes as $dish)
