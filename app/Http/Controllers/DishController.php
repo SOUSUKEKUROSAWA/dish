@@ -10,7 +10,7 @@ class DishController extends Controller
     public function store(Dish $dish, DishRequest $request)
     {
         $input = $request['dish'];
-        $tag->fill($input)->save();
+        $dish->fill($input)->save();
         return redirect('/dishes/' . $dish->id);
     }
 }

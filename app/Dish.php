@@ -6,6 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Dish extends Model
 {
+    protected $fillable = [
+        'dish_name',
+        'tag_id',
+    ];
+
     public function tag()
     {
         return $this->belongsTo('App\Tag');
