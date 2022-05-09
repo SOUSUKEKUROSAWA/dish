@@ -26,6 +26,7 @@ class TagController extends Controller
 
     public function selectdish(Tag $tag)
     {
+        //$dishes=$tag->dishes()->paginate(5);
         $dishes=$tag->dishes()->get();
         return view('dishes/select_dish')->with(['tag' => $tag, 'dishes' => $dishes ]);
     }

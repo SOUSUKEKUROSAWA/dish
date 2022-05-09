@@ -13,4 +13,9 @@ class DishController extends Controller
         $dish->fill($input)->save();
         return redirect('/dishes/' . $dish->id);
     }
+
+    public function posturl(Dish $dish)
+    {
+        return view('posts/post_url')->with([ 'dish' => $dish ]);
+    }
 }

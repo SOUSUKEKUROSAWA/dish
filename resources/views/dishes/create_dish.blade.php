@@ -13,6 +13,7 @@
             <div class="title">
                 <h2>料理名</h2>
                 <input type="text" name="dish[dish_name]" placeholder="短く，わかりやすい料理名を入力" value="{{ old('dish.dish_name') }}"/>
+                <input type="hidden" name="dish[tag_id]" value="{{ $tag->id }}"/>
                 <p class="title__error" style="color:red">{{ $errors->first('dish.dish_name') }}</p>
             </div>
             <input type="submit" value="作成"/>

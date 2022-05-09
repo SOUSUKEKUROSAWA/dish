@@ -18,6 +18,9 @@ Route::get('/selecttag', 'TagController@selecttag');
 Route::get('/createtag', 'TagController@createtag');
 Route::get('/tags/{tag}', 'TagController@selectdish');
 Route::get('/tags/{tag}/createdish', 'TagController@createdish');
+Route::get('/dishes/{dish}', 'DishController@posturl');
+//Route::get('/dishes/{dish}/', 'DishController@postcomment');
 
 Route::post('/tags', 'TagController@store');
 Route::post('/dishes', 'DishController@store');
+Route::post('/posts', 'PostController@store');
