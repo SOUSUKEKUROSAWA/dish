@@ -13,14 +13,14 @@
             <a href="/createdish">自分で料理名を作成</a>
         </h2>
         <div class='dishes'>
-            @foreach ($tag->dishes() as $dish)
+            @foreach ($dishes as $dish)
                 <h2 class='dish'>
                     <a href="/dishes/{{ $dish->id }}">{{ $dish->dish_name }}</a>
                 </h2>
             @endforeach
         </div>
-        <div class='paginate'>
+        {{--<div class='paginate'>
             {{ $dishes->links() }}
-        </div>
+        </div>--}}
     </body>
 </html>
