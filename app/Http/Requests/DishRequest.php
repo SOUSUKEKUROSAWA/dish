@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class TagRequest extends FormRequest
+class DishRequest extends FormRequest
 {
     /**
      * Get the validation rules that apply to the request.
@@ -14,7 +14,7 @@ class TagRequest extends FormRequest
     public function rules()
     {
         return [
-            'tag.tag_name' => 'required|string|max:30',
+            'dish.dish_name' => 'required|string|max:30',
         ];
     }
 }

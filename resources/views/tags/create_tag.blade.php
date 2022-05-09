@@ -12,8 +12,8 @@
             @csrf
             <div class="title">
                 <h2>タグ名</h2>
-                <input type="text" name="tag_name" placeholder="サイトに訪れた人がどんな気分か想像してみよう　ex.) 「肉食べたい」「安く済ませたい」「15分以内に作りたい」・・・" value="{{ old('tag_name') }}"/>
-                <p class="title__error" style="color:red">{{ $errors->first('tag_name') }}</p>
+                <input type="text" name="tag[tag_name]" placeholder="サイトに訪れた人がどんな気分か想像してみよう　ex.) 「肉食べたい」「安く済ませたい」「15分以内に作りたい」・・・" value="{{ old('tag.tag_name') }}"/>
+                <p class="title__error" style="color:red">{{ $errors->first('tag.tag_name') }}</p>
             </div>
             <input type="submit" value="作成"/>
         </form>

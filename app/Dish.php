@@ -6,6 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Dish extends Model
 {
+    protected $fillable = [
+        'dish_name',
+        'tag_id',
+    ];
+
     public function tag()
     {
         return $this->belongsTo('App\Tag');
@@ -14,5 +19,11 @@ class Dish extends Model
     public function posts()
     {
         return $this->hasMany('App\Post');
+    }
+
+    public function getPaginateByLimit(int $limit_count = 5)
+    {
+        // updated_atで降順に並べたあと、limitで件数制限をかける
+        return $this->orderBy('updated_at', 'DESC')->paginate($limit_count);
     }
 }
