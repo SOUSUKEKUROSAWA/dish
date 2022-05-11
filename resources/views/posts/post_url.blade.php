@@ -14,7 +14,6 @@
                 <h2>URL</h2>
                 <input type="text" name="post[url]" value="{{ old('post.url') }}"/>
                 <input type="hidden" name="post[dish_id]" value="{{ $dish->id }}"/>
-                <input type="hidden" name="post[comment]" value="コメントなし"/>
                 <p class="title__error" style="color:red">{{ $errors->first('post.url') }}</p>
             </div>
             <input type="submit" value="登録"/>
