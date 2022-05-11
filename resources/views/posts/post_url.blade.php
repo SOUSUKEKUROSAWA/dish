@@ -8,11 +8,13 @@
     </head>
     <body>
         <h1 class='title'>{{ $dish->dish_name }}</h1>
-        <form action="/posts" method="POST">
+        <form action="/posts/url" method="POST">
             @csrf
             <div class="title">
                 <h2>URL</h2>
                 <input type="text" name="post[url]" value="{{ old('post.url') }}"/>
+                <input type="hidden" name="post[dish_id]" value="{{ $dish->id }}"/>
+                <input type="hidden" name="post[comment]" value="コメントなし"/>
                 <p class="title__error" style="color:red">{{ $errors->first('post.url') }}</p>
             </div>
             <input type="submit" value="登録"/>
