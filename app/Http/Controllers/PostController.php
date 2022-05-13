@@ -20,7 +20,7 @@ class PostController extends Controller
         return view('posts/post_comment')->with([ 'post' => $post ]);
     }
 
-    public function storecomment(Post $post, PostcommentRequest $request)
+    public function updatecomment(Post $post, PostcommentRequest $request)
     {
         $input = $request['post'];
         $post->fill($input)->save();

@@ -24,4 +24,6 @@ Route::get('/posts/{post}', 'PostController@postcomment');
 Route::post('/tags', 'TagController@store');
 Route::post('/dishes', 'DishController@store');
 Route::post('/posts/url', 'PostController@storeurl');
-Route::post('/posts/comment', 'PostController@storecomment');
+//Route::post('/posts/comment', 'PostController@storecomment');
+
+Route::put('/posts/{post}', 'PostController@updatecomment');
