@@ -35,4 +35,16 @@ class TagController extends Controller
     {
         return view('dishes/create_dish')->with(['tag' => $tag ]);
     }
+
+    public function searchtag(Tag $tag)
+    {
+        return view('tags/search_tag')->with(['tags' => $tag -> getPaginateByLimit()]);
+    }
+
+    public function searchdish(Tag $tag)
+    {
+        //$dishes=$tag->dishes()->paginate(5);
+        $dishes=$tag->dishes()->get();
+        return view('dishes/search_dish')->with(['tag' => $tag, 'dishes' => $dishes ]);
+    }
 }
