@@ -18,9 +18,5 @@
             </div>
             <input type="submit" value="投稿"/>
         </form>
-        <div class="back">
-            <a href="/dishes/{{ $post->dish_id }}">URLを登録し直す</a>
-            <a href="/tags/{{ $post->dish->tag_id }}">料理を選び直す</a>
-        </div>
     </body>
 </html>

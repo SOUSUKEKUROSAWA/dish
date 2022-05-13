@@ -18,4 +18,10 @@ class DishController extends Controller
     {
         return view('posts/post_url')->with([ 'dish' => $dish ]);
     }
+
+    public function searchpost(Dish $dish)
+    {
+        $posts=$dish->posts()->get();
+        return view('posts/search_post')->with(['dish' => $dish, 'posts' => $posts ]);
+    }
 }
