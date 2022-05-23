@@ -31,3 +31,6 @@ Route::post('/dishes', 'DishController@store');
 Route::post('/posts/url', 'PostController@storeurl');
 
 Route::put('/posts/{post}', 'PostController@updatecomment');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
