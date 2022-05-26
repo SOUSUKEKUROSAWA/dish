@@ -13,3 +13,8 @@ require('./bootstrap');
  */
 
 require('./components/Example');
+
+/*-----------------------------------------------*/
+
+require('./components/OpenPreview');
+require('./components/Preview');
