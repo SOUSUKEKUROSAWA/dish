@@ -10,6 +10,8 @@ const Preview = (props) => {
                 <>
                     <iframe is="x-frame-bypass" src={props.url}></iframe>
                     // <iframe src="https://www.itpassportsiken.com/ipkakomon.php"></iframe>
+                    <h2 className='comment'>{props.comment}</h2>
+                    <div>作成日時：{props.createdAt}</div>
                     <h2 className='redirect'>
                         <a href={props.url}>今日，これ食べよ</a>
                     </h2>
