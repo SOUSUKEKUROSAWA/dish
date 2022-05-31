@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+    <script type="module" src="https://unpkg.com/x-frame-bypass"></script>
     <h1 class='title'>{{ $dish->dish_name }}の投稿一覧</h1>
     <div id='openpreview' data-posts='{{json_encode($posts)}}'></div>
     <div class="back">

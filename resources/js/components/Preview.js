@@ -1,20 +1,26 @@
-import React from 'react';
+import React, { useState } from "react";
 import ReactDOM from 'react-dom';
 
 const Preview = (props) => {
-    const closePreview = () => {
-      props.setShowPreview(false);
-    };
+    const [showPreview, setShowPreview] = useState(false);
     
     return (
         <>
-            {props.open ? (
+            {showPreview ? (
                 <>
-                    <iframe src={props.url}></iframe>
-                    <button onClick={closePreview}>閉じる</button>
+                    <iframe is="x-frame-bypass" src={props.url}></iframe>
+                    // <iframe src="https://www.itpassportsiken.com/ipkakomon.php"></iframe>
+                    <h2 className='redirect'>
+                        <a href={props.url}>今日，これ食べよ</a>
+                    </h2>
+                    <button onClick={()=>setShowPreview(false)}>閉じる</button>
                 </>
             ) : (
-                <></>
+                <>
+                    <button onClick={()=>setShowPreview(true)}>サイトをプレビュー</button>
+                    <h2 className='comment'>{props.comment}</h2>
+                    <div>作成日時：{props.createdAt}</div>
+                </>
             )}
         </>
     );
