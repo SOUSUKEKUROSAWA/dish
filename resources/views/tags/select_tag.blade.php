@@ -8,9 +8,13 @@
     </h2>
     <div class='tags'>
         @foreach ($tags as $tag)
-            <h2 class='tag'>
-                <a href="/tags/{{ $tag->id }}">{{ $tag->tag_name }}</a>
-            </h2>
+            <div class="field">
+                <div class="item shake{{ $tag->id }}">
+                    <h2 class='tag'>
+                        <a href="/tags/{{ $tag->id }}">{{ $tag->tag_name }}</a>
+                    </h2>
+                </div>
+            </div>
         @endforeach
     </div>
     <div class='paginate'>

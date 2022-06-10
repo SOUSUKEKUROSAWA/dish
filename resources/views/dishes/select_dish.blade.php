@@ -8,9 +8,13 @@
     </h2>
     <div class='dishes'>
         @foreach ($dishes as $dish)
-            <h2 class='dish'>
-                <a href="/dishes/{{ $dish->id }}">{{ $dish->dish_name }}</a>
-            </h2>
+            <div class="field">
+                <div class="item shake{{ $dish->id }}">
+                    <h3 class='dish'>
+                        <a href="/dishes/{{ $dish->id }}">{{ $dish->dish_name }}</a>
+                    </h3>
+                </div>
+            </div>
         @endforeach
     </div>
     <div class="back">

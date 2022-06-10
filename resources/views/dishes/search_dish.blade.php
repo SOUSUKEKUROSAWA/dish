@@ -5,10 +5,23 @@
     <h2 class='sub_title'>料理名を選択</h2>
     <div class='dishes'>
         @foreach ($dishes as $dish)
-            <h2 class='dish'>
-                <a href="/searchdish/dishes/{{ $dish->id }}">{{ $dish->dish_name }}</a>
-            </h2>
+            <div class="field">
+                <div class="item shake{{ $dish->id }}">
+                    <h3 class='dish'>
+                        <a href="/searchdish/dishes/{{ $dish->id }}">{{ $dish->dish_name }}</a>
+                    </h3>
+                </div>
+            </div>
         @endforeach
+        <!--@for ($i = 0; $i < count($dishes); $i++)-->
+        <!--    <div class="field">-->
+        <!--        <div class="item shake{{ $i }}">-->
+        <!--            <h3 class='dish'>-->
+        <!--                <a href="/searchdish/dishes/{{ $dishes[$i]->id }}">{{ $dishes[$i]->dish_name }}</a>-->
+        <!--            </h3>-->
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--@endfor-->
     </div>
     {{--<h2 class='change'>
         <a href="">迷って決められない！</a>
