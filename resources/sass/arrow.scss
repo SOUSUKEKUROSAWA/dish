@@ -1,0 +1,63 @@
+.arrows *, .arrows *:before, .arrows *:after {
+    box-sizing: border-box;
+}
+
+.arrows {
+	position: relative;
+	display: flex;
+    height: 10vh;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+}
+
+.arrows .arrow {
+	position: absolute;
+	top: 90%;/*着地点（[class:arrows]heightに対する割合）*/
+	left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: 50% 50%;
+	opacity: 0;
+}
+
+.arrows .arrowfirst {
+    animation: arrow-move08 2s ease-in-out infinite;
+}
+
+.arrows .arrowsecond {
+    animation: arrow-move08 2s 1s ease-in-out infinite;
+}
+
+.arrows .arrow:before, .arrows .arrow:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 30px;
+	height: 3px;
+	content: '';
+	background: #E91E63;
+}
+
+.arrows .arrow:before {
+    transform: rotate(30deg) translateX(-39%);
+    transform-origin: top left;
+}
+
+.arrows .arrow:after {
+    transform: rotate(-30deg) translateX(39%);
+    transform-origin: top right;
+}
+
+@keyframes arrow-move08 {
+	0% {
+		top: 40%;/*スタート地点（[class:arrows]heightに対する割合）*/
+		opacity: 0;
+	}
+	70% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}

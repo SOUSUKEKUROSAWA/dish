@@ -1,5 +1,35 @@
+nav {
+    background: linear-gradient(90deg, #CCFFFF, #FFCCCC);
+}
+
+.navbar-brand {
+    position: relative;
+    left: 10%;
+}
 body {
     background: linear-gradient(90deg, #CCFFFF, #FFCCCC);
     font-family: "M PLUS Rounded 1c";
     font-weight: bold;
+}
+
+h1 {
+    font-size: 5vh;
+    text-align: center;
+}
+
+h2 {
+    font-size: 4vh;
+    text-align: center;
+}
+
+p {
+    font-size: 2vh;
+}
+
+a {
+    text-align: center;
+}
+
+a:hover {
+    transform: scale(1.1);
 }
