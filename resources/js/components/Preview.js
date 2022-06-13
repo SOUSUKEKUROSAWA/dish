@@ -8,20 +8,25 @@ const Preview = (props) => {
         <>
             {showPreview ? (
                 <>
-                    <iframe is="x-frame-bypass" src={props.url}></iframe>
-                    // <iframe src="https://www.itpassportsiken.com/ipkakomon.php"></iframe>
-                    <h2 className='comment'>{props.comment}</h2>
-                    <div>作成日時：{props.createdAt}</div>
-                    <h2 className='redirect'>
-                        <a href={props.url}>今日，これ食べよ</a>
-                    </h2>
-                    <button onClick={()=>setShowPreview(false)}>閉じる</button>
+                    <div className="box-shadow box-shadow-searchpost preview-frame">
+                        <iframe src={props.url}></iframe>
+                        <iframe is="x-frame-bypass" src={props.url}></iframe>
+                        <iframe src="https://www.itpassportsiken.com/ipkakomon.php"></iframe>
+                        <p className='comment'>「紹介してくれた人からのコメント・・・」<br/>{props.comment}</p>
+                        <p className='created-at'>作成日時：{props.createdAt}</p>
+                        <div className="side-by-side">
+                            <a className="box-shadow box-shadow-searchpost" href={props.url}>今日，これ食べよ</a>
+                            <button className="box-shadow box-shadow-searchpost" onClick={()=>setShowPreview(false)}>閉じる</button>
+                        </div>
+                    </div>
                 </>
             ) : (
                 <>
-                    <button onClick={()=>setShowPreview(true)}>サイトをプレビュー</button>
-                    <h2 className='comment'>{props.comment}</h2>
-                    <div>作成日時：{props.createdAt}</div>
+                    <div className="box-shadow box-shadow-searchpost preview-frame">
+                        <button className="box-shadow box-shadow-searchpost" onClick={()=>setShowPreview(true)}>サイトをプレビュー</button>
+                        <p className='comment'>「紹介してくれた人からのコメント・・・」<br/>{props.comment}</p>
+                        <p className='created-at'>作成日時：{props.createdAt}</p>
+                    </div>
                 </>
             )}
         </>

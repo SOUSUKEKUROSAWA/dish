@@ -1,5 +1,6 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+// @import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
 
 // Variables
 @import 'variables';
@@ -8,4 +9,13 @@
 @import '~bootstrap/scss/bootstrap';
 
 @import 'default';
-@import 'bubble';
+@import './components/bubble';
+@import 'front';
+@import './components/arrow';
+@import './tags/searchtag';
+@import './dishes/searchdish';
+@import './posts/searchpost';
+@import './tags/selecttag';
+@import './dishes/selectdish';
+@import './posts/posturl';
+@import './posts/postcomment';

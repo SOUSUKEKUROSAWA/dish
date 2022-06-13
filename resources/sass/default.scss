@@ -1,5 +1,109 @@
+nav {
+    background: linear-gradient(90deg, #CCFFFF, #FFCCCC);
+}
+
+.navbar-brand {
+    position: relative;
+    left: 10%;
+}
+
+.centreren {
+    text-align: center;
+    height: 100%;
+}
+
+.justify-content {
+    display: flex;
+    justify-content: center;
+}
+
 body {
     background: linear-gradient(90deg, #CCFFFF, #FFCCCC);
     font-family: "M PLUS Rounded 1c";
     font-weight: bold;
+}
+
+#app {
+    height: 100vh;
+}
+
+footer {
+    height: 7vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255,255,255,0.4);
+    position: relative;
+    bottom: 0px;
+    width: 100vw;
+}
+
+.box-shadow {
+    border: 1px solid #ccc;
+    margin: 10px 5px;
+    padding: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.side-by-side {
+    display: flex;
+    justify-content: space-around;
+}
+
+h1 {
+    font-size: 4vh;
+    text-align: center;
+}
+
+h2 {
+    font-size: 4vh;
+    text-align: center;
+}
+
+h3 {
+    font-size: 3vh;
+    text-align: center;
+}
+
+p {
+    font-size: 2vh;
+}
+
+a {
+    text-align: center;
+}
+
+a:hover {
+    transform: scale(1.1);
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.paginate {
+    position: relative;
+    bottom: -4vh;
+    display: flex;
+    justify-content: center;
+}
+
+.input {
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.submit-input:hover {
+    transform: scale(1.1);
+}
+
+.url-input {
+    width: 50%;
+}
+
+.textarea {
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    margin: 20px;
 }

@@ -65977,28 +65977,41 @@ var Preview = function Preview(props) {
       showPreview = _useState2[0],
       setShowPreview = _useState2[1];
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, showPreview ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, showPreview ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "box-shadow box-shadow-searchpost preview-frame"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
+    src: props.url
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
     is: "x-frame-bypass",
     src: props.url
-  }), "// ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
     src: "https://www.itpassportsiken.com/ipkakomon.php"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "comment"
-  }, props.comment), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "\u4F5C\u6210\u65E5\u6642\uFF1A", props.createdAt), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
-    className: "redirect"
+  }, "\u300C\u7D39\u4ECB\u3057\u3066\u304F\u308C\u305F\u4EBA\u304B\u3089\u306E\u30B3\u30E1\u30F3\u30C8\u30FB\u30FB\u30FB\u300D", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), props.comment), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "created-at"
+  }, "\u4F5C\u6210\u65E5\u6642\uFF1A", props.createdAt), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "side-by-side"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "box-shadow box-shadow-searchpost",
     href: props.url
-  }, "\u4ECA\u65E5\uFF0C\u3053\u308C\u98DF\u3079\u3088")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+  }, "\u4ECA\u65E5\uFF0C\u3053\u308C\u98DF\u3079\u3088"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "box-shadow box-shadow-searchpost",
     onClick: function onClick() {
       return setShowPreview(false);
     }
-  }, "\u9589\u3058\u308B")) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+  }, "\u9589\u3058\u308B")))) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "box-shadow box-shadow-searchpost preview-frame"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "box-shadow box-shadow-searchpost",
     onClick: function onClick() {
       return setShowPreview(true);
     }
-  }, "\u30B5\u30A4\u30C8\u3092\u30D7\u30EC\u30D3\u30E5\u30FC"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+  }, "\u30B5\u30A4\u30C8\u3092\u30D7\u30EC\u30D3\u30E5\u30FC"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "comment"
-  }, props.comment), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "\u4F5C\u6210\u65E5\u6642\uFF1A", props.createdAt)));
+  }, "\u300C\u7D39\u4ECB\u3057\u3066\u304F\u308C\u305F\u4EBA\u304B\u3089\u306E\u30B3\u30E1\u30F3\u30C8\u30FB\u30FB\u30FB\u300D", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), props.comment), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "created-at"
+  }, "\u4F5C\u6210\u65E5\u6642\uFF1A", props.createdAt))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Preview);

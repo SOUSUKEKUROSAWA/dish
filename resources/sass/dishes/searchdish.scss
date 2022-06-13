@@ -1,0 +1,13 @@
+.dishes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-shadow-searchdish {
+    width: 40vh;
+    font-size: 3vh;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

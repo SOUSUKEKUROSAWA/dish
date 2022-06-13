@@ -1,0 +1,19 @@
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.to-selecttag {
+    position: relative;
+    bottom: -4vh;
+    right: 0%;
+}
+
+.box-shadow-searchtag {
+    width: 40vh;
+    font-size: 3vh;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
