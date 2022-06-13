@@ -1,23 +1,22 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1 class='title'>どんな人に紹介する？</h1>
-    <h2 class='sub_title'>~今，みんなはこんな気分です~</h2>
-    <h2 class='create_tag'>
-        <a href="/createtag">自分でタグを作成</a>
-    </h2>
-    <div class='tags'>
-        @foreach ($tags as $tag)
-            <div class="field">
-                <div class="item shake{{ $tag->id }}">
-                    <h2 class='tag'>
+    <div class="centreren">
+        <h1 class='title'>どんな気分の人に紹介する？</h1>
+        <div class="justify-content">
+            <a class="box-shadow box-shadow-selecttag" href="/createtag">自分でタグを作成</a>
+        </div>
+        <div class='tags'>
+            @foreach ($tags as $tag)
+                <div class="bubble-field">
+                    <div class="item shake{{ $tag->id }}">
                         <a href="/tags/{{ $tag->id }}">{{ $tag->tag_name }}</a>
-                    </h2>
+                    </div>
                 </div>
-            </div>
-        @endforeach
-    </div>
-    <div class='paginate'>
-        {{ $tags->links() }}
+            @endforeach
+        </div>
+        <div class='paginate'>
+            {{ $tags->links() }}
+        </div>
     </div>
 @endsection

@@ -1,18 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1 class='title'>{{ $tag->tag_name }}</h1>
+    <h1 class='title'>選んだ気分「{{ $tag->tag_name }}」</h1>
     <form action="/dishes" method="POST">
         @csrf
-        <div class="title">
-            <h2>料理名</h2>
-            <input type="text" name="dish[dish_name]" placeholder="短く，わかりやすい料理名を入力" value="{{ old('dish.dish_name') }}"/>
+        <br><h3>料理名を考えてね</h3>
+        <div class="justify-content">
+            <input class="input url-input" type="text" name="dish[dish_name]" placeholder="短く，わかりやすい料理名を入力" value="{{ old('dish.dish_name') }}"/>
             <input type="hidden" name="dish[tag_id]" value="{{ $tag->id }}"/>
             <p class="title__error" style="color:red">{{ $errors->first('dish.dish_name') }}</p>
+            <input type="input submit" value="作成"/>
         </div>
-        <input type="submit" value="作成"/>
     </form>
-    <div class="back">
+    <div class="side-by-side">
         <a href="/tags/{{ $tag->id }}">既存の料理名から選ぶ</a>
     </div>
 @endsection

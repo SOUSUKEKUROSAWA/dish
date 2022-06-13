@@ -9,6 +9,13 @@
 @import '~bootstrap/scss/bootstrap';
 
 @import 'default';
-@import 'bubble';
+@import './components/bubble';
 @import 'front';
-@import 'arrow';
+@import './components/arrow';
+@import './tags/searchtag';
+@import './dishes/searchdish';
+@import './posts/searchpost';
+@import './tags/selecttag';
+@import './dishes/selectdish';
+@import './posts/posturl';
+@import './posts/postcomment';

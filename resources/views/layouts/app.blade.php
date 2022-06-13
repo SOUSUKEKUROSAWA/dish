@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>気分deご飯</title>
+    <title>気分deご飯 -気分に合わせてレシピを紹介-</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -65,6 +65,11 @@
         <main class="py-4">
             @yield('content')
         </main>
+        <footer>
+            <a href="">運営者のTwitter</a>
+            <a href="">お問い合わせ</a>
+            <a href="">Twitterでこのサービスをシェア</a>
+        </footer>
     </div>
 </body>
 </html>
