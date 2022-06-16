@@ -15,22 +15,23 @@ Route::get('/', function () {
     return view('front');
 });
 
-Route::get('/selecttag', 'TagController@selecttag');
-Route::get('/createtag', 'TagController@createtag');
-Route::get('/tags/{tag}', 'TagController@selectdish');
-Route::get('/tags/{tag}/createdish', 'TagController@createdish');
-Route::get('/dishes/{dish}', 'DishController@posturl');
-Route::get('/posts/{post}', 'PostController@postcomment');
+Route::group(['middleware' => ['auth']], function(){
+    Route::get('/selecttag', 'TagController@selecttag');
+    Route::get('/createtag', 'TagController@createtag');
+    Route::get('/tags/{tag}', 'TagController@selectdish');
+    Route::get('/tags/{tag}/createdish', 'TagController@createdish');
+    Route::get('/dishes/{dish}', 'DishController@posturl');
+    Route::get('/posts/{post}', 'PostController@postcomment');
+    Route::post('/tags', 'TagController@store');
+    Route::post('/dishes', 'DishController@store');
+    Route::post('/posts/url', 'PostController@storeurl');
+    Route::put('/posts/{post}', 'PostController@updatecomment');
+});
 
 Route::get('/searchtag', 'TagController@searchtag');
 Route::get('/searchtag/tags/{tag}', 'TagController@searchdish');
 Route::get('/searchdish/dishes/{dish}', 'DishController@searchpost');
 
-Route::post('/tags', 'TagController@store');
-Route::post('/dishes', 'DishController@store');
-Route::post('/posts/url', 'PostController@storeurl');
-
-Route::put('/posts/{post}', 'PostController@updatecomment');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
