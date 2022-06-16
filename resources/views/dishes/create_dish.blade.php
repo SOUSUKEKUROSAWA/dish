@@ -9,7 +9,7 @@
             <input class="input url-input" type="text" name="dish[dish_name]" placeholder="短く，わかりやすい料理名を入力" value="{{ old('dish.dish_name') }}"/>
             <input type="hidden" name="dish[tag_id]" value="{{ $tag->id }}"/>
             <p class="title__error" style="color:red">{{ $errors->first('dish.dish_name') }}</p>
-            <input type="input submit" value="作成"/>
+            <input class="input submit-input" type="submit" value="作成"/>
         </div>
     </form>
     <div class="side-by-side">

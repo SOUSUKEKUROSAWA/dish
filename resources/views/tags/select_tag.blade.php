@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="centreren">
-        <h1 class='title'>どんな気分の人に紹介する？</h1>
+        <h1 class='title'>{{Auth::user()->name}}さん，こんにちは！<br>どんな気分の人に紹介する？</h1>
         <div class="justify-content">
             <a class="box-shadow box-shadow-selecttag" href="/createtag">自分でタグを作成</a>
         </div>
