@@ -4,7 +4,7 @@
     <div class="centreren">
         <h1 class='title'>今の気分に一番合うものを選んでね</h1>
         <div class="justify-content">
-            <a class="box-shadow box-shadow-searchtag" href="">選ぶのもめんどくさい！</a>
+            <a class="box-shadow box-shadow-searchtag" href="/tags/randomtag">選ぶのもめんどくさい！</a>
         </div>
         <div class='tags'>
             @foreach ($tags as $tag)

@@ -15,6 +15,12 @@ Route::get('/', function () {
     return view('front');
 });
 
+Route::get('/searchtag', 'TagController@searchtag');
+Route::get('/tags/randomtag', 'TagController@randomtag');
+Route::get('/searchtag/tags/{tag}', 'TagController@searchdish');
+Route::get('tags/{tag}/dishes/randomdish', 'TagController@randomdish');
+Route::get('/searchdish/dishes/{dish}', 'DishController@searchpost');
+
 Route::group(['middleware' => ['auth']], function(){
     Route::get('/selecttag', 'TagController@selecttag');
     Route::get('/createtag', 'TagController@createtag');
@@ -28,10 +34,10 @@ Route::group(['middleware' => ['auth']], function(){
     Route::put('/posts/{post}', 'PostController@updatecomment');
 });
 
-Route::get('/searchtag', 'TagController@searchtag');
-Route::get('/searchtag/tags/{tag}', 'TagController@searchdish');
-Route::get('/searchdish/dishes/{dish}', 'DishController@searchpost');
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/auth/redirect', 'Auth\GoogleLoginController@getGoogleAuth');
+// Route::get('/login/google', 'Auth\GoogleLoginController@getGoogleAuth');
+Route::get('/login/callback', 'Auth\GoogleLoginController@authGoogleCallback');

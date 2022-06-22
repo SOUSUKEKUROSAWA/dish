@@ -5,7 +5,7 @@
         <h1 class='title'>今の気分「{{ $tag->tag_name }}」</h1>
         <h2 class='sub_title'>気になる料理名を選んでね</h2>
         <div class="justify-content">
-            <a class="box-shadow box-shadow-searchdish" href="">迷って決められない！</a>
+            <a class="box-shadow box-shadow-searchdish" href="/tags/{{ $tag->id }}/dishes/randomdish">迷って決められない！</a>
         </div>
         <div class='dishes'>
             @foreach ($dishes as $dish)
@@ -34,7 +34,7 @@
             <a href="/selecttag">料理を他の人に紹介してみる</a>
         </div>
     </div>
-    {{--<div class='paginate'>
+    <div class='paginate'>
         {{ $dishes->links() }}
-    </div>--}}
+    </div>
 @endsection
