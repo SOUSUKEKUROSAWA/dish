@@ -65980,12 +65980,16 @@ var Preview = function Preview(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, showPreview ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "box-shadow box-shadow-searchpost preview-frame"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
-    src: props.url
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
     is: "x-frame-bypass",
-    src: props.url
+    src: props.url,
+    title: props.comment,
+    sandbox: "allow-scripts allow-same-origin allow-orientation-lock allow-pointer-lock allow-presentation allow-popups-to-escape-sandbox allow-top-navigation",
+    allowfullscreen: true
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
-    src: "https://www.itpassportsiken.com/ipkakomon.php"
+    src: props.url,
+    title: props.comment,
+    sandbox: "allow-scripts allow-same-origin allow-orientation-lock allow-pointer-lock allow-presentation allow-popups-to-escape-sandbox allow-top-navigation",
+    allowfullscreen: true
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "comment"
   }, "\u300C\u7D39\u4ECB\u3057\u3066\u304F\u308C\u305F\u4EBA\u304B\u3089\u306E\u30B3\u30E1\u30F3\u30C8\u30FB\u30FB\u30FB\u300D", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), props.comment), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -65995,7 +65999,7 @@ var Preview = function Preview(props) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "box-shadow box-shadow-searchpost",
     href: props.url
-  }, "\u4ECA\u65E5\uFF0C\u3053\u308C\u98DF\u3079\u3088"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+  }, "\u30B5\u30A4\u30C8\u3078GO\uFF01"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     className: "box-shadow box-shadow-searchpost",
     onClick: function onClick() {
       return setShowPreview(false);
@@ -66007,7 +66011,7 @@ var Preview = function Preview(props) {
     onClick: function onClick() {
       return setShowPreview(true);
     }
-  }, "\u30B5\u30A4\u30C8\u3092\u30D7\u30EC\u30D3\u30E5\u30FC"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, "\u8A73\u3057\u304F\u307F\u308B"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "comment"
   }, "\u300C\u7D39\u4ECB\u3057\u3066\u304F\u308C\u305F\u4EBA\u304B\u3089\u306E\u30B3\u30E1\u30F3\u30C8\u30FB\u30FB\u30FB\u300D", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), props.comment), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "created-at"
