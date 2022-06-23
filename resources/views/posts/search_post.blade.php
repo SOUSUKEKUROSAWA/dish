@@ -11,5 +11,5 @@
         <div class='posting'>
             <a href="/selecttag">料理を他の人に紹介してみる</a>
         </div>
-    </div>    
+    </div>
 @endsection
