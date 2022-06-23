@@ -21,8 +21,9 @@ class GoogleLoginController extends Controller
         $user = User::firstOrCreate([
             'email' => $googleUser->email
         ], [
+            'name' => $googleUser->name,
             'email_verified_at' => now(),
-            'google_id' => $googleUser->getId()
+            'password' => \Hash::make(uniqid()),
         ]);
         Auth::login($user, true);
         return redirect('/selecttag');
