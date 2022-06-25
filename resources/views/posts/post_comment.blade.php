@@ -2,7 +2,7 @@
 
 @section('content')
     <h1 class='title'>選んだ料理「{{ $post->dish->dish_name }}」</h1>
-    <form action="/posts/{{ $post->id }}" method="POST">
+    <form action="/posts/comment/{{ $post->id }}" method="POST">
         @csrf
         @method('PUT')
         <h3><br>コメントを入力してね</h3>

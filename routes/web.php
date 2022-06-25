@@ -27,11 +27,13 @@ Route::group(['middleware' => ['auth']], function(){
     Route::get('/tags/{tag}', 'TagController@selectdish');
     Route::get('/tags/{tag}/createdish', 'TagController@createdish');
     Route::get('/dishes/{dish}', 'DishController@posturl');
-    Route::get('/posts/{post}', 'PostController@postcomment');
+    Route::get('/posts/img/{post}', 'PostController@postimg');
+    Route::get('/posts/comment/{post}', 'PostController@postcomment');
     Route::post('/tags', 'TagController@store');
     Route::post('/dishes', 'DishController@store');
     Route::post('/posts/url', 'PostController@storeurl');
-    Route::put('/posts/{post}', 'PostController@updatecomment');
+    Route::put('/posts/img/{post}', 'PostController@updateimg');
+    Route::put('posts/comment/{post}', 'PostController@updatecomment');
 });
 
 Auth::routes();
@@ -39,5 +41,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/auth/redirect', 'Auth\GoogleLoginController@getGoogleAuth');
-// Route::get('/login/google', 'Auth\GoogleLoginController@getGoogleAuth');
 Route::get('/login/callback', 'Auth\GoogleLoginController@authGoogleCallback');

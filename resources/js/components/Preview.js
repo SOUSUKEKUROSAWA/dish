@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ReactDOM from 'react-dom';
+import Iframe from 'react-iframe';
 
 const Preview = (props) => {
     const [showPreview, setShowPreview] = useState(false);
@@ -9,13 +10,13 @@ const Preview = (props) => {
             {showPreview ? (
                 <>
                     <div className="box-shadow box-shadow-searchpost preview-frame">
-                        <iframe src={props.url}></iframe>
-                        <iframe is="x-frame-bypass" src={props.url}></iframe>
-                        <iframe src="https://www.itpassportsiken.com/ipkakomon.php"></iframe>
+                        {/*<img className='preview-img' src={Storage::url({props.img_path})}/>*/}
+                        {/*<Iframe srcdoc={props.url} is="x-frame-bypass" url={props.url} title={props.comment} sandbox="allow-scripts allow-same-origin allow-orientation-lock allow-pointer-lock allow-presentation allow-popups-to-escape-sandbox allow-top-navigation" allowfullscreen/>
+                        <iframe srcdoc={props.url} is="x-frame-bypass" src={props.url} title={props.comment} sandbox="allow-scripts allow-same-origin allow-orientation-lock allow-pointer-lock allow-presentation allow-popups-to-escape-sandbox allow-top-navigation" allowfullscreen></iframe>*/}
                         <p className='comment'>「紹介してくれた人からのコメント・・・」<br/>{props.comment}</p>
                         <p className='created-at'>作成日時：{props.createdAt}</p>
                         <div className="side-by-side">
-                            <a className="box-shadow box-shadow-searchpost" href={props.url}>今日，これ食べよ</a>
+                            <a className="box-shadow box-shadow-searchpost" href={props.url}>サイトへGO！</a>
                             <button className="box-shadow box-shadow-searchpost" onClick={()=>setShowPreview(false)}>閉じる</button>
                         </div>
                     </div>
@@ -23,7 +24,7 @@ const Preview = (props) => {
             ) : (
                 <>
                     <div className="box-shadow box-shadow-searchpost preview-frame">
-                        <button className="box-shadow box-shadow-searchpost" onClick={()=>setShowPreview(true)}>サイトをプレビュー</button>
+                        <button className="box-shadow box-shadow-searchpost" onClick={()=>setShowPreview(true)}>詳しくみる</button>
                         <p className='comment'>「紹介してくれた人からのコメント・・・」<br/>{props.comment}</p>
                         <p className='created-at'>作成日時：{props.createdAt}</p>
                     </div>

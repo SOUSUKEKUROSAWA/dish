@@ -8,6 +8,7 @@ class Post extends Model
 {
     protected $fillable = [
         'url',
+        'img_path',
         'comment',
         'dish_id',
     ];
