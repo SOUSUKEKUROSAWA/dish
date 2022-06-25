@@ -44,9 +44,6 @@ class TagController extends Controller
     public function searchdish(Tag $tag)
     {
         $dishes=$tag->dishes()->paginate(5);
-        // $dishes=$tag->dishes()->get();
-        // $dishes=$tag->dishes();
-        // dd(gettype($tag->dishes()));
         return view('dishes/search_dish')->with(['tag' => $tag, 'dishes' => $dishes ]);
     }
     

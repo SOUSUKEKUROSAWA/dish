@@ -22,6 +22,7 @@ class DishController extends Controller
     public function searchpost(Dish $dish)
     {
         $posts=$dish->posts()->get();
+        // $posts=$dish->posts()->paginate(5);
         return view('posts/search_post')->with(['dish' => $dish, 'posts' => $posts ]);
     }
 }

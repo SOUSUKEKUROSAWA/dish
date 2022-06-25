@@ -62519,6 +62519,97 @@ if (false) {} else {
 
 /***/ }),
 
+/***/ "./node_modules/react-iframe/dist/es/iframe.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/react-iframe/dist/es/iframe.js ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var object_assign__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! object-assign */ "./node_modules/object-assign/index.js");
+/* harmony import */ var object_assign__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(object_assign__WEBPACK_IMPORTED_MODULE_1__);
+var __assign = (undefined && undefined.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+
+
+var Iframe = function (_a) {
+    var url = _a.url, allowFullScreen = _a.allowFullScreen, position = _a.position, display = _a.display, height = _a.height, width = _a.width, overflow = _a.overflow, styles = _a.styles, onLoad = _a.onLoad, onMouseOver = _a.onMouseOver, onMouseOut = _a.onMouseOut, scrolling = _a.scrolling, id = _a.id, frameBorder = _a.frameBorder, ariaHidden = _a.ariaHidden, sandbox = _a.sandbox, allow = _a.allow, className = _a.className, title = _a.title, ariaLabel = _a.ariaLabel, ariaLabelledby = _a.ariaLabelledby, name = _a.name, target = _a.target, loading = _a.loading, importance = _a.importance, referrerpolicy = _a.referrerpolicy, allowpaymentrequest = _a.allowpaymentrequest, src = _a.src;
+    var defaultProps = object_assign__WEBPACK_IMPORTED_MODULE_1___default()({
+        src: src || url,
+        target: target || null,
+        style: {
+            position: position || null,
+            display: display || "block",
+            overflow: overflow || null
+        },
+        scrolling: scrolling || null,
+        allowpaymentrequest: allowpaymentrequest || null,
+        importance: importance || null,
+        sandbox: sandbox || null,
+        loading: loading || null,
+        styles: styles || null,
+        name: name || null,
+        className: className || null,
+        referrerpolicy: referrerpolicy || null,
+        title: title || null,
+        allow: allow || null,
+        id: id || null,
+        "aria-labelledby": ariaLabelledby || null,
+        "aria-hidden": ariaHidden || null,
+        "aria-label": ariaLabel || null,
+        width: width || null,
+        height: height || null,
+        onLoad: onLoad || null,
+        onMouseOver: onMouseOver || null,
+        onMouseOut: onMouseOut || null
+    });
+    var props = Object.create(null);
+    for (var _i = 0, _b = Object.keys(defaultProps); _i < _b.length; _i++) {
+        var prop = _b[_i];
+        if (defaultProps[prop] != null) {
+            props[prop] = defaultProps[prop];
+        }
+    }
+    for (var _c = 0, _d = Object.keys(props.style); _c < _d.length; _c++) {
+        var i = _d[_c];
+        if (props.style[i] == null) {
+            delete props.style[i];
+        }
+    }
+    if (allowFullScreen) {
+        if ("allow" in props) {
+            var currentAllow = props.allow.replace("fullscreen", "");
+            props.allow = ("fullscreen " + currentAllow.trim()).trim();
+        }
+        else {
+            props.allow = "fullscreen";
+        }
+    }
+    if (frameBorder >= 0) {
+        if (!props.style.hasOwnProperty("border")) {
+            props.style.border = frameBorder;
+        }
+    }
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", __assign({}, props));
+};
+/* harmony default export */ __webpack_exports__["default"] = (Iframe);
+
+
+/***/ }),
+
 /***/ "./node_modules/react/cjs/react.development.js":
 /*!*****************************************************!*\
   !*** ./node_modules/react/cjs/react.development.js ***!
@@ -65929,6 +66020,7 @@ var OpenPreview = function OpenPreview() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, posts.map(function (post) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Preview__WEBPACK_IMPORTED_MODULE_2__["default"], {
       url: post['url'],
+      img_path: post['img_path'],
       comment: post['comment'],
       createdAt: post['created_at']
     }));
@@ -65956,6 +66048,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_iframe__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-iframe */ "./node_modules/react-iframe/dist/es/iframe.js");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -65971,6 +66064,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
 var Preview = function Preview(props) {
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
       _useState2 = _slicedToArray(_useState, 2),
@@ -65979,14 +66073,7 @@ var Preview = function Preview(props) {
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, showPreview ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "box-shadow box-shadow-searchpost preview-frame"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
-    src: props.url
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
-    is: "x-frame-bypass",
-    src: props.url
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
-    src: "https://www.itpassportsiken.com/ipkakomon.php"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "comment"
   }, "\u300C\u7D39\u4ECB\u3057\u3066\u304F\u308C\u305F\u4EBA\u304B\u3089\u306E\u30B3\u30E1\u30F3\u30C8\u30FB\u30FB\u30FB\u300D", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), props.comment), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "created-at"
@@ -65995,7 +66082,7 @@ var Preview = function Preview(props) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "box-shadow box-shadow-searchpost",
     href: props.url
-  }, "\u4ECA\u65E5\uFF0C\u3053\u308C\u98DF\u3079\u3088"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+  }, "\u30B5\u30A4\u30C8\u3078GO\uFF01"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     className: "box-shadow box-shadow-searchpost",
     onClick: function onClick() {
       return setShowPreview(false);
@@ -66007,7 +66094,7 @@ var Preview = function Preview(props) {
     onClick: function onClick() {
       return setShowPreview(true);
     }
-  }, "\u30B5\u30A4\u30C8\u3092\u30D7\u30EC\u30D3\u30E5\u30FC"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, "\u8A73\u3057\u304F\u307F\u308B"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "comment"
   }, "\u300C\u7D39\u4ECB\u3057\u3066\u304F\u308C\u305F\u4EBA\u304B\u3089\u306E\u30B3\u30E1\u30F3\u30C8\u30FB\u30FB\u30FB\u300D", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), props.comment), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "created-at"
