@@ -12,7 +12,7 @@ const OpenPreview = () => {
             {posts.map((post)=>{
                 return(
                     <>
-                        <Preview url={post['url']} comment={post['comment']} createdAt={post['created_at']} />
+                        <Preview url={post['url']} img_path={post['img_path']} comment={post['comment']} createdAt={post['created_at']} />
                     </>
                 )
             })}

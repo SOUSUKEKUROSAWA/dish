@@ -66020,6 +66020,7 @@ var OpenPreview = function OpenPreview() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, posts.map(function (post) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Preview__WEBPACK_IMPORTED_MODULE_2__["default"], {
       url: post['url'],
+      img_path: post['img_path'],
       comment: post['comment'],
       createdAt: post['created_at']
     }));
