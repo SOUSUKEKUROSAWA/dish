@@ -114,8 +114,9 @@ iframe {
     border: none;
 }
 
-.preview-img {
-    width: 80%;
-    height: 100%;
-    border: none;
+.preview-image {
+    max-width: 90%;
+    height: 50%;
+    border-radius: 10px;
+    margin: auto;
 }
