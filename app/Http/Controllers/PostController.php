@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Post;
 use App\Http\Requests\PosturlRequest;
 use App\Http\Requests\PostcommentRequest;
+use Illuminate\Support\Facades\Storage;
 
 class PostController extends Controller
 {
@@ -24,16 +25,26 @@ class PostController extends Controller
     {
         $img = $request->file('post.img_path');
         
-        // 画像情報がセットされていれば、保存処理を実行
-        if (isset($img)) {
-            $path = $img->store('public/img');
+        /*--- 現在のサーバに画像を保存する場合 ---*/
+        // // 画像情報がセットされていれば、保存処理を実行
+        // if (isset($img)) {
+        //     $path = $img->store('public/img');
             
-            // store処理が実行できたらDBに保存処理を実行
-            if ($path) {
-                $input = $request['post'];
-                $post->fill($input)->save();
-            }
-        }
+        //     // store処理が実行できたらDBに保存処理を実行
+        //     if ($path) {
+        //         $input = $request['post'];
+        //         $post->fill($input)->save();
+        //     }
+        // }
+        /*------------------------------------------*/
+        
+        /*--- AWS,S3のサーバに画像を保存する場合 ---*/
+        // バケットの`/`フォルダへアップロードする
+        $path = Storage::disk('s3')->putFile('/', $img, 'public');
+        // アップロードした画像のフルパスを取得
+        $post->img_path = Storage::disk('s3')->url($path);
+        $post->save();
+        /*------------------------------------------*/
         
         return redirect('/posts/comment/' . $post->id);
     }

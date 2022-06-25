@@ -10,7 +10,7 @@ const Preview = (props) => {
             {showPreview ? (
                 <>
                     <div className="box-shadow box-shadow-searchpost preview-frame">
-                        {/*<img className='preview-img' src={Storage::url({props.img_path})}/>*/}
+                        <img className='preview-image' src={props.img_path }/>
                         {/*<Iframe srcdoc={props.url} is="x-frame-bypass" url={props.url} title={props.comment} sandbox="allow-scripts allow-same-origin allow-orientation-lock allow-pointer-lock allow-presentation allow-popups-to-escape-sandbox allow-top-navigation" allowfullscreen/>
                         <iframe srcdoc={props.url} is="x-frame-bypass" src={props.url} title={props.comment} sandbox="allow-scripts allow-same-origin allow-orientation-lock allow-pointer-lock allow-presentation allow-popups-to-escape-sandbox allow-top-navigation" allowfullscreen></iframe>*/}
                         <p className='comment'>「紹介してくれた人からのコメント・・・」<br/>{props.comment}</p>
