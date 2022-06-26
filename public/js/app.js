@@ -65906,7 +65906,7 @@ __webpack_require__(/*! ./components/Example */ "./resources/js/components/Examp
 
 __webpack_require__(/*! ./components/OpenPreview */ "./resources/js/components/OpenPreview.js");
 
-__webpack_require__(/*! ./components/Preview */ "./resources/js/components/Preview.js");
+__webpack_require__(/*! ./components/Preview */ "./resources/js/components/Preview.js"); // require('./components/OpenEditer');
 
 /***/ }),
 
@@ -66022,7 +66022,8 @@ var OpenPreview = function OpenPreview() {
       url: post['url'],
       img_path: post['img_path'],
       comment: post['comment'],
-      createdAt: post['created_at']
+      createdAt: post['created_at'],
+      updatedAt: post['updated_at']
     }));
   }));
 };
@@ -66078,30 +66079,33 @@ var Preview = function Preview(props) {
     src: props.img_path
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "comment"
-  }, "\u300C\u7D39\u4ECB\u3057\u3066\u304F\u308C\u305F\u4EBA\u304B\u3089\u306E\u30B3\u30E1\u30F3\u30C8\u30FB\u30FB\u30FB\u300D", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), props.comment), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, "\u300C\u7D39\u4ECB\u3057\u3066\u304F\u308C\u305F\u4EBA\u304B\u3089\u306E\u30B3\u30E1\u30F3\u30C8\u30FB\u30FB\u30FB\u300D", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), props.comment), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
     className: "created-at"
   }, "\u4F5C\u6210\u65E5\u6642\uFF1A", props.createdAt), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "side-by-side"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "box-shadow box-shadow-searchpost",
-    href: props.url
+    className: "btn btn-primary",
+    href: props.url,
+    target: "_blank"
   }, "\u30B5\u30A4\u30C8\u3078GO\uFF01"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    className: "box-shadow box-shadow-searchpost",
+    className: "btn btn-secondary",
     onClick: function onClick() {
       return setShowPreview(false);
     }
   }, "\u9589\u3058\u308B")))) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "box-shadow box-shadow-searchpost preview-frame"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    className: "box-shadow box-shadow-searchpost",
+    className: "btn btn-primary",
     onClick: function onClick() {
       return setShowPreview(true);
     }
   }, "\u8A73\u3057\u304F\u307F\u308B"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "comment"
-  }, "\u300C\u7D39\u4ECB\u3057\u3066\u304F\u308C\u305F\u4EBA\u304B\u3089\u306E\u30B3\u30E1\u30F3\u30C8\u30FB\u30FB\u30FB\u300D", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), props.comment), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, "\u300C\u7D39\u4ECB\u3057\u3066\u304F\u308C\u305F\u4EBA\u304B\u3089\u306E\u30B3\u30E1\u30F3\u30C8\u30FB\u30FB\u30FB\u300D", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), props.comment), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
     className: "created-at"
-  }, "\u4F5C\u6210\u65E5\u6642\uFF1A", props.createdAt))));
+  }, "\u4F5C\u6210\u65E5\u6642\uFF1A", props.createdAt), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
+    className: "created-at"
+  }, "\u4F5C\u6210\u65E5\u6642\uFF1A", props.updatedAt))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Preview);

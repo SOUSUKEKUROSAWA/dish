@@ -33,7 +33,15 @@ Route::group(['middleware' => ['auth']], function(){
     Route::post('/dishes', 'DishController@store');
     Route::post('/posts/url', 'PostController@storeurl');
     Route::put('/posts/img/{post}', 'PostController@updateimg');
-    Route::put('posts/comment/{post}', 'PostController@updatecomment');
+    Route::put('/posts/comment/{post}', 'PostController@updatecomment');
+    Route::get('/posts/myindex', 'UserController@myindex');
+    Route::get('/posts/url/{post}/editer', 'PostController@openUrlEditer');
+    Route::get('/posts/img/{post}/editer', 'PostController@openImgEditer');
+    Route::get('/posts/comment/{post}/editer', 'PostController@openCommentEditer');
+    Route::put('/posts/url/{post}/edit', 'PostController@editUrl');
+    Route::put('/posts/img/{post}/edit', 'PostController@editImg');
+    Route::put('/posts/comment/{post}/edit', 'PostController@editComment');
+    Route::delete('/posts/{post}', 'PostController@delete');
 });
 
 Auth::routes();

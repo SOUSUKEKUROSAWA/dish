@@ -18,7 +18,7 @@
     <div class="side-by-side">
         <a href="/selecttag">タグを選び直す</a>
     </div>
-    {{--<div class='paginate'>
+    <div class='paginate'>
         {{ $dishes->links() }}
-    </div>--}}
+    </div>
 @endsection

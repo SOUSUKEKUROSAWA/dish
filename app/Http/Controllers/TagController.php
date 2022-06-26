@@ -26,8 +26,8 @@ class TagController extends Controller
 
     public function selectdish(Tag $tag)
     {
-        //$dishes=$tag->dishes()->paginate(5);
-        $dishes=$tag->dishes()->get();
+        $dishes=$tag->dishes()->orderBy('updated_at', 'DESC')->paginate(5);
+        // $dishes=$tag::with('dishes')->orderBy('updated_at', 'DESC')->paginate(5);
         return view('dishes/select_dish')->with(['tag' => $tag, 'dishes' => $dishes ]);
     }
 
@@ -43,7 +43,8 @@ class TagController extends Controller
 
     public function searchdish(Tag $tag)
     {
-        $dishes=$tag->dishes()->paginate(5);
+        $dishes=$tag->dishes()->orderBy('updated_at', 'DESC')->paginate(5);
+        // $dishes=$tag::with('dishes')->orderBy('updated_at', 'DESC')->paginate(5);
         return view('dishes/search_dish')->with(['tag' => $tag, 'dishes' => $dishes ]);
     }
     
@@ -56,6 +57,7 @@ class TagController extends Controller
     public function randomdish(Tag $tag)
     {
         $randomdish=$tag->dishes()->get()->random(); // random()はコレクション型の関数（get()でhasManyオブジェクトからコレクションオブジェクトに変換）
+        // $randomdish=$tag::with('dishes')->get()->random(); // random()はコレクション型の関数（get()でhasManyオブジェクトからコレクションオブジェクトに変換）
         return view('dishes/randomdish')->with(['tag' => $tag, 'randomdish' => $randomdish ]);
     }
 }
