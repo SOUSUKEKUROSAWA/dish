@@ -66074,14 +66074,7 @@ var Preview = function Preview(props) {
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, showPreview ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "box-shadow box-shadow-searchpost preview-frame"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "preview-image",
-    src: props.img_path
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "comment"
-  }, "\u300C\u7D39\u4ECB\u3057\u3066\u304F\u308C\u305F\u4EBA\u304B\u3089\u306E\u30B3\u30E1\u30F3\u30C8\u30FB\u30FB\u30FB\u300D", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), props.comment), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
-    className: "created-at"
-  }, "\u4F5C\u6210\u65E5\u6642\uFF1A", props.createdAt), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "side-by-side"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "btn btn-primary",
@@ -66092,7 +66085,16 @@ var Preview = function Preview(props) {
     onClick: function onClick() {
       return setShowPreview(false);
     }
-  }, "\u9589\u3058\u308B")))) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "\u9589\u3058\u308B")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "preview-image",
+    src: props.img_path
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "comment"
+  }, "\u300C\u7D39\u4ECB\u3057\u3066\u304F\u308C\u305F\u4EBA\u304B\u3089\u306E\u30B3\u30E1\u30F3\u30C8\u30FB\u30FB\u30FB\u300D", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), props.comment), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
+    className: "created-at"
+  }, "\u4F5C\u6210\u65E5\u6642\uFF1A", props.createdAt, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
+    className: "created-at"
+  }, "\u66F4\u65B0\u65E5\u6642\uFF1A", props.updatedAt))) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "box-shadow box-shadow-searchpost preview-frame"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     className: "btn btn-primary",
@@ -66103,9 +66105,9 @@ var Preview = function Preview(props) {
     className: "comment"
   }, "\u300C\u7D39\u4ECB\u3057\u3066\u304F\u308C\u305F\u4EBA\u304B\u3089\u306E\u30B3\u30E1\u30F3\u30C8\u30FB\u30FB\u30FB\u300D", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), props.comment), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
     className: "created-at"
-  }, "\u4F5C\u6210\u65E5\u6642\uFF1A", props.createdAt), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
+  }, "\u4F5C\u6210\u65E5\u6642\uFF1A", props.createdAt, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
     className: "created-at"
-  }, "\u4F5C\u6210\u65E5\u6642\uFF1A", props.updatedAt))));
+  }, "\u66F4\u65B0\u65E5\u6642\uFF1A", props.updatedAt))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Preview);

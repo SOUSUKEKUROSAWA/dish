@@ -18,7 +18,7 @@ Route::get('/', function () {
 Route::get('/searchtag', 'TagController@searchtag');
 Route::get('/tags/randomtag', 'TagController@randomtag');
 Route::get('/searchtag/tags/{tag}', 'TagController@searchdish');
-Route::get('tags/{tag}/dishes/randomdish', 'TagController@randomdish');
+Route::get('/tags/{tag}/dishes/randomdish', 'TagController@randomdish');
 Route::get('/searchdish/dishes/{dish}', 'DishController@searchpost');
 
 Route::group(['middleware' => ['auth']], function(){
