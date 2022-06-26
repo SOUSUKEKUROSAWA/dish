@@ -7,6 +7,7 @@
         <div class="justify-content">
             <input class="input url-input" type="text" name="post[url]" placeholder="ここにURLをコピー＆ペーストしてね" value="{{ old('post.url') }}"/>
             <input type="hidden" name="post[dish_id]" value="{{ $dish->id }}"/>
+            <input type="hidden" name="post[user_id]" value="{{ Auth::user()->id }}"/>
             <p class="title__error" style="color:red">{{ $errors->first('post.url') }}</p>
             <input class="input submit-input" type="submit" value="登録"/>
         </div>

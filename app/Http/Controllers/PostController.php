@@ -58,6 +58,51 @@ class PostController extends Controller
     {
         $input = $request['post'];
         $post->fill($input)->save();
-        return redirect('/');
+        return redirect('/posts/myindex');
+    }
+    
+    public function openUrlEditer(Post $post)
+    {
+        return view('posts/edit_url')->with(['post' => $post]);
+    }
+    
+    public function editUrl(Post $post, PosturlRequest $request)
+    {
+        $input = $request['post'];
+        $post->fill($input)->save();
+        return redirect('/posts/myindex');
+    }
+    
+    public function openImgEditer(Post $post)
+    {
+        return view('posts/edit_img')->with(['post' => $post]);
+    }
+    
+    public function editImg(Post $post, PostcommentRequest $request)
+    {
+        $img = $request->file('post.img_path');
+        $path = Storage::disk('s3')->putFile('/', $img, 'public');
+        $post->img_path = Storage::disk('s3')->url($path);
+        $post->save();
+
+        return redirect('/posts/myindex');
+    }
+    
+    public function openCommentEditer(Post $post)
+    {
+        return view('posts/edit_comment')->with(['post' => $post]);
+    }
+    
+    public function editComment(Post $post, PostcommentRequest $request)
+    {
+        $input = $request['post'];
+        $post->fill($input)->save();
+        return redirect('/posts/myindex');
+    }
+    
+    public function delete(Post $post)
+    {
+        $post->delete();
+        return redirect('/posts/myindex');
     }
 }

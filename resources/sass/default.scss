@@ -12,6 +12,12 @@ nav {
     height: 100%;
 }
 
+.flex-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .justify-content {
     display: flex;
     justify-content: center;
@@ -117,6 +123,13 @@ iframe {
 .preview-image {
     max-width: 90%;
     height: 50%;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.myindex-image {
+    max-width: 50%;
+    height: 10%;
     border-radius: 10px;
     margin: auto;
 }
