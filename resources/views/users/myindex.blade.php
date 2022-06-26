@@ -6,10 +6,9 @@
     <div class="own_posts">
         @foreach($own_posts as $post)
             <div class="box-shadow box-shadow-searchpost preview-frame">
-                <div class="flex-start">
-                    <p>URL：<a href="{{ $post->url }}" target="_blank">{{ $post->url }}</a></p>
-                    <a class="btn btn-secondary" href="/posts/url/{{ $post->id }}/editer">編集する</a>
-                </div>
+                <p>URL：<a href="{{ $post->url }}" target="_blank">{{ $post->url }}</a></p>
+                <a class="btn btn-secondary" href="/posts/url/{{ $post->id }}/editer">編集する</a>
+                <p><br></p>
                 <div class="flex-start">
                     <p>画像：</p>
                     <a class="btn btn-secondary" href="/posts/img/{{ $post->id }}/editer">編集する</a>
