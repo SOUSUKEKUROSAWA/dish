@@ -25,6 +25,7 @@ nav {
 
 body {
     background: linear-gradient(90deg, #CCFFFF, #FFCCCC);
+    background-repeat: repeat-y;
     font-family: "M PLUS Rounded 1c";
     font-weight: bold;
 }
@@ -45,9 +46,9 @@ footer {
 }
 
 .box-shadow {
-    border: 1px solid #ccc;
-    margin: 10px 5px;
-    padding: 10px;
+    border: none;
+    margin: auto;
+    padding: 15px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
@@ -59,11 +60,17 @@ footer {
 h1 {
     font-size: 4vh;
     text-align: center;
+    margin: auto;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
 }
 
 h2 {
     font-size: 4vh;
     text-align: center;
+    margin: auto;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
 }
 
 h3 {
@@ -108,8 +115,6 @@ button:hover {
 }
 
 .textarea {
-    width: 50%;
-    height: 50%;
     border-radius: 10px;
     margin: 20px;
 }

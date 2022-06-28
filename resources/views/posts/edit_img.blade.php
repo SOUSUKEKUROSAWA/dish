@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1 class="title">編集画面</h1>
+    <h1 class="title">もう一度画像を選択してね</h1>
     <form action="/posts/img/{{ $post->id }}/edit" method="POST" enctype="multipart/form-data">
         @csrf
         @method('PUT')

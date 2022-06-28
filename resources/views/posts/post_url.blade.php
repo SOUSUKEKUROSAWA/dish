@@ -5,7 +5,7 @@
     <form action="/posts/url" method="POST">
         @csrf
         <div class="justify-content">
-            <input class="input url-input" type="text" name="post[url]" placeholder="ここにURLをコピー＆ペーストしてね" value="{{ old('post.url') }}"/>
+            <input class="input url-input" type="url" name="post[url]" placeholder="ここにURLをコピー＆ペーストしてね" value="{{ old('post.url') }}" required/>
             <input type="hidden" name="post[dish_id]" value="{{ $dish->id }}"/>
             <input type="hidden" name="post[user_id]" value="{{ Auth::user()->id }}"/>
             <p class="title__error" style="color:red">{{ $errors->first('post.url') }}</p>

@@ -4,7 +4,8 @@
     <div class="centreren">
         <h1 class='title'>今の気分「{{ $tag->tag_name }}」</h1>
         <h2 class='sub_title'>気になる料理名を選んでね</h2>
-        <!--<img id="top-image" src="./img/c5caaa1a.png">-->
+        <!--<img id="top-image" src="../img/c5caaa1a.png">-->
+        <img id="top-image" src="{{asset("/img/c5caaa1a.png")}}">
         <div class="justify-content">
             <a class="box-shadow box-shadow-searchdish" href="/tags/{{ $tag->id }}/dishes/randomdish">迷って決められない！</a>
         </div>
