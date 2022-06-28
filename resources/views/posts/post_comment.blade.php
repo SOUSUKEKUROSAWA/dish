@@ -7,7 +7,7 @@
         @method('PUT')
         <h3><br>コメントを入力してね</h3>
         <div class="justify-content">
-            <textarea class="textarea" name="post[comment]" placeholder="レシピのポイント・自己流アレンジなどあれば" value="{{ old('post.comment') }}"></textarea>
+            <textarea class="textarea" name="post[comment]" rows="5" cols="40" placeholder="レシピのポイント・自己流アレンジなどあれば" value="{{ old('post.comment') }}"></textarea>
             <p class="title__error" style="color:red">{{ $errors->first('post.comment') }}</p>
         </div>
         <div class="justify-content">

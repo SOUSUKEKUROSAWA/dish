@@ -1,13 +1,16 @@
 #top-image {
+    display: block;
+    margin: auto;
     height: 25vh;
-    margin: 20px;
 }
 
 .box-shadow-front {
     width: 45%;
     border-radius: 10px;
+    background-color: rgba(255,255,255);
+    height: 30vh;
+    text-align: center;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
