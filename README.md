@@ -14,7 +14,7 @@
 - 温かみのあるUI
 
 「時には面倒な今日のご飯選びを，ユーザーの自由な投稿により楽しいものにする」をコンセプトとしています．<br><br>
-<a href="https://stark-journey-71646.herokuapp.com">アプリへGO</a>
+<a href="https://stark-journey-71646.herokuapp.com" target="_blank">アプリへGO</a>
 
 ##  開発環境
 <b>使用言語：</b><br>
