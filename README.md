@@ -33,7 +33,7 @@
 - Heroku
 
 ##  データ構成
-<b>テーブル構成とリレーションとテーブル包含関係：</b><br>
+<b>「テーブル構成・リレーション」と「テーブル包含関係」：</b><br>
 <img src="https://user-images.githubusercontent.com/55343913/176453593-0e9621ef-a695-48a4-bf53-60adc7b53ea3.jpg" width="225">　<img src="https://user-images.githubusercontent.com/55343913/176453687-f0668515-1e0d-4d2c-9ec2-d25edff41bc9.jpg" width="225">
 <br><b>各テーブル詳細：</b><br>
 <img src="https://user-images.githubusercontent.com/55343913/176453649-5a1c39fa-4f5f-4fc8-9c63-7b97da3174cf.jpg" width="500">
