@@ -14,6 +14,7 @@
 
 「時には面倒な今日のご飯選びを，ユーザーの自由な投稿により楽しいものにする」をコンセプトとしています．<br><br>
 <a href="https://stark-journey-71646.herokuapp.com">アプリへGO</a>
+
 ##  開発環境
 <b>使用言語：</b><br>
 - PHP
@@ -44,19 +45,27 @@
 - レシピのランダム検索
 - アプリのシェア(Twitter API)
 - 投稿のプレビュー
+
 ##  工夫した点
-<b>バブルのように浮かぶ選択肢：</b>
-<b>リレーションを用いて実現した一意な操作性：</b>
+<b>バブルのように浮かぶ選択肢：</b><br>
+SCSSを用いてランダムに振動数を設定し，ふわふわと浮かぶ選択肢を実現しています<br><br>
+<b>わかりやすい一意な操作性：</b><br>
+リレーションをhiddenタイプのinputタグを用いて，1ページに1つのフォームによるわかりやすい投稿機能を実現しています<br>
+
 ##  楽しみ方
+<b>レシピを検索したいユーザー：</b><br>
+レシピを検索したいユーザーは「気分de探す」バブルから一つずつ直感的に選択していくことで，レシピが掲載されている外部サイトにたどり着きます．<br>
+迷って決められない場合や，選択することさえ面倒になった場合でも心配ありません．ランダムに選択するボタンによりユーザーはレシピにたどり着くことができます．<br>
+その他，ユーザーにより投稿されるユニークな選択肢を楽しむことができます．<br><br>
+<b>おすすめサイトを投稿するユーザー：</b><br>
+自身のおすすめサイトを投稿するユーザーは，ログインをする必要がありますが，Googleアカウントによるソーシャルログイン機能が実装されているため楽にログインすることができます．<br>
+ログイン後は1ページに1つある入力フォームの流れに従って，自由な発想で，検索するユーザーが楽しめるものなら何でも投稿することができます．<br>
+また，ログインしたユーザーは自分の投稿を閲覧・編集・削除することができます．<br>
+
 ##  今後の計画
+- Google Map APIによる近くの外食できる場所の自動紹介
+- 選択肢のシャッフル（アニメーション付き)
+- 関連投稿の表示
+- 投稿評価（いいね）とそれによる投稿並び替え
 
 <p align="right"><a href="https://twitter.com/So78107889" target="_blank"><img src="https://img.shields.io/twitter/url?label=%E9%96%8B%E7%99%BA%E8%80%85%E3%81%AE%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88&style=social&url=https%3A%2F%2Ftwitter.com%2FSo78107889" alt="Twitter account"></a></p>
-
-
-
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-- **[Vehikl](https://vehikl.com/)**
