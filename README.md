@@ -1,4 +1,5 @@
-<p align="right"><a href="https://twitter.com/So78107889" target="_blank"><img src="https://img.shields.io/twitter/url?label=%E9%96%8B%E7%99%BA%E8%80%85%E3%81%AE%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88&style=social&url=https%3A%2F%2Ftwitter.com%2FSo78107889" alt="Twitter account"></a></p>
+<p align="right"><a href="https://twitter.com/so_webeng" target="_blank"><img src="https://img.shields.io/twitter/url?label=%E9%96%8B%E7%99%BA%E8%80%85%E3%81%AETweet%E3%82%92%E8%A6%8B%E3%82%8B&style=social&url=https%3A%2F%2Ftwitter.com%2Fso_webeng" alt="Developer's Twitter account"></a></p>
+
 
 <p align="center"><b>シロクマにタッチすると...</b></p>
 
@@ -70,4 +71,4 @@ SCSSを用いてランダムに振動数を設定し，ふわふわと浮かぶ�
 - 関連投稿の表示
 - 投稿評価（いいね）とそれによる投稿並び替え
 
-<p align="right"><a href="https://twitter.com/So78107889" target="_blank"><img src="https://img.shields.io/twitter/url?label=%E9%96%8B%E7%99%BA%E8%80%85%E3%81%AE%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88&style=social&url=https%3A%2F%2Ftwitter.com%2FSo78107889" alt="Twitter account"></a></p>
+<p align="right"><a href="https://twitter.com/so_webeng" target="_blank"><img src="https://img.shields.io/twitter/url?label=%E9%96%8B%E7%99%BA%E8%80%85%E3%81%AETweet%E3%82%92%E8%A6%8B%E3%82%8B&style=social&url=https%3A%2F%2Ftwitter.com%2Fso_webeng" alt="Developer's Twitter account"></a></p>
