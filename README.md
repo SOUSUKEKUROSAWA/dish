@@ -47,7 +47,7 @@
 - アプリのシェア(Twitter API)
 - 投稿のプレビュー
 
-##  工夫した点
+##  こだわり
 <b>バブルのように浮かぶ選択肢：</b><br>
 SCSSを用いてランダムに振動数を設定し，ふわふわと浮かぶ選択肢を実現しています<br><br>
 <img src="https://media.giphy.com/media/WkbqikAR8FY9RtHZSx/giphy.gif" width="225"><br>
