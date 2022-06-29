@@ -1,7 +1,7 @@
 <p align="center"><a href="https://stark-journey-71646.herokuapp.com" target="_blank"><img src="https://stark-journey-71646.herokuapp.com/img/c5caaa1a.png" width="300"></a></p>
 
 <p align="center">
-<a href="https://twitter.com/So78107889"><img src="https://img.shields.io/twitter/url?label=%E9%96%8B%E7%99%BA%E8%80%85%E3%81%AE%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88&style=social&url=https%3A%2F%2Ftwitter.com%2FSo78107889" alt="Twitter account" target="_blank"></a>
+<a href="https://twitter.com/So78107889" target="_blank"><img src="https://img.shields.io/twitter/url?label=%E9%96%8B%E7%99%BA%E8%80%85%E3%81%AE%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88&style=social&url=https%3A%2F%2Ftwitter.com%2FSo78107889" alt="Twitter account"></a>
 </p>
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
