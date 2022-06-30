@@ -71,5 +71,6 @@ SCSSを用いてランダムに振動数を設定し，ふわふわと浮かぶ�
 - 関連投稿の表示
 - 投稿評価（いいね）とそれによる投稿並び替え
 - 投稿されたサイトのプレビュー（動画も再生される）
+- レシピの文字検索
 
 <p align="right"><a href="https://twitter.com/so_webeng" target="_blank"><img src="https://img.shields.io/twitter/url?label=%E9%96%8B%E7%99%BA%E8%80%85%E3%81%AETweet%E3%82%92%E8%A6%8B%E3%82%8B&style=social&url=https%3A%2F%2Ftwitter.com%2Fso_webeng" alt="Developer's Twitter account"></a></p>
