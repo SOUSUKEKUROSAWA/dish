@@ -11009,10 +11009,31 @@ footer {
   width: 100vw;
 }
 
+.guide {
+  position: relative;
+  width: 80%;
+  padding: 10px;
+  border-radius: 15px;
+  border-bottom: 5px solid #5e5e5e;
+  background-color: #e0c9be;
+  text-align: center;
+}
+
+.guide:before {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 25px;
+  width: 3px;
+  background-color: #e0c9be;
+  content: "";
+}
+
 .box-shadow {
   border: none;
   margin: auto;
-  padding: 15px;
+  padding: 3vw;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -11090,27 +11111,47 @@ iframe {
 }
 
 .preview-image {
-  max-width: 90%;
-  height: 50%;
+  max-width: 50vh;
+  width: 70vw;
   border-radius: 10px;
-  margin: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 .myindex-image {
-  max-width: 50%;
-  height: 10%;
+  max-width: 50vh;
+  width: 70vw;
   border-radius: 10px;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.btn-mini {
+  background: linear-gradient(90deg, #CCFFFF, #FFCCCC);
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.btn-middle {
+  background: white;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 5vh;
+}
+
+.tags {
   margin: auto;
+  margin-left: 5vw;
 }
 
 .bubble-field {
   height: 40vh;
-  width: 30vh;
+  width: 25vh;
 }
 
 .item {
-  width: 25vh;
-  height: 25vh;
+  width: 20vh;
+  height: 20vh;
   border-radius: 100%;
   box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.6) inset;
   display: flex;
@@ -11119,7 +11160,7 @@ iframe {
 }
 
 .item:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .item:after {
@@ -11183,8 +11224,8 @@ iframe {
 /*animation Play*/
 
 .shake2 {
-  -webkit-animation: shake 9s ease 0s infinite normal;
-          animation: shake 9s ease 0s infinite normal;
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -11197,22 +11238,22 @@ iframe {
 /*animation Play*/
 
 .shake4 {
-  -webkit-animation: shake 12s ease 0s infinite normal;
-          animation: shake 12s ease 0s infinite normal;
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake5 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake6 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -11225,85 +11266,85 @@ iframe {
 /*animation Play*/
 
 .shake8 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake9 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake10 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake11 {
-  -webkit-animation: shake 12s ease 0s infinite normal;
-          animation: shake 12s ease 0s infinite normal;
+  -webkit-animation: shake 10s ease 0s infinite normal;
+          animation: shake 10s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake12 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake13 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake14 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake15 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake16 {
-  -webkit-animation: shake 12s ease 0s infinite normal;
-          animation: shake 12s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake17 {
   -webkit-animation: shake 8s ease 0s infinite normal;
           animation: shake 8s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
+.shake16 {
+  -webkit-animation: shake 10s ease 0s infinite normal;
+          animation: shake 10s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake17 {
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
 .shake18 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake19 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -11316,22 +11357,22 @@ iframe {
 /*animation Play*/
 
 .shake21 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake22 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake23 {
-  -webkit-animation: shake 10s ease 0s infinite normal;
-          animation: shake 10s ease 0s infinite normal;
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -11344,92 +11385,92 @@ iframe {
 /*animation Play*/
 
 .shake25 {
-  -webkit-animation: shake 8s ease 0s infinite normal;
-          animation: shake 8s ease 0s infinite normal;
+  -webkit-animation: shake 10s ease 0s infinite normal;
+          animation: shake 10s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake26 {
+  -webkit-animation: shake 10s ease 0s infinite normal;
+          animation: shake 10s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake27 {
   -webkit-animation: shake 7s ease 0s infinite normal;
           animation: shake 7s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake27 {
+.shake28 {
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake29 {
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake30 {
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake31 {
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake32 {
+  -webkit-animation: shake 10s ease 0s infinite normal;
+          animation: shake 10s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake33 {
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake34 {
   -webkit-animation: shake 8s ease 0s infinite normal;
           animation: shake 8s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake28 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake29 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake30 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake31 {
-  -webkit-animation: shake 9s ease 0s infinite normal;
-          animation: shake 9s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake32 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake33 {
-  -webkit-animation: shake 12s ease 0s infinite normal;
-          animation: shake 12s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake34 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
 .shake35 {
-  -webkit-animation: shake 12s ease 0s infinite normal;
-          animation: shake 12s ease 0s infinite normal;
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake36 {
-  -webkit-animation: shake 9s ease 0s infinite normal;
-          animation: shake 9s ease 0s infinite normal;
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake37 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -11449,8 +11490,8 @@ iframe {
 /*animation Play*/
 
 .shake40 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -11463,57 +11504,57 @@ iframe {
 /*animation Play*/
 
 .shake42 {
-  -webkit-animation: shake 8s ease 0s infinite normal;
-          animation: shake 8s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake43 {
   -webkit-animation: shake 11s ease 0s infinite normal;
           animation: shake 11s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
+.shake43 {
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
 .shake44 {
+  -webkit-animation: shake 5s ease 0s infinite normal;
+          animation: shake 5s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake45 {
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake46 {
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake47 {
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake48 {
   -webkit-animation: shake 9s ease 0s infinite normal;
           animation: shake 9s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake45 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake46 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake47 {
+.shake49 {
   -webkit-animation: shake 8s ease 0s infinite normal;
           animation: shake 8s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake48 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake49 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -11526,43 +11567,43 @@ iframe {
 /*animation Play*/
 
 .shake51 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake52 {
-  -webkit-animation: shake 8s ease 0s infinite normal;
-          animation: shake 8s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake53 {
   -webkit-animation: shake 7s ease 0s infinite normal;
           animation: shake 7s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
+.shake52 {
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake53 {
+  -webkit-animation: shake 4s ease 0s infinite normal;
+          animation: shake 4s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
 .shake54 {
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake55 {
   -webkit-animation: shake 5s ease 0s infinite normal;
           animation: shake 5s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake55 {
-  -webkit-animation: shake 10s ease 0s infinite normal;
-          animation: shake 10s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
 .shake56 {
-  -webkit-animation: shake 9s ease 0s infinite normal;
-          animation: shake 9s ease 0s infinite normal;
+  -webkit-animation: shake 4s ease 0s infinite normal;
+          animation: shake 4s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -11575,134 +11616,134 @@ iframe {
 /*animation Play*/
 
 .shake58 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake59 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake60 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake61 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake62 {
-  -webkit-animation: shake 12s ease 0s infinite normal;
-          animation: shake 12s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake63 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake64 {
-  -webkit-animation: shake 9s ease 0s infinite normal;
-          animation: shake 9s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake65 {
   -webkit-animation: shake 8s ease 0s infinite normal;
           animation: shake 8s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake66 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake67 {
+.shake59 {
   -webkit-animation: shake 7s ease 0s infinite normal;
           animation: shake 7s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake68 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
+.shake60 {
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake69 {
-  -webkit-animation: shake 12s ease 0s infinite normal;
-          animation: shake 12s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake70 {
+.shake61 {
   -webkit-animation: shake 10s ease 0s infinite normal;
           animation: shake 10s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake71 {
+.shake62 {
+  -webkit-animation: shake 5s ease 0s infinite normal;
+          animation: shake 5s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake63 {
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake64 {
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake65 {
+  -webkit-animation: shake 4s ease 0s infinite normal;
+          animation: shake 4s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake66 {
+  -webkit-animation: shake 4s ease 0s infinite normal;
+          animation: shake 4s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake67 {
   -webkit-animation: shake 8s ease 0s infinite normal;
           animation: shake 8s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
+.shake68 {
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake69 {
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake70 {
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake71 {
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
 .shake72 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
+  -webkit-animation: shake 10s ease 0s infinite normal;
+          animation: shake 10s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake73 {
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake74 {
   -webkit-animation: shake 7s ease 0s infinite normal;
           animation: shake 7s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake74 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
 .shake75 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake76 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -11715,92 +11756,92 @@ iframe {
 /*animation Play*/
 
 .shake78 {
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake79 {
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake80 {
   -webkit-animation: shake 10s ease 0s infinite normal;
           animation: shake 10s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake79 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
+.shake81 {
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake80 {
+.shake82 {
   -webkit-animation: shake 4s ease 0s infinite normal;
           animation: shake 4s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake81 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake82 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
 .shake83 {
-  -webkit-animation: shake 12s ease 0s infinite normal;
-          animation: shake 12s ease 0s infinite normal;
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake84 {
+  -webkit-animation: shake 4s ease 0s infinite normal;
+          animation: shake 4s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake85 {
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake86 {
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake87 {
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake88 {
   -webkit-animation: shake 10s ease 0s infinite normal;
           animation: shake 10s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake85 {
-  -webkit-animation: shake 12s ease 0s infinite normal;
-          animation: shake 12s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake86 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake87 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake88 {
+.shake89 {
   -webkit-animation: shake 5s ease 0s infinite normal;
           animation: shake 5s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake89 {
-  -webkit-animation: shake 12s ease 0s infinite normal;
-          animation: shake 12s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake90 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -11813,50 +11854,50 @@ iframe {
 /*animation Play*/
 
 .shake92 {
+  -webkit-animation: shake 4s ease 0s infinite normal;
+          animation: shake 4s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake93 {
+  -webkit-animation: shake 4s ease 0s infinite normal;
+          animation: shake 4s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake94 {
+  -webkit-animation: shake 5s ease 0s infinite normal;
+          animation: shake 5s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake95 {
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake96 {
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake97 {
   -webkit-animation: shake 8s ease 0s infinite normal;
           animation: shake 8s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake93 {
-  -webkit-animation: shake 9s ease 0s infinite normal;
-          animation: shake 9s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake94 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake95 {
-  -webkit-animation: shake 9s ease 0s infinite normal;
-          animation: shake 9s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake96 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake97 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
 .shake98 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -11869,99 +11910,99 @@ iframe {
 /*animation Play*/
 
 .shake100 {
-  -webkit-animation: shake 9s ease 0s infinite normal;
-          animation: shake 9s ease 0s infinite normal;
+  -webkit-animation: shake 5s ease 0s infinite normal;
+          animation: shake 5s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake101 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake102 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake103 {
   -webkit-animation: shake 6s ease 0s infinite normal;
           animation: shake 6s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake104 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake105 {
-  -webkit-animation: shake 12s ease 0s infinite normal;
-          animation: shake 12s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake106 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake107 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake108 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake109 {
+.shake102 {
   -webkit-animation: shake 10s ease 0s infinite normal;
           animation: shake 10s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake110 {
+.shake103 {
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake104 {
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake105 {
   -webkit-animation: shake 5s ease 0s infinite normal;
           animation: shake 5s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake111 {
+.shake106 {
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake107 {
   -webkit-animation: shake 4s ease 0s infinite normal;
           animation: shake 4s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake108 {
+  -webkit-animation: shake 5s ease 0s infinite normal;
+          animation: shake 5s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake109 {
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake110 {
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake111 {
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake112 {
-  -webkit-animation: shake 12s ease 0s infinite normal;
-          animation: shake 12s ease 0s infinite normal;
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake113 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -11974,246 +12015,246 @@ iframe {
 /*animation Play*/
 
 .shake115 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake116 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake117 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake118 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake119 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake120 {
   -webkit-animation: shake 12s ease 0s infinite normal;
           animation: shake 12s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake121 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake122 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake123 {
-  -webkit-animation: shake 10s ease 0s infinite normal;
-          animation: shake 10s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake124 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake125 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake126 {
+.shake117 {
   -webkit-animation: shake 5s ease 0s infinite normal;
           animation: shake 5s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake127 {
+.shake118 {
   -webkit-animation: shake 4s ease 0s infinite normal;
           animation: shake 4s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
+.shake119 {
+  -webkit-animation: shake 10s ease 0s infinite normal;
+          animation: shake 10s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake120 {
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake121 {
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake122 {
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake123 {
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake124 {
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake125 {
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake126 {
+  -webkit-animation: shake 10s ease 0s infinite normal;
+          animation: shake 10s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake127 {
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
 .shake128 {
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake129 {
+  -webkit-animation: shake 4s ease 0s infinite normal;
+          animation: shake 4s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake130 {
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake131 {
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake132 {
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake133 {
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake134 {
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake135 {
+  -webkit-animation: shake 4s ease 0s infinite normal;
+          animation: shake 4s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake136 {
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake137 {
+  -webkit-animation: shake 10s ease 0s infinite normal;
+          animation: shake 10s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake138 {
   -webkit-animation: shake 13s ease 0s infinite normal;
           animation: shake 13s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake129 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake130 {
-  -webkit-animation: shake 8s ease 0s infinite normal;
-          animation: shake 8s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake131 {
-  -webkit-animation: shake 8s ease 0s infinite normal;
-          animation: shake 8s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake132 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake133 {
-  -webkit-animation: shake 10s ease 0s infinite normal;
-          animation: shake 10s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake134 {
-  -webkit-animation: shake 10s ease 0s infinite normal;
-          animation: shake 10s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake135 {
+.shake139 {
   -webkit-animation: shake 11s ease 0s infinite normal;
           animation: shake 11s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake136 {
+.shake140 {
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake141 {
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake142 {
+  -webkit-animation: shake 4s ease 0s infinite normal;
+          animation: shake 4s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake143 {
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake144 {
   -webkit-animation: shake 12s ease 0s infinite normal;
           animation: shake 12s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake137 {
-  -webkit-animation: shake 8s ease 0s infinite normal;
-          animation: shake 8s ease 0s infinite normal;
+.shake145 {
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake138 {
+.shake146 {
+  -webkit-animation: shake 4s ease 0s infinite normal;
+          animation: shake 4s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake147 {
   -webkit-animation: shake 5s ease 0s infinite normal;
           animation: shake 5s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake139 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake140 {
-  -webkit-animation: shake 10s ease 0s infinite normal;
-          animation: shake 10s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake141 {
-  -webkit-animation: shake 12s ease 0s infinite normal;
-          animation: shake 12s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake142 {
-  -webkit-animation: shake 10s ease 0s infinite normal;
-          animation: shake 10s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake143 {
-  -webkit-animation: shake 10s ease 0s infinite normal;
-          animation: shake 10s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake144 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake145 {
-  -webkit-animation: shake 12s ease 0s infinite normal;
-          animation: shake 12s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake146 {
-  -webkit-animation: shake 10s ease 0s infinite normal;
-          animation: shake 10s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake147 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
 .shake148 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake149 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -12226,78 +12267,78 @@ iframe {
 /*animation Play*/
 
 .shake151 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake152 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake153 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake154 {
   -webkit-animation: shake 9s ease 0s infinite normal;
           animation: shake 9s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
+.shake154 {
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
 .shake155 {
-  -webkit-animation: shake 8s ease 0s infinite normal;
-          animation: shake 8s ease 0s infinite normal;
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake156 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake157 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake158 {
-  -webkit-animation: shake 10s ease 0s infinite normal;
-          animation: shake 10s ease 0s infinite normal;
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake159 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake160 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake161 {
-  -webkit-animation: shake 8s ease 0s infinite normal;
-          animation: shake 8s ease 0s infinite normal;
+  -webkit-animation: shake 5s ease 0s infinite normal;
+          animation: shake 5s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -12310,57 +12351,57 @@ iframe {
 /*animation Play*/
 
 .shake163 {
-  -webkit-animation: shake 12s ease 0s infinite normal;
-          animation: shake 12s ease 0s infinite normal;
+  -webkit-animation: shake 10s ease 0s infinite normal;
+          animation: shake 10s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake164 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake165 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake166 {
-  -webkit-animation: shake 10s ease 0s infinite normal;
-          animation: shake 10s ease 0s infinite normal;
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake167 {
-  -webkit-animation: shake 10s ease 0s infinite normal;
-          animation: shake 10s ease 0s infinite normal;
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake168 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake169 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake170 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
+  -webkit-animation: shake 4s ease 0s infinite normal;
+          animation: shake 4s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -12373,64 +12414,64 @@ iframe {
 /*animation Play*/
 
 .shake172 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
+  -webkit-animation: shake 5s ease 0s infinite normal;
+          animation: shake 5s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake173 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake174 {
-  -webkit-animation: shake 12s ease 0s infinite normal;
-          animation: shake 12s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake175 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake176 {
-  -webkit-animation: shake 9s ease 0s infinite normal;
-          animation: shake 9s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake177 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake178 {
   -webkit-animation: shake 10s ease 0s infinite normal;
           animation: shake 10s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake179 {
+.shake174 {
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake175 {
   -webkit-animation: shake 5s ease 0s infinite normal;
           animation: shake 5s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
+.shake176 {
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake177 {
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake178 {
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake179 {
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
 .shake180 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -12443,36 +12484,36 @@ iframe {
 /*animation Play*/
 
 .shake182 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake183 {
-  -webkit-animation: shake 12s ease 0s infinite normal;
-          animation: shake 12s ease 0s infinite normal;
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake184 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
+  -webkit-animation: shake 10s ease 0s infinite normal;
+          animation: shake 10s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake185 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake186 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
+  -webkit-animation: shake 4s ease 0s infinite normal;
+          animation: shake 4s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -12492,71 +12533,71 @@ iframe {
 /*animation Play*/
 
 .shake189 {
-  -webkit-animation: shake 12s ease 0s infinite normal;
-          animation: shake 12s ease 0s infinite normal;
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake190 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake191 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
+  -webkit-animation: shake 4s ease 0s infinite normal;
+          animation: shake 4s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake192 {
-  -webkit-animation: shake 9s ease 0s infinite normal;
-          animation: shake 9s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake193 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake194 {
-  -webkit-animation: shake 9s ease 0s infinite normal;
-          animation: shake 9s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake195 {
-  -webkit-animation: shake 9s ease 0s infinite normal;
-          animation: shake 9s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake196 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake197 {
   -webkit-animation: shake 8s ease 0s infinite normal;
           animation: shake 8s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
+.shake193 {
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake194 {
+  -webkit-animation: shake 5s ease 0s infinite normal;
+          animation: shake 5s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake195 {
+  -webkit-animation: shake 4s ease 0s infinite normal;
+          animation: shake 4s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake196 {
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake197 {
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
 .shake198 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -12569,71 +12610,71 @@ iframe {
 /*animation Play*/
 
 .shake200 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake201 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake202 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake203 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake204 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake205 {
   -webkit-animation: shake 8s ease 0s infinite normal;
           animation: shake 8s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake206 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
+.shake201 {
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake207 {
+.shake202 {
   -webkit-animation: shake 9s ease 0s infinite normal;
           animation: shake 9s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
+.shake203 {
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake204 {
+  -webkit-animation: shake 10s ease 0s infinite normal;
+          animation: shake 10s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake205 {
+  -webkit-animation: shake 5s ease 0s infinite normal;
+          animation: shake 5s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake206 {
+  -webkit-animation: shake 5s ease 0s infinite normal;
+          animation: shake 5s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake207 {
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
 .shake208 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
+  -webkit-animation: shake 10s ease 0s infinite normal;
+          animation: shake 10s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake209 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -12646,155 +12687,155 @@ iframe {
 /*animation Play*/
 
 .shake211 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake212 {
   -webkit-animation: shake 4s ease 0s infinite normal;
           animation: shake 4s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake213 {
-  -webkit-animation: shake 8s ease 0s infinite normal;
-          animation: shake 8s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake214 {
-  -webkit-animation: shake 10s ease 0s infinite normal;
-          animation: shake 10s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake215 {
-  -webkit-animation: shake 10s ease 0s infinite normal;
-          animation: shake 10s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake216 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake217 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake218 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake219 {
+.shake212 {
   -webkit-animation: shake 12s ease 0s infinite normal;
           animation: shake 12s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake220 {
-  -webkit-animation: shake 10s ease 0s infinite normal;
-          animation: shake 10s ease 0s infinite normal;
+.shake213 {
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake221 {
+.shake214 {
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake215 {
   -webkit-animation: shake 9s ease 0s infinite normal;
           animation: shake 9s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake222 {
+.shake216 {
+  -webkit-animation: shake 10s ease 0s infinite normal;
+          animation: shake 10s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake217 {
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake218 {
   -webkit-animation: shake 6s ease 0s infinite normal;
           animation: shake 6s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake223 {
+.shake219 {
   -webkit-animation: shake 10s ease 0s infinite normal;
           animation: shake 10s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake224 {
-  -webkit-animation: shake 8s ease 0s infinite normal;
-          animation: shake 8s ease 0s infinite normal;
+.shake220 {
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake225 {
-  -webkit-animation: shake 10s ease 0s infinite normal;
-          animation: shake 10s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake226 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake227 {
+.shake221 {
   -webkit-animation: shake 12s ease 0s infinite normal;
           animation: shake 12s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
+.shake222 {
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake223 {
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake224 {
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake225 {
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake226 {
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake227 {
+  -webkit-animation: shake 4s ease 0s infinite normal;
+          animation: shake 4s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
 .shake228 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake229 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
+  -webkit-animation: shake 4s ease 0s infinite normal;
+          animation: shake 4s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake230 {
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake231 {
   -webkit-animation: shake 10s ease 0s infinite normal;
           animation: shake 10s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake231 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
 .shake232 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -12807,22 +12848,22 @@ iframe {
 /*animation Play*/
 
 .shake234 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake235 {
-  -webkit-animation: shake 10s ease 0s infinite normal;
-          animation: shake 10s ease 0s infinite normal;
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake236 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -12835,8 +12876,8 @@ iframe {
 /*animation Play*/
 
 .shake238 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -12849,8 +12890,8 @@ iframe {
 /*animation Play*/
 
 .shake240 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -12863,22 +12904,22 @@ iframe {
 /*animation Play*/
 
 .shake242 {
-  -webkit-animation: shake 12s ease 0s infinite normal;
-          animation: shake 12s ease 0s infinite normal;
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake243 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake244 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -12891,64 +12932,64 @@ iframe {
 /*animation Play*/
 
 .shake246 {
-  -webkit-animation: shake 8s ease 0s infinite normal;
-          animation: shake 8s ease 0s infinite normal;
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake247 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
+  -webkit-animation: shake 10s ease 0s infinite normal;
+          animation: shake 10s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake248 {
-  -webkit-animation: shake 9s ease 0s infinite normal;
-          animation: shake 9s ease 0s infinite normal;
+  -webkit-animation: shake 10s ease 0s infinite normal;
+          animation: shake 10s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake249 {
-  -webkit-animation: shake 12s ease 0s infinite normal;
-          animation: shake 12s ease 0s infinite normal;
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake250 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake251 {
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake252 {
   -webkit-animation: shake 8s ease 0s infinite normal;
           animation: shake 8s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake252 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
 .shake253 {
-  -webkit-animation: shake 9s ease 0s infinite normal;
-          animation: shake 9s ease 0s infinite normal;
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake254 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
+  -webkit-animation: shake 4s ease 0s infinite normal;
+          animation: shake 4s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -12961,127 +13002,127 @@ iframe {
 /*animation Play*/
 
 .shake256 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake257 {
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake258 {
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake259 {
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake260 {
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake261 {
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake262 {
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake263 {
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake264 {
   -webkit-animation: shake 10s ease 0s infinite normal;
           animation: shake 10s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake258 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake259 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake260 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake261 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake262 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake263 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake264 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
 .shake265 {
+  -webkit-animation: shake 10s ease 0s infinite normal;
+          animation: shake 10s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake266 {
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake267 {
+  -webkit-animation: shake 10s ease 0s infinite normal;
+          animation: shake 10s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake268 {
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake269 {
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake270 {
   -webkit-animation: shake 8s ease 0s infinite normal;
           animation: shake 8s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake266 {
+.shake271 {
+  -webkit-animation: shake 5s ease 0s infinite normal;
+          animation: shake 5s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake272 {
   -webkit-animation: shake 6s ease 0s infinite normal;
           animation: shake 6s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake267 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake268 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake269 {
-  -webkit-animation: shake 12s ease 0s infinite normal;
-          animation: shake 12s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake270 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake271 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake272 {
-  -webkit-animation: shake 9s ease 0s infinite normal;
-          animation: shake 9s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
 .shake273 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -13101,162 +13142,162 @@ iframe {
 /*animation Play*/
 
 .shake276 {
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake277 {
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake278 {
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake279 {
+  -webkit-animation: shake 10s ease 0s infinite normal;
+          animation: shake 10s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake280 {
+  -webkit-animation: shake 10s ease 0s infinite normal;
+          animation: shake 10s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake281 {
+  -webkit-animation: shake 4s ease 0s infinite normal;
+          animation: shake 4s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake282 {
   -webkit-animation: shake 8s ease 0s infinite normal;
           animation: shake 8s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake277 {
-  -webkit-animation: shake 12s ease 0s infinite normal;
-          animation: shake 12s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake278 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake279 {
-  -webkit-animation: shake 12s ease 0s infinite normal;
-          animation: shake 12s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake280 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake281 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake282 {
+.shake283 {
   -webkit-animation: shake 5s ease 0s infinite normal;
           animation: shake 5s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake283 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake284 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
+  -webkit-animation: shake 4s ease 0s infinite normal;
+          animation: shake 4s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake285 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake286 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake287 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake288 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake289 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake290 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake291 {
   -webkit-animation: shake 12s ease 0s infinite normal;
           animation: shake 12s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake292 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake293 {
+.shake291 {
   -webkit-animation: shake 4s ease 0s infinite normal;
           animation: shake 4s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
+.shake292 {
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake293 {
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
 .shake294 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake295 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
+  -webkit-animation: shake 10s ease 0s infinite normal;
+          animation: shake 10s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake296 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake297 {
-  -webkit-animation: shake 12s ease 0s infinite normal;
-          animation: shake 12s ease 0s infinite normal;
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake298 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -13269,169 +13310,169 @@ iframe {
 /*animation Play*/
 
 .shake300 {
+  -webkit-animation: shake 5s ease 0s infinite normal;
+          animation: shake 5s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake301 {
+  -webkit-animation: shake 10s ease 0s infinite normal;
+          animation: shake 10s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake302 {
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake303 {
   -webkit-animation: shake 12s ease 0s infinite normal;
           animation: shake 12s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake301 {
-  -webkit-animation: shake 9s ease 0s infinite normal;
-          animation: shake 9s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake302 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake303 {
-  -webkit-animation: shake 8s ease 0s infinite normal;
-          animation: shake 8s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
 .shake304 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake305 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake306 {
   -webkit-animation: shake 4s ease 0s infinite normal;
           animation: shake 4s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
+.shake306 {
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
 .shake307 {
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake308 {
+  -webkit-animation: shake 5s ease 0s infinite normal;
+          animation: shake 5s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake309 {
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake310 {
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake311 {
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake312 {
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake313 {
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake314 {
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake315 {
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake316 {
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake317 {
   -webkit-animation: shake 11s ease 0s infinite normal;
           animation: shake 11s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake308 {
-  -webkit-animation: shake 8s ease 0s infinite normal;
-          animation: shake 8s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake309 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake310 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake311 {
-  -webkit-animation: shake 10s ease 0s infinite normal;
-          animation: shake 10s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake312 {
-  -webkit-animation: shake 8s ease 0s infinite normal;
-          animation: shake 8s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake313 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake314 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake315 {
-  -webkit-animation: shake 10s ease 0s infinite normal;
-          animation: shake 10s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake316 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake317 {
-  -webkit-animation: shake 10s ease 0s infinite normal;
-          animation: shake 10s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
 .shake318 {
-  -webkit-animation: shake 10s ease 0s infinite normal;
-          animation: shake 10s ease 0s infinite normal;
+  -webkit-animation: shake 4s ease 0s infinite normal;
+          animation: shake 4s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake319 {
-  -webkit-animation: shake 10s ease 0s infinite normal;
-          animation: shake 10s ease 0s infinite normal;
+  -webkit-animation: shake 4s ease 0s infinite normal;
+          animation: shake 4s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake320 {
-  -webkit-animation: shake 9s ease 0s infinite normal;
-          animation: shake 9s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake321 {
-  -webkit-animation: shake 10s ease 0s infinite normal;
-          animation: shake 10s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake322 {
   -webkit-animation: shake 13s ease 0s infinite normal;
           animation: shake 13s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
+.shake321 {
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake322 {
+  -webkit-animation: shake 4s ease 0s infinite normal;
+          animation: shake 4s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
 .shake323 {
-  -webkit-animation: shake 9s ease 0s infinite normal;
-          animation: shake 9s ease 0s infinite normal;
+  -webkit-animation: shake 4s ease 0s infinite normal;
+          animation: shake 4s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -13444,99 +13485,99 @@ iframe {
 /*animation Play*/
 
 .shake325 {
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake326 {
+  -webkit-animation: shake 4s ease 0s infinite normal;
+          animation: shake 4s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake327 {
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake328 {
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake329 {
+  -webkit-animation: shake 10s ease 0s infinite normal;
+          animation: shake 10s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake330 {
   -webkit-animation: shake 12s ease 0s infinite normal;
           animation: shake 12s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake326 {
+.shake331 {
   -webkit-animation: shake 8s ease 0s infinite normal;
           animation: shake 8s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake327 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake328 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake329 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake330 {
+.shake332 {
   -webkit-animation: shake 5s ease 0s infinite normal;
           animation: shake 5s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake331 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake332 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
 .shake333 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
+  -webkit-animation: shake 10s ease 0s infinite normal;
+          animation: shake 10s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake334 {
-  -webkit-animation: shake 8s ease 0s infinite normal;
-          animation: shake 8s ease 0s infinite normal;
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake335 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake336 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
+  -webkit-animation: shake 10s ease 0s infinite normal;
+          animation: shake 10s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake337 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
+  -webkit-animation: shake 5s ease 0s infinite normal;
+          animation: shake 5s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake338 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -13556,64 +13597,64 @@ iframe {
 /*animation Play*/
 
 .shake341 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
+  -webkit-animation: shake 10s ease 0s infinite normal;
+          animation: shake 10s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake342 {
-  -webkit-animation: shake 9s ease 0s infinite normal;
-          animation: shake 9s ease 0s infinite normal;
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake343 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake344 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake345 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake346 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake347 {
   -webkit-animation: shake 4s ease 0s infinite normal;
           animation: shake 4s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
+.shake344 {
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake345 {
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake346 {
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake347 {
+  -webkit-animation: shake 10s ease 0s infinite normal;
+          animation: shake 10s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
 .shake348 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake349 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -13626,22 +13667,22 @@ iframe {
 /*animation Play*/
 
 .shake351 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake352 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
+  -webkit-animation: shake 5s ease 0s infinite normal;
+          animation: shake 5s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake353 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
+  -webkit-animation: shake 4s ease 0s infinite normal;
+          animation: shake 4s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -13654,43 +13695,43 @@ iframe {
 /*animation Play*/
 
 .shake355 {
-  -webkit-animation: shake 12s ease 0s infinite normal;
-          animation: shake 12s ease 0s infinite normal;
+  -webkit-animation: shake 4s ease 0s infinite normal;
+          animation: shake 4s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake356 {
-  -webkit-animation: shake 9s ease 0s infinite normal;
-          animation: shake 9s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake357 {
   -webkit-animation: shake 12s ease 0s infinite normal;
           animation: shake 12s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
+.shake357 {
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
 .shake358 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
+  -webkit-animation: shake 5s ease 0s infinite normal;
+          animation: shake 5s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake359 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake360 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -13703,36 +13744,36 @@ iframe {
 /*animation Play*/
 
 .shake362 {
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake363 {
   -webkit-animation: shake 5s ease 0s infinite normal;
           animation: shake 5s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake363 {
-  -webkit-animation: shake 8s ease 0s infinite normal;
-          animation: shake 8s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
 .shake364 {
-  -webkit-animation: shake 8s ease 0s infinite normal;
-          animation: shake 8s ease 0s infinite normal;
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake365 {
-  -webkit-animation: shake 9s ease 0s infinite normal;
-          animation: shake 9s ease 0s infinite normal;
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake366 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -13745,148 +13786,148 @@ iframe {
 /*animation Play*/
 
 .shake368 {
-  -webkit-animation: shake 9s ease 0s infinite normal;
-          animation: shake 9s ease 0s infinite normal;
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake369 {
-  -webkit-animation: shake 8s ease 0s infinite normal;
-          animation: shake 8s ease 0s infinite normal;
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake370 {
-  -webkit-animation: shake 8s ease 0s infinite normal;
-          animation: shake 8s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake371 {
   -webkit-animation: shake 4s ease 0s infinite normal;
           animation: shake 4s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
+.shake371 {
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
 .shake372 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake373 {
-  -webkit-animation: shake 9s ease 0s infinite normal;
-          animation: shake 9s ease 0s infinite normal;
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake374 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake375 {
-  -webkit-animation: shake 12s ease 0s infinite normal;
-          animation: shake 12s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake376 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake377 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake378 {
-  -webkit-animation: shake 12s ease 0s infinite normal;
-          animation: shake 12s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake379 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake380 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake381 {
   -webkit-animation: shake 10s ease 0s infinite normal;
           animation: shake 10s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake382 {
-  -webkit-animation: shake 12s ease 0s infinite normal;
-          animation: shake 12s ease 0s infinite normal;
+.shake375 {
+  -webkit-animation: shake 10s ease 0s infinite normal;
+          animation: shake 10s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake383 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake384 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake385 {
-  -webkit-animation: shake 8s ease 0s infinite normal;
-          animation: shake 8s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake386 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake387 {
+.shake376 {
   -webkit-animation: shake 5s ease 0s infinite normal;
           animation: shake 5s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake388 {
+.shake377 {
   -webkit-animation: shake 11s ease 0s infinite normal;
           animation: shake 11s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake378 {
+  -webkit-animation: shake 5s ease 0s infinite normal;
+          animation: shake 5s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake379 {
+  -webkit-animation: shake 10s ease 0s infinite normal;
+          animation: shake 10s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake380 {
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake381 {
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake382 {
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake383 {
+  -webkit-animation: shake 5s ease 0s infinite normal;
+          animation: shake 5s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake384 {
+  -webkit-animation: shake 5s ease 0s infinite normal;
+          animation: shake 5s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake385 {
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake386 {
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake387 {
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake388 {
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -13899,239 +13940,239 @@ iframe {
 /*animation Play*/
 
 .shake390 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake391 {
-  -webkit-animation: shake 10s ease 0s infinite normal;
-          animation: shake 10s ease 0s infinite normal;
+  -webkit-animation: shake 4s ease 0s infinite normal;
+          animation: shake 4s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake392 {
-  -webkit-animation: shake 10s ease 0s infinite normal;
-          animation: shake 10s ease 0s infinite normal;
+  -webkit-animation: shake 5s ease 0s infinite normal;
+          animation: shake 5s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake393 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake394 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake395 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake396 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake397 {
-  -webkit-animation: shake 8s ease 0s infinite normal;
-          animation: shake 8s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake398 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake399 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake400 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake401 {
   -webkit-animation: shake 10s ease 0s infinite normal;
           animation: shake 10s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake402 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake403 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake404 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake405 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake406 {
-  -webkit-animation: shake 8s ease 0s infinite normal;
-          animation: shake 8s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake407 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake408 {
+.shake395 {
   -webkit-animation: shake 9s ease 0s infinite normal;
           animation: shake 9s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake409 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake410 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake411 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake412 {
-  -webkit-animation: shake 8s ease 0s infinite normal;
-          animation: shake 8s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake413 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake414 {
-  -webkit-animation: shake 8s ease 0s infinite normal;
-          animation: shake 8s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake415 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake416 {
+.shake396 {
   -webkit-animation: shake 9s ease 0s infinite normal;
           animation: shake 9s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake417 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
+.shake397 {
+  -webkit-animation: shake 10s ease 0s infinite normal;
+          animation: shake 10s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake418 {
+.shake398 {
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake399 {
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake400 {
   -webkit-animation: shake 12s ease 0s infinite normal;
           animation: shake 12s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake419 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake420 {
-  -webkit-animation: shake 9s ease 0s infinite normal;
-          animation: shake 9s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake421 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake422 {
+.shake401 {
   -webkit-animation: shake 8s ease 0s infinite normal;
           animation: shake 8s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake423 {
+.shake402 {
+  -webkit-animation: shake 5s ease 0s infinite normal;
+          animation: shake 5s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake403 {
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake404 {
   -webkit-animation: shake 7s ease 0s infinite normal;
           animation: shake 7s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake405 {
+  -webkit-animation: shake 5s ease 0s infinite normal;
+          animation: shake 5s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake406 {
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake407 {
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake408 {
+  -webkit-animation: shake 5s ease 0s infinite normal;
+          animation: shake 5s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake409 {
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake410 {
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake411 {
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake412 {
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake413 {
+  -webkit-animation: shake 4s ease 0s infinite normal;
+          animation: shake 4s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake414 {
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake415 {
+  -webkit-animation: shake 4s ease 0s infinite normal;
+          animation: shake 4s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake416 {
+  -webkit-animation: shake 5s ease 0s infinite normal;
+          animation: shake 5s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake417 {
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake418 {
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake419 {
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake420 {
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake421 {
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake422 {
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake423 {
+  -webkit-animation: shake 4s ease 0s infinite normal;
+          animation: shake 4s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -14144,50 +14185,50 @@ iframe {
 /*animation Play*/
 
 .shake425 {
-  -webkit-animation: shake 12s ease 0s infinite normal;
-          animation: shake 12s ease 0s infinite normal;
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake426 {
-  -webkit-animation: shake 10s ease 0s infinite normal;
-          animation: shake 10s ease 0s infinite normal;
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake427 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake428 {
   -webkit-animation: shake 8s ease 0s infinite normal;
           animation: shake 8s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake429 {
-  -webkit-animation: shake 12s ease 0s infinite normal;
-          animation: shake 12s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake430 {
+.shake428 {
   -webkit-animation: shake 4s ease 0s infinite normal;
           animation: shake 4s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake431 {
+.shake429 {
   -webkit-animation: shake 6s ease 0s infinite normal;
           animation: shake 6s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake430 {
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake431 {
+  -webkit-animation: shake 4s ease 0s infinite normal;
+          animation: shake 4s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -14200,15 +14241,15 @@ iframe {
 /*animation Play*/
 
 .shake433 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake434 {
-  -webkit-animation: shake 8s ease 0s infinite normal;
-          animation: shake 8s ease 0s infinite normal;
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -14221,120 +14262,120 @@ iframe {
 /*animation Play*/
 
 .shake436 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake437 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake438 {
-  -webkit-animation: shake 9s ease 0s infinite normal;
-          animation: shake 9s ease 0s infinite normal;
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake439 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake440 {
-  -webkit-animation: shake 9s ease 0s infinite normal;
-          animation: shake 9s ease 0s infinite normal;
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake441 {
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake442 {
   -webkit-animation: shake 8s ease 0s infinite normal;
           animation: shake 8s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake442 {
+.shake443 {
   -webkit-animation: shake 12s ease 0s infinite normal;
           animation: shake 12s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake443 {
+.shake444 {
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake445 {
+  -webkit-animation: shake 10s ease 0s infinite normal;
+          animation: shake 10s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake446 {
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake447 {
+  -webkit-animation: shake 10s ease 0s infinite normal;
+          animation: shake 10s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake448 {
   -webkit-animation: shake 4s ease 0s infinite normal;
           animation: shake 4s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake444 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake445 {
-  -webkit-animation: shake 12s ease 0s infinite normal;
-          animation: shake 12s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake446 {
-  -webkit-animation: shake 9s ease 0s infinite normal;
-          animation: shake 9s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake447 {
-  -webkit-animation: shake 9s ease 0s infinite normal;
-          animation: shake 9s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake448 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
 .shake449 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake450 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake451 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake452 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -14347,141 +14388,141 @@ iframe {
 /*animation Play*/
 
 .shake454 {
-  -webkit-animation: shake 10s ease 0s infinite normal;
-          animation: shake 10s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake455 {
-  -webkit-animation: shake 12s ease 0s infinite normal;
-          animation: shake 12s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake456 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake457 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake458 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake459 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake460 {
-  -webkit-animation: shake 8s ease 0s infinite normal;
-          animation: shake 8s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake461 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake462 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake463 {
-  -webkit-animation: shake 12s ease 0s infinite normal;
-          animation: shake 12s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake464 {
   -webkit-animation: shake 7s ease 0s infinite normal;
           animation: shake 7s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake465 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
+.shake455 {
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake466 {
+.shake456 {
   -webkit-animation: shake 10s ease 0s infinite normal;
           animation: shake 10s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake467 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
+.shake457 {
+  -webkit-animation: shake 5s ease 0s infinite normal;
+          animation: shake 5s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake468 {
-  -webkit-animation: shake 10s ease 0s infinite normal;
-          animation: shake 10s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake469 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake470 {
+.shake458 {
   -webkit-animation: shake 9s ease 0s infinite normal;
           animation: shake 9s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake471 {
+.shake459 {
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake460 {
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake461 {
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake462 {
+  -webkit-animation: shake 10s ease 0s infinite normal;
+          animation: shake 10s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake463 {
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake464 {
   -webkit-animation: shake 13s ease 0s infinite normal;
           animation: shake 13s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake465 {
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake466 {
+  -webkit-animation: shake 5s ease 0s infinite normal;
+          animation: shake 5s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake467 {
+  -webkit-animation: shake 5s ease 0s infinite normal;
+          animation: shake 5s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake468 {
+  -webkit-animation: shake 12s ease 0s infinite normal;
+          animation: shake 12s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake469 {
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake470 {
+  -webkit-animation: shake 13s ease 0s infinite normal;
+          animation: shake 13s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake471 {
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake472 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
+  -webkit-animation: shake 4s ease 0s infinite normal;
+          animation: shake 4s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake473 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -14494,29 +14535,29 @@ iframe {
 /*animation Play*/
 
 .shake475 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake476 {
-  -webkit-animation: shake 6s ease 0s infinite normal;
-          animation: shake 6s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake477 {
   -webkit-animation: shake 9s ease 0s infinite normal;
           animation: shake 9s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake478 {
+.shake476 {
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake477 {
   -webkit-animation: shake 12s ease 0s infinite normal;
           animation: shake 12s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake478 {
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -14529,106 +14570,106 @@ iframe {
 /*animation Play*/
 
 .shake480 {
-  -webkit-animation: shake 10s ease 0s infinite normal;
-          animation: shake 10s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake481 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake482 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake483 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake484 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake485 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake486 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake487 {
   -webkit-animation: shake 12s ease 0s infinite normal;
           animation: shake 12s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake488 {
-  -webkit-animation: shake 5s ease 0s infinite normal;
-          animation: shake 5s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake489 {
-  -webkit-animation: shake 11s ease 0s infinite normal;
-          animation: shake 11s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake490 {
-  -webkit-animation: shake 10s ease 0s infinite normal;
-          animation: shake 10s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake491 {
-  -webkit-animation: shake 4s ease 0s infinite normal;
-          animation: shake 4s ease 0s infinite normal;
-}
-
-/*animation Play*/
-
-.shake492 {
+.shake481 {
   -webkit-animation: shake 6s ease 0s infinite normal;
           animation: shake 6s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake493 {
+.shake482 {
+  -webkit-animation: shake 4s ease 0s infinite normal;
+          animation: shake 4s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake483 {
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake484 {
+  -webkit-animation: shake 5s ease 0s infinite normal;
+          animation: shake 5s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake485 {
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake486 {
+  -webkit-animation: shake 9s ease 0s infinite normal;
+          animation: shake 9s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake487 {
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake488 {
   -webkit-animation: shake 8s ease 0s infinite normal;
           animation: shake 8s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
-.shake494 {
+.shake489 {
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake490 {
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake491 {
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake492 {
   -webkit-animation: shake 7s ease 0s infinite normal;
           animation: shake 7s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake493 {
+  -webkit-animation: shake 6s ease 0s infinite normal;
+          animation: shake 6s ease 0s infinite normal;
+}
+
+/*animation Play*/
+
+.shake494 {
+  -webkit-animation: shake 11s ease 0s infinite normal;
+          animation: shake 11s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -14641,15 +14682,15 @@ iframe {
 /*animation Play*/
 
 .shake496 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake497 {
-  -webkit-animation: shake 12s ease 0s infinite normal;
-          animation: shake 12s ease 0s infinite normal;
+  -webkit-animation: shake 8s ease 0s infinite normal;
+          animation: shake 8s ease 0s infinite normal;
 }
 
 /*animation Play*/
@@ -14662,15 +14703,15 @@ iframe {
 /*animation Play*/
 
 .shake499 {
-  -webkit-animation: shake 7s ease 0s infinite normal;
-          animation: shake 7s ease 0s infinite normal;
+  -webkit-animation: shake 10s ease 0s infinite normal;
+          animation: shake 10s ease 0s infinite normal;
 }
 
 /*animation Play*/
 
 .shake500 {
-  -webkit-animation: shake 13s ease 0s infinite normal;
-          animation: shake 13s ease 0s infinite normal;
+  -webkit-animation: shake 7s ease 0s infinite normal;
+          animation: shake 7s ease 0s infinite normal;
 }
 
 #top-image {
@@ -14683,14 +14724,21 @@ iframe {
   width: 45%;
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
-  height: 30vh;
   text-align: center;
-  display: flex;
-  align-items: center;
 }
 
 .front-link {
   font-size: 2.5vh;
+}
+
+.explain {
+  position: relative;
+  padding: 0.7rem 0;
+  margin-bottom: 0.2rem;
+  background: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 5%;
+  background-position: bottom;
 }
 
 .arrows *,
@@ -14828,6 +14876,8 @@ iframe {
 .preview-frame {
   width: 80%;
   margin: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 .box-shadow-selecttag {

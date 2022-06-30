@@ -1,11 +1,11 @@
 .bubble-field {
     height: 40vh;
-    width: 30vh;
+    width: 25vh;
 }
 
 .item {
-    width: 25vh;
-    height: 25vh;
+    width: 20vh;
+    height: 20vh;
     border-radius: 100%;
     box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.6) inset;
     display: flex;
@@ -14,7 +14,7 @@
 }
 
 .item:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .item:after {

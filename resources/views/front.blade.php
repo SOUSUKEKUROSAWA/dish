@@ -2,17 +2,23 @@
 
 @section('content')
     <h1>気分deご飯とは？</h1>
-    <img id="top-image" src="./img/c5caaa1a.png">
+    <img id="top-image" src="{{asset("/img/c5caaa1a.png")}}">
     <h2>今日のご飯に迷っているあなたに</h2>
     <div class="side-by-side">
         <div class="box-shadow box-shadow-front">
+            <h3 class="explain">
+                直感的なレシピ検索
+            </h3>
             <p>
-                「気分deご飯」は，<br>あなたの今の気分を選ぶことで，<br><br>それに合った料理と，<br>そのレシピ<br><br>が見れるサイトを教えてくれるサービスです．
+                <br>「気分deご飯」は，<br>あなたの今の気分を選ぶことで，<br><br>それに合った料理と，<br>そのレシピ<br><br>が見れるサイトを教えてくれるサービスです．
             </p>
         </div>
         <div class="box-shadow box-shadow-front">
+            <h3 class="explain">
+                自由なレシピ紹介
+            </h3>
             <p>
-                このサービスは，「料理を紹介してくれる人」がいてはじめて成り立つサービスです．<br><br>今日のご飯に迷っている人のために，ぜひあなたのおすすめの料理を紹介してください．
+                <br>このサービスは，「料理を紹介してくれる人」がいてはじめて成り立つサービスです．<br><br>今日のご飯に迷っている人のために，ぜひあなたのおすすめの料理を紹介してください．
             </p>
         </div>
     </div>

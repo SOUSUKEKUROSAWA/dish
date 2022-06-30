@@ -2,10 +2,10 @@
 
 @section('content')
     <div class="centreren">
-        <h1 class='title'>今の気分に一番合うものを選んでね</h1>
-        <img id="top-image" src="./img/c5caaa1a.png">
+        <h1 class='guide'>今の気分に一番合うものを選んでね</h1>
+        <img id="top-image" src="{{asset("/img/c5caaa1a.png")}}">
         <div class="justify-content">
-            <a class="box-shadow box-shadow-searchtag" href="/tags/randomtag">選ぶのもめんどくさい！</a>
+            <a class="btn btn-middle" href="/tags/randomtag">選ぶのもめんどくさいときは...</a>
         </div>
         <div class='tags'>
             @foreach ($tags as $tag)
@@ -16,7 +16,9 @@
                 </div>
             @endforeach
         </div>
-        <a class="to-selecttag" href="/selecttag">料理を他の人に紹介してみる</a>
+        <div class="justify-content">
+            <a class="btn btn-middle" href="/selecttag">料理を他の人に紹介してみる</a>
+        </div>
         <div class='paginate'>
             {{ $tags->links() }}
         </div>

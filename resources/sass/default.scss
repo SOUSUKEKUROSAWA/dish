@@ -45,10 +45,31 @@ footer {
     width: 100vw;
 }
 
+.guide {
+    position: relative;
+    width: 80%;
+    padding: 10px;
+    border-radius: 15px;
+    border-bottom: 5px solid #5e5e5e;
+    background-color: #e0c9be;
+    text-align: center;
+}
+
+.guide:before {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 25px;
+    width: 3px;
+    background-color: #e0c9be;
+    content: "";
+}
+
 .box-shadow {
     border: none;
     margin: auto;
-    padding: 15px;
+    padding: 3vw;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
@@ -126,15 +147,35 @@ iframe {
 }
 
 .preview-image {
-    max-width: 90%;
-    height: 50%;
+    max-width: 50vh;
+    width: 70vw;
     border-radius: 10px;
-    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 .myindex-image {
-    max-width: 50%;
-    height: 10%;
+    max-width: 50vh;
+    width: 70vw;
     border-radius: 10px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.btn-mini {
+    background: linear-gradient(90deg, #CCFFFF, #FFCCCC);
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.btn-middle {
+    background: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 5vh;
+}
+
+.tags {
     margin: auto;
+    margin-left: 5vw;
 }

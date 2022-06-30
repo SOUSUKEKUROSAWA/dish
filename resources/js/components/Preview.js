@@ -14,7 +14,7 @@ const Preview = (props) => {
                             <a className="btn btn-primary" href={props.url} target="_blank">サイトへGO！</a>
                             <button className="btn btn-secondary" onClick={()=>setShowPreview(false)}>閉じる</button>
                         </div>
-                        <img className='preview-image' src={props.img_path }/>
+                        <img className='preview-image' src={props.img_path}/>
                         {/*<Iframe srcdoc={props.url} is="x-frame-bypass" url={props.url} title={props.comment} sandbox="allow-scripts allow-same-origin allow-orientation-lock allow-pointer-lock allow-presentation allow-popups-to-escape-sandbox allow-top-navigation" allowfullscreen/>
                         <iframe srcdoc={props.url} is="x-frame-bypass" src={props.url} title={props.comment} sandbox="allow-scripts allow-same-origin allow-orientation-lock allow-pointer-lock allow-presentation allow-popups-to-escape-sandbox allow-top-navigation" allowfullscreen></iframe>*/}
                         <p className='comment'>「紹介してくれた人からのコメント・・・」<br/>{props.comment}</p>
