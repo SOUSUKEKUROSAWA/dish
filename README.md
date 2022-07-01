@@ -1,78 +1,76 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<p align="right"><a href="https://twitter.com/so_webeng" target="_blank"><img src="https://img.shields.io/twitter/url?label=%E9%96%8B%E7%99%BA%E8%80%85%E3%81%AETweet%E3%82%92%E8%A6%8B%E3%82%8B&style=social&url=https%3A%2F%2Ftwitter.com%2Fso_webeng" alt="Developer's Twitter account"></a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
 
-## About Laravel
+<p align="center"><b>シロクマにタッチすると...</b></p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<p align="center"><a href="https://stark-journey-71646.herokuapp.com" target="_blank"><img src="https://stark-journey-71646.herokuapp.com/img/c5caaa1a.png" width="400"></a></p>
+<h1 align="center">気分deご飯</h1>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+##  概要
+「今日のご飯に迷っているあなたに」<br>
+気分deご飯は以下に示すポイントに根差して設計されています．
+- 直感的なレシピ検索体験
+- 自由度の高い投稿機能
+- 温かみのあるUI
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+「時には面倒な今日のご飯選びを，ユーザーの自由な投稿により楽しいものにする」をコンセプトとしています．<br><br>
+<a href="https://stark-journey-71646.herokuapp.com" target="_blank">アプリへGO</a>
 
-## Learning Laravel
+##  開発環境
+<b>使用言語：</b><br>
+- PHP
+- HTML
+- CSS(SCSS)
+- JavaScript(React)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+<b>環境：</b><br>
+- Laravel(ver.6)
+- AWS(EC2＋Cloud9＋S3)
+- MySQL(MariaDB)
+- Github
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+<b>デプロイ：</b><br>
+- Heroku
 
-## Laravel Sponsors
+##  データ構成
+<b>「テーブル構成・リレーション」と「テーブル包含関係」：</b><br>
+<img src="https://user-images.githubusercontent.com/55343913/176453593-0e9621ef-a695-48a4-bf53-60adc7b53ea3.jpg" width="225">　<img src="https://user-images.githubusercontent.com/55343913/176453687-f0668515-1e0d-4d2c-9ec2-d25edff41bc9.jpg" width="225">
+<br><b>各テーブル詳細：</b><br>
+<img src="https://user-images.githubusercontent.com/55343913/176453649-5a1c39fa-4f5f-4fc8-9c63-7b97da3174cf.jpg" width="500">
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+##  機能
+- CRUD
+- ログイン
+- 画像アップロード＆表示(AWS S3)
+- Googleログイン(Google API)
+- レシピのランダム検索
+- アプリのシェア(Twitter API)
+- 投稿のプレビュー
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
+##  こだわり
+<b>バブルのように浮かぶ選択肢：</b><br>
+SCSSを用いてランダムに振動数を設定し，ふわふわと浮かぶ選択肢を実現しています<br><br>
+<img src="https://media.giphy.com/media/WkbqikAR8FY9RtHZSx/giphy.gif" width="225"><br>
+<b>わかりやすい一意な操作性：</b><br>
+リレーションやhiddenタイプのinputタグを用いて，1ページに1つのフォームによるわかりやすい投稿機能を実現しています<br><br>
+<img src="https://media.giphy.com/media/KbAsTTUqWw1KMW1WLE/giphy.gif" width="225">
 
-## Contributing
+##  楽しみ方
+<b>レシピを検索したいユーザー：</b><br>
+レシピを検索したいユーザーは「気分de探す」バブルから一つずつ直感的に選択していくことで，レシピが掲載されている外部サイトにたどり着きます．<br>
+迷って決められない場合や，選択することさえ面倒になった場合でも心配ありません．ランダムに選択するボタンによりユーザーはレシピにたどり着くことができます．<br>
+その他，ユーザーにより投稿されるユニークな選択肢を楽しむことができます．<br><br>
+<b>おすすめサイトを投稿するユーザー：</b><br>
+自身のおすすめサイトを投稿するユーザーは，ログインをする必要がありますが，Googleアカウントによるソーシャルログイン機能が実装されているため楽にログインすることができます．<br>
+ログイン後は1ページに1つある入力フォームの流れに従って，自由な発想で投稿することができます．<br>
+また，ログインしたユーザーは自分の投稿を閲覧・編集・削除することができます．<br>
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+##  今後の計画
+- Google Map APIによる近くの外食できる場所の自動検索
+- 選択肢のシャッフル（アニメーション付き)
+- 関連投稿の表示
+- 投稿評価（いいね）とそれによる投稿並び替え
+- 投稿されたサイトのプレビュー（動画も再生される）
+- レシピの文字検索
 
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<p align="right"><a href="https://twitter.com/so_webeng" target="_blank"><img src="https://img.shields.io/twitter/url?label=%E9%96%8B%E7%99%BA%E8%80%85%E3%81%AETweet%E3%82%92%E8%A6%8B%E3%82%8B&style=social&url=https%3A%2F%2Ftwitter.com%2Fso_webeng" alt="Developer's Twitter account"></a></p>
