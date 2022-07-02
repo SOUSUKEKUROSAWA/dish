@@ -1,6 +1,7 @@
 .bubble-field {
     height: 40vh;
     width: 25vh;
+    margin: auto;
 }
 
 .item {
@@ -11,10 +12,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
 }
 
 .item:hover {
-    transform: scale(1.02);
+    transform: scale(1.05);
 }
 
 .item:after {
@@ -46,4 +48,13 @@
     .shake#{$i} {
         animation: shake $f+s ease 0s infinite normal;
     }
+}
+
+.bubble-name {
+    font-weight: bold;
+    color: #6b8e23;
+}
+
+.bubble-name:hover {
+    color: #556b2f;
 }

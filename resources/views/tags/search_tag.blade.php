@@ -5,13 +5,13 @@
         <h1 class='guide'>今の気分に一番合うものを選んでね</h1>
         <img id="top-image" src="{{asset("/img/c5caaa1a.png")}}">
         <div class="justify-content">
-            <a class="btn btn-middle" href="/tags/randomtag">選ぶのもめんどくさいときは...</a>
+            <a class="btn btn-middle" href="/tags/randomtag">選ぶのもめんどくさ～い</a>
         </div>
         <div class='tags'>
             @foreach ($tags as $tag)
                 <div class="bubble-field">
                     <div class="item shake{{ $tag->id }}">
-                        <a href="/searchtag/tags/{{ $tag->id }}">{{ $tag->tag_name }}</a>
+                        <a class="btn bubble-name" href="/searchtag/tags/{{ $tag->id }}">{{ $tag->tag_name }}</a>
                     </div>
                 </div>
             @endforeach

@@ -2,19 +2,19 @@
 
 @section('content')
     <div class="centreren">
-        <h1 class='title'>こんな気分でいいんじゃない？</h1>
-        <!--<img id="top-image" src="./img/c5caaa1a.png">-->
+        <h1 class='guide'>こんな気分でいいんじゃない？</h1>
+        <img id="top-image" src="{{asset("/img/c5caaa1a.png")}}">
+        <a class="btn btn-middle" href="/tags/randomtag">う～ん...なんか違う</a>
         <div class="justify-content">    
             <div class="bubble-field">
                 <div class="item shake{{ $randomtag->id }}">
-                    <a href="/searchtag/tags/{{ $randomtag->id }}">{{ $randomtag->tag_name }}</a>
+                    <a class="btn bubble-name" href="/searchtag/tags/{{ $randomtag->id }}">{{ $randomtag->tag_name }}</a>
                 </div>
             </div>
         </div>
-        <div class="justify-content">
-            <a class="box-shadow box-shadow-searchtag" href="/tags/randomtag">こんな気分じゃない！</a>
+        <div class="side-by-side">
+            <a class="btn btn-middle" href="/searchtag">やっぱり自分で選ぶ</a>
+            <a class="btn btn-middle" href="/selecttag">料理を他の人に紹介してみる</a>
         </div>
-        <a class="to-selecttag" href="/searchtag">やっぱり自分で選ぶ<br><br></a>
-        <a class="to-selecttag" href="/selecttag">料理を他の人に紹介してみる</a>
     </div>
 @endsection

@@ -108,11 +108,11 @@ a {
 }
 
 a:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 button:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .paginate {
@@ -128,7 +128,7 @@ button:hover {
 }
 
 .submit-input:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .url-input {
@@ -169,13 +169,8 @@ iframe {
 }
 
 .btn-middle {
-    background: white;
+    background: #e0c9be;
     border-radius: 10px;
     padding: 5px;
-    margin-top: 5vh;
-}
-
-.tags {
-    margin: auto;
-    margin-left: 5vw;
+    border-bottom: 5px solid #5e5e5e;
 }

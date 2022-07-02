@@ -1,6 +1,6 @@
 .tags {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25vh, 1fr));
 }
 
 .to-selecttag {
