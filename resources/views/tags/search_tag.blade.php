@@ -12,8 +12,8 @@
         <div class='tags'>
             @foreach ($tags as $tag)
                 <div class="bubble-field">
-                    <div class="item shake{{ $tag->id }}"> // classにidを渡すことで，CSSにidを参照させて，バブルの振動数を決定する（bubble.scss）
-                        <a class="btn bubble-name" href="/searchtag/tags/{{ $tag->id }}">{{ $tag->tag_name }}</a> // URIで選択されたタグのidを渡す
+                    <div class="item shake{{ $tag->id }}"> <!-- classにidを渡すことで，CSSにidを参照させて，バブルの振動数を決定する（bubble.scss） -->
+                        <a class="btn bubble-name" href="/searchtag/tags/{{ $tag->id }}">{{ $tag->tag_name }}</a> <!-- URIで，選択されたタグのidをweb.phpに渡す -->
                     </div>
                 </div>
             @endforeach

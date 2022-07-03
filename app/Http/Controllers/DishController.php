@@ -7,6 +7,15 @@ use App\Http\Requests\DishRequest;
 
 class DishController extends Controller
 {
+    /*--- レシピを検索するユーザー用 --------------------------------------------------*/
+    public function searchpost(Dish $dish)
+    {
+        $posts=$dish->posts()->orderBy('updated_at', 'DESC')->get();
+        return view('posts/search_post')->with(['dish' => $dish, 'posts' => $posts ]);
+    }
+    /*----------------------------------------------------------------------------------*/
+    
+    /*--- レシピを投稿するユーザー用 -------------------------------*/
     public function store(Dish $dish, DishRequest $request)
     {
         $input = $request['dish'];
@@ -18,11 +27,5 @@ class DishController extends Controller
     {
         return view('posts/post_url')->with([ 'dish' => $dish ]);
     }
-
-    public function searchpost(Dish $dish)
-    {
-        $posts=$dish->posts()->orderBy('updated_at', 'DESC')->get();
-        // $posts=$dish->posts()->orderBy('updated_at', 'DESC')->paginate(10);
-        return view('posts/search_post')->with(['dish' => $dish, 'posts' => $posts ]);
-    }
+    /*---------------------------------------------------------------*/
 }

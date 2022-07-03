@@ -65906,7 +65906,7 @@ __webpack_require__(/*! ./components/Example */ "./resources/js/components/Examp
 
 __webpack_require__(/*! ./components/OpenPreview */ "./resources/js/components/OpenPreview.js");
 
-__webpack_require__(/*! ./components/Preview */ "./resources/js/components/Preview.js"); // require('./components/OpenEditer');
+__webpack_require__(/*! ./components/Preview */ "./resources/js/components/Preview.js");
 
 /***/ }),
 
@@ -66014,9 +66014,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var OpenPreview = function OpenPreview() {
+  {
+    /*--- postsインスタンスの読み込みとエラー時の処理 ---*/
+  }
   var targetDom = document.getElementById("openpreview");
   var str_posts = targetDom === null || targetDom === void 0 ? void 0 : targetDom.dataset.posts;
+  {
+    /*data-postsが存在する場合はそれを取得，存在しない場合は"undefined"を返す*/
+  }
   var posts = JSON.parse(str_posts !== null && str_posts !== void 0 ? str_posts : "");
+  {
+    /*str-postsが存在する場合はそれをオブジェクト型に変換，存在しない場合は""を返す*/
+  }
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "posts"
   }, posts.map(function (post) {
@@ -66087,7 +66096,7 @@ var Preview = function Preview(props) {
     onClick: function onClick() {
       return setShowPreview(false);
     }
-  }, "\u9589\u3058\u308B")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "\u9589\u3058\u308B"), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "justify-content"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "preview-image",
@@ -66111,7 +66120,7 @@ var Preview = function Preview(props) {
     onClick: function onClick() {
       return setShowPreview(true);
     }
-  }, "\u8A73\u3057\u304F\u307F\u308B")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "\u8A73\u3057\u304F\u307F\u308B"), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "justify-content"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "explain"

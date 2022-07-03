@@ -5,7 +5,7 @@
         <h1 class='guide'>こんな気分でいいんじゃない？</h1>
         <img id="top-image" src="{{asset("/img/c5caaa1a.png")}}">
         
-        <a class="btn btn-middle" href="/tags/randomtag">う～ん...なんか違う</a> // 再度ランダム取得を実行
+        <a class="btn btn-middle" href="/tags/randomtag">う～ん...なんか違う</a> <!-- 再度ランダム取得を実行 -->
         
         <div class="justify-content">    
             <div class="bubble-field">

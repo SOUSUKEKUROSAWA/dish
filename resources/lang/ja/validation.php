@@ -147,8 +147,10 @@ return [
     */
  
     'attributes' => [
-        'tag_name' => 'タグ名',
-        'dish_name' => '料理名',
+        'tag.tag_name' => 'タグ名',
+        'dish.dish_name' => '料理名',
+        'post.url' => 'URL',
+        'post.comment' => 'コメント',
     ],
  
 ];

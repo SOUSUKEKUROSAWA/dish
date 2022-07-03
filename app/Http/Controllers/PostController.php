@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Storage;
 
 class PostController extends Controller
 {
+    /*--- 投稿用 --------------------------------------------------------------------------------------------*/
     public function storeurl(Post $post, PosturlRequest $request)
     {
         $input = $request['post'];
@@ -21,35 +22,31 @@ class PostController extends Controller
         return view('posts/post_img')->with([ 'post' => $post ]);
     }
 
-    public function updateimg(Post $post, PostcommentRequest $request)
+    public function updateimg(Post $post, PostcommentRequest $request) // デフォルトのRequest.phpがなかったため，PostcommentRequestで代用
     {
         $img = $request->file('post.img_path');
         
+        /*--- S3のサーバに画像を保存する場合 ---*/
+        if (isset($img)) { // 画像情報がセットされていれば、S3バケットの`/`フォルダへアップロード
+            $path = Storage::disk('s3')->putFile('/', $img, 'public');
+            
+            if ($path) { // アップロードが実行できたら，DBに保存処理を実行
+                $post->img_path = Storage::disk('s3')->url($path); // アップロードした画像のパスを取得
+                $post->save();
+            }
+        }
+        /*---------------------------------------*/
+        
         /*--- EC2のサーバに画像を保存する場合 ---*/
-        // // 画像情報がセットされていれば、保存処理を実行
-        // if (isset($img)) {
+        // if (isset($img)) { // 画像情報がセットされていれば、保存処理を実行
         //     $path = $img->store('public/img');
             
-        //     // store処理が実行できたらDBに保存処理を実行
-        //     if ($path) {
+        //     if ($path) { // store処理が実行できたらDBに保存処理を実行
         //         $input = $request['post'];
         //         $post->fill($input)->save();
         //     }
         // }
-        /*------------------------------------------*/
-        
-        /*--- S3のサーバに画像を保存する場合 ---*/
-        if (isset($img)) {
-            // 画像情報がセットされていれば、S3バケットの`/`フォルダへアップロード
-            $path = Storage::disk('s3')->putFile('/', $img, 'public');
-            
-            // アップロードが実行できたらDBに保存処理を実行
-            if ($path) {
-                $post->img_path = Storage::disk('s3')->url($path); // アップロードした画像のフルパスを取得
-                $post->save();
-            }
-        }
-        /*------------------------------------------*/
+        /*---------------------------------------*/
         
         return redirect('/posts/comment/' . $post->id);
     }
@@ -65,7 +62,9 @@ class PostController extends Controller
         $post->fill($input)->save();
         return redirect('/posts/myindex');
     }
+    /*-------------------------------------------------------------------------------------------------------*/
     
+    /*--- 編集・削除用 ---------------------------------------------------------*/
     public function openUrlEditer(Post $post)
     {
         return view('posts/edit_url')->with(['post' => $post]);
@@ -83,7 +82,7 @@ class PostController extends Controller
         return view('posts/edit_img')->with(['post' => $post]);
     }
     
-    public function editImg(Post $post, PostcommentRequest $request)
+    public function editImg(Post $post, PostcommentRequest $request) // デフォルトのRequest.phpがなかったため，PostcommentRequestで代用
     {
         $img = $request->file('post.img_path');
         $path = Storage::disk('s3')->putFile('/', $img, 'public');
@@ -110,4 +109,5 @@ class PostController extends Controller
         $post->delete();
         return redirect('/posts/myindex');
     }
+    /*--------------------------------------------------------------------------*/
 }

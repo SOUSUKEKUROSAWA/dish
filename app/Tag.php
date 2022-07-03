@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Tag extends Model
 {
-    protected $fillable = [
+    protected $fillable = [ // 複数代入の脆弱性対策
         'tag_name',
     ];
 

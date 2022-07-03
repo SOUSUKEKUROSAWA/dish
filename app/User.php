@@ -40,7 +40,7 @@ class User extends Authenticatable
     
     public function getOwnPaginateByLimit(int $limit_count = 5)
     {
-        return $this::with('posts')->find(Auth::id())->posts()->orderBy('updated_at', 'DESC')->paginate($limit_count);
+        return $this::with('posts')->find(Auth::id())->posts()->orderBy('updated_at', 'DESC')->paginate($limit_count); // リレーションとAuthを利用して，ユーザーのidと一致するuser_idを持った投稿のみをページネーションで分割して取得
     }
     
     public function posts()   

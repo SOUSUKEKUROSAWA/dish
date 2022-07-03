@@ -7,6 +7,7 @@ use App\Http\Requests\TagRequest;
 
 class TagController extends Controller
 {
+    /*--- レシピを検索するユーザー用 ---------------------------------------------------------------------------------------------------------------------------*/
     public function searchtag(Tag $tag)
     {
         return view('tags/search_tag')->with(['tags' => $tag -> getPaginateByLimit()]); // getPaginateByLimit()はTag.php内で定義
@@ -29,7 +30,9 @@ class TagController extends Controller
         $randomdish=$tag->dishes()->get()->random(); // random()はコレクション型の関数（get()でhasManyオブジェクトからコレクションオブジェクトに変換）
         return view('dishes/randomdish')->with(['tag' => $tag, 'randomdish' => $randomdish ]);
     }
+    /*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
     
+    /*--- レシピを投稿するユーザー用 ----------------------------------------------------*/
     public function selecttag(Tag $tag)
     {
         return view('tags/select_tag')->with(['tags' => $tag -> getPaginateByLimit()]);
@@ -40,11 +43,11 @@ class TagController extends Controller
         return view('tags/create_tag');
     }
     
-    public function store(Tag $tag, TagRequest $request)
+    public function store(Tag $tag, TagRequest $request) // DIで渡されたidを持ったタグがインスタンス化されるタイミングでバリデーションを実行→バリデーションエラーは$errorsに格納される
     {
-        $input = $request['tag'];
-        $tag->fill($input)->save();
-        return redirect('/tags/' . $tag->id);
+        $input = $request['tag']; // tagをキーに持つリクエストパラメータを取得（キー名はForm内inputタグのname属性を表す）
+        $tag->fill($input)->save(); // fillでtagインスタンスを上書き，saveでMySQLへのINSERT文を実行
+        return redirect('/tags/' . $tag->id); // save()が実行された時点でtagインスタンスのidは自動採番されるので，そのidをweb.phpに渡す
     }
 
     public function selectdish(Tag $tag)
@@ -57,4 +60,5 @@ class TagController extends Controller
     {
         return view('dishes/create_dish')->with(['tag' => $tag ]);
     }
+    /*-----------------------------------------------------------------------------------*/
 }
