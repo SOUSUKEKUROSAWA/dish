@@ -13,7 +13,7 @@
         @csrf
         @method('PUT')
         <div class="input-field">
-            <input class="input" type="file" name="post[img_path]">
+            <input class="input img-input" type="file" name="post[img_path]">
             <input class="input submit-input btn-primary" type="submit" value="アップロード"/>
             <input class="input submit-input btn-secondary" type="submit" value="アップロードせずに次へ"/>
         </div>

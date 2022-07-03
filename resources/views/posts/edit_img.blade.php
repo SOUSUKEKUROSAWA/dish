@@ -7,7 +7,7 @@
         @csrf
         @method('PUT')
         <div class="input-field">
-            <input class="input" type="file" name="post[img_path]">
+            <input class="input img-input" type="file" name="post[img_path]">
             <input class="input submit-input" type="submit" value="更新"/>
         </div>
     </form>

@@ -11,13 +11,17 @@
 |
 */
 
+/*--- 諸注意 ---*/
+// search~はレシピ検索ユーザー側のURI，view等を表しています．
+// select~はレシピ投稿ユーザー側のURI，view等を表しています．
+
 Route::get('/', function () {
     return view('front');
 });
 
 Route::get('/searchtag', 'TagController@searchtag');
 Route::get('/tags/randomtag', 'TagController@randomtag');
-Route::get('/searchtag/tags/{tag}', 'TagController@searchdish');
+Route::get('/searchtag/tags/{tag}', 'TagController@searchdish'); // URIで渡されたidをさらにTagControllerに渡す
 Route::get('/tags/{tag}/dishes/randomdish', 'TagController@randomdish');
 Route::get('/searchdish/dishes/{dish}', 'DishController@searchpost');
 

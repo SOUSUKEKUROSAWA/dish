@@ -132,12 +132,17 @@ button:hover {
 }
 
 .url-input {
-    width: 60vw;
+    width: 50vw;
+}
+
+.img-input {
+    width: 50vw;
 }
 
 .textarea {
     border-radius: 10px;
     margin: 3vh;
+    max-width: 50vw;
 }
 
 iframe {
@@ -163,7 +168,7 @@ iframe {
 
 .input-field {
     width: fit-content;
-    max-width: 80vw;
+    max-width: 90vw;
     padding: 0.5em 1em;
     margin: 2em auto;
     color: #232323;
