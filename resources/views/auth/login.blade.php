@@ -1,6 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="justify-content">
+    <div class="guide">
+        <h1>また来てくれてありがとう！</h1>
+        <h3><u>Googleでログイン</u>が楽ちんだよ</h3>
+    </div>
+</div>
+<img id="top-image" src="{{asset("/img/c5caaa1a.png")}}">
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -8,6 +15,13 @@
                 <div class="card-header">ログイン</div>
 
                 <div class="card-body">
+                    <div class="form-group row mt-2">
+                        <div class="col-md-8 offset-md-4">
+                            <a class="btn btn-middle" href="/auth/redirect" class="btn btn-primary" role="button">
+                                Googleでログイン
+                            </a>
+                        </div>
+                    </div>
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
@@ -54,20 +68,16 @@
                                 <button type="submit" class="btn btn-primary">いざ，ログイン！</button>
 
                                 @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                                    <!--<a class="btn bubble-name" href="{{ route('password.request') }}">-->
+                                    <!--    パスワードを忘れてしまいましたか？-->
+                                    <!--</a>-->
+                                    <a class="btn bubble-name" href="/underdevelopment">
                                         パスワードを忘れてしまいましたか？
                                     </a>
                                 @endif
                             </div>
                         </div>
                     </form>
-                    <div class="form-group row mt-2">
-                        <div class="col-md-8 offset-md-4">
-                            <a href="/auth/redirect" class="btn btn-primary" role="button">
-                                Googleアカウントでログイン
-                            </a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

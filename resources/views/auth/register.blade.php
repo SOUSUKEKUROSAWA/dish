@@ -1,6 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="justify-content">
+    <div class="guide">
+        <h1>はじめまして！</h1>
+        <h3><u>Googleで登録</u>が楽ちんだよ</h3>
+    </div>
+</div>
+<img id="top-image" src="{{asset("/img/c5caaa1a.png")}}">
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -8,6 +15,13 @@
                 <div class="card-header">新規登録</div>
 
                 <div class="card-body">
+                    <div class="form-group row mt-2">
+                        <div class="col-md-8 offset-md-4">
+                            <a class="btn btn-middle" href="/auth/redirect" class="btn btn-secondary" role="button">
+                                Googleで登録
+                            </a>
+                        </div>
+                    </div>
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
@@ -64,16 +78,8 @@
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    いざ，登録！
+                                    登録
                                 </button>
-                            </div>
-                        </div>
-                        
-                        <div class="form-group row mt-2">
-                            <div class="col-md-8 offset-md-4">
-                                <a href="/auth/redirect" class="btn btn-secondary" role="button">
-                                    Googleアカウントで登録
-                                </a>
                             </div>
                         </div>
                     </form>

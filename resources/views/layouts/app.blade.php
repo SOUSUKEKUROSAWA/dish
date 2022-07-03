@@ -46,17 +46,15 @@
                                     </a>
     
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="{{ route('logout') }}"
+                                        <a class="btn" href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                          document.getElementById('logout-form').submit();">
                                             またね！（ログアウト）
                                         </a>
-    
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                             @csrf
                                         </form>
-                                        
-                                        <a class="dropdown-item" href="/posts/myindex">過去の自分の投稿を見る</a>
+                                        <a class="btn" href="/posts/myindex">過去の自分の投稿を見る</a>
                                     </div>
                                 </li>
                         @endguest
@@ -68,7 +66,7 @@
             @yield('content')
         </main>
         <footer>
-            <a href="https://twitter.com/so_webeng" target="_blank">運営者のTwitter</a>
+            <a class="btn bubble-name" href="https://twitter.com/so_webeng" target="_blank">開発者のTwitter</a>
             <!--<a href="">お問い合わせ</a>-->
             <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="「気分deご飯」今日の気分でご飯を決めよう" data-url="https://stark-journey-71646.herokuapp.com/" data-hashtags="今日何食べよう" data-lang="ja" data-show-count="false">「気分deご飯」をシェア</a>
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -1,7 +1,10 @@
 #top-image {
     display: block;
     margin: auto;
-    height: 25vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    height: 50vw;
+    max-height: 25vh;
 }
 
 .box-shadow-front {
@@ -21,6 +24,6 @@
     margin-bottom: 0.2rem;
     background: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
     background-repeat: no-repeat;
-    background-size: 100% 5%;
+    background-size: min(100%, 80vw) 5%;
     background-position: bottom;
 }

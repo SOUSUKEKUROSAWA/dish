@@ -9,13 +9,15 @@ const OpenPreview = () => {
     
     return (
         <>
-            {posts.map((post)=>{
-                return(
-                    <>
-                        <Preview url={post['url']} img_path={post['img_path']} comment={post['comment']} createdAt={post['created_at']} updatedAt={post['updated_at']} />
-                    </>
-                )
-            })}
+            <div className="posts">
+                {posts.map((post)=>{
+                    return(
+                        <>
+                            <Preview url={post['url']} img_path={post['img_path']} comment={post['comment']} createdAt={post['created_at']} updatedAt={post['updated_at']} />
+                        </>
+                    )
+                })}
+            </div>
         </>
     );
 };

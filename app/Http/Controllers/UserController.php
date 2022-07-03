@@ -10,6 +10,5 @@ class UserController extends Controller
     public function myindex(User $user)
     {
         return view('users/myindex')->with(['own_posts' => $user->getOwnPaginateByLimit() ]);
-        // return view('users/myindex')->with(['own_posts' => $user->getMyPosts() ]);
     }
 }

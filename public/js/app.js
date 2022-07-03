@@ -66017,7 +66017,9 @@ var OpenPreview = function OpenPreview() {
   var targetDom = document.getElementById("openpreview");
   var str_posts = targetDom === null || targetDom === void 0 ? void 0 : targetDom.dataset.posts;
   var posts = JSON.parse(str_posts !== null && str_posts !== void 0 ? str_posts : "");
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, posts.map(function (post) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "posts"
+  }, posts.map(function (post) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Preview__WEBPACK_IMPORTED_MODULE_2__["default"], {
       url: post['url'],
       img_path: post['img_path'],
@@ -66025,7 +66027,7 @@ var OpenPreview = function OpenPreview() {
       createdAt: post['created_at'],
       updatedAt: post['updated_at']
     }));
-  }));
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (OpenPreview);
@@ -66085,25 +66087,37 @@ var Preview = function Preview(props) {
     onClick: function onClick() {
       return setShowPreview(false);
     }
-  }, "\u9589\u3058\u308B")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  }, "\u9589\u3058\u308B")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "justify-content"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "preview-image",
     src: props.img_path
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "comment"
-  }, "\u300C\u7D39\u4ECB\u3057\u3066\u304F\u308C\u305F\u4EBA\u304B\u3089\u306E\u30B3\u30E1\u30F3\u30C8\u30FB\u30FB\u30FB\u300D", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), props.comment), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "justify-content"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "explain"
+  }, "\u7D39\u4ECB\u3057\u3066\u304F\u308C\u305F\u4EBA\u304B\u3089\u306E\u30B3\u30E1\u30F3\u30C8")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "justify-content"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, props.comment)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
     className: "created-at"
   }, "\u4F5C\u6210\u65E5\u6642\uFF1A", props.createdAt, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
     className: "created-at"
   }, "\u66F4\u65B0\u65E5\u6642\uFF1A", props.updatedAt))) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "box-shadow box-shadow-searchpost preview-frame"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "justify-content"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     className: "btn btn-primary",
     onClick: function onClick() {
       return setShowPreview(true);
     }
-  }, "\u8A73\u3057\u304F\u307F\u308B"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "comment"
-  }, "\u300C\u7D39\u4ECB\u3057\u3066\u304F\u308C\u305F\u4EBA\u304B\u3089\u306E\u30B3\u30E1\u30F3\u30C8\u30FB\u30FB\u30FB\u300D", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), props.comment), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
+  }, "\u8A73\u3057\u304F\u307F\u308B")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "justify-content"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "explain"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "\u7D39\u4ECB\u3057\u3066\u304F\u308C\u305F\u4EBA\u304B\u3089\u306E\u30B3\u30E1\u30F3\u30C8")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "justify-content"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, props.comment)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
     className: "created-at"
   }, "\u4F5C\u6210\u65E5\u6642\uFF1A", props.createdAt, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
     className: "created-at"

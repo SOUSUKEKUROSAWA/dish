@@ -35,12 +35,12 @@
     <div class="side-by-side">
         <div class="bubble-field">
             <div class="item shake1">
-                    <a class='front-link searching' href="/searchtag">気分de探す</a>
+                <a class="btn bubble-name" href="/searchtag">気分de探す</a>
             </div>
         </div>
         <div class="bubble-field">
             <div class="item shake2">
-                    <a class='front-link posting' href="/selecttag">おすすめを<br>紹介する</a>
+                <a class="btn bubble-name" href="/selecttag">おすすめを<br>紹介する</a>
             </div>
         </div>
     </div>

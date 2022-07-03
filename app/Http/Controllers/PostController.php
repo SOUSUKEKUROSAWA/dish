@@ -25,7 +25,7 @@ class PostController extends Controller
     {
         $img = $request->file('post.img_path');
         
-        /*--- 現在のサーバに画像を保存する場合 ---*/
+        /*--- EC2のサーバに画像を保存する場合 ---*/
         // // 画像情報がセットされていれば、保存処理を実行
         // if (isset($img)) {
         //     $path = $img->store('public/img');
@@ -38,12 +38,17 @@ class PostController extends Controller
         // }
         /*------------------------------------------*/
         
-        /*--- AWS,S3のサーバに画像を保存する場合 ---*/
-        // バケットの`/`フォルダへアップロードする
-        $path = Storage::disk('s3')->putFile('/', $img, 'public');
-        // アップロードした画像のフルパスを取得
-        $post->img_path = Storage::disk('s3')->url($path);
-        $post->save();
+        /*--- S3のサーバに画像を保存する場合 ---*/
+        if (isset($img)) {
+            // 画像情報がセットされていれば、S3バケットの`/`フォルダへアップロード
+            $path = Storage::disk('s3')->putFile('/', $img, 'public');
+            
+            // アップロードが実行できたらDBに保存処理を実行
+            if ($path) {
+                $post->img_path = Storage::disk('s3')->url($path); // アップロードした画像のフルパスを取得
+                $post->save();
+            }
+        }
         /*------------------------------------------*/
         
         return redirect('/posts/comment/' . $post->id);

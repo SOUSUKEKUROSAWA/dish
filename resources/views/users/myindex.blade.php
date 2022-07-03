@@ -1,20 +1,22 @@
 @extends('layouts.app')
 
 @section('content')
+    <h1 class="explain">{{Auth::user()->name}}さんの投稿一覧</h1>
     <!--<script type="module" src="https://unpkg.com/x-frame-bypass"></script>-->
     <!--<div id='openEditer' data-posts=''></div>-->
-    <div class="own_posts">
+    <div class="posts">
         @foreach($own_posts as $post)
             <div class="box-shadow box-shadow-searchpost preview-frame">
-                <p>URL：<a href="{{ $post->url }}" target="_blank">{{ $post->url }}</a></p>
-                <a class="btn btn-mini" href="/posts/url/{{ $post->id }}/editer">編集する</a>
+                <a class="btn btn-middle" href="{{ $post->url }}" target="_blank">サイトへGO</a>
+                <a class="btn btn-mini" href="/posts/url/{{ $post->id }}/editer">URLを登録し直す</a>
                 <p><br></p>
                 <div class="flex-start">
                     <p>画像：</p>
                     <a class="btn btn-mini" href="/posts/img/{{ $post->id }}/editer">編集する</a>
                 </div>
-                <img class='myindex-image' src={{$post->img_path }}>
-                <p><br></p>
+                <div class="justify-content">
+                    <img class='preview-image' src={{$post->img_path }}>
+                </div>
                 <div class="flex-start">
                     <p>コメント：<p/>
                     <a class="btn btn-mini" href="/posts/comment/{{ $post->id }}/editer">編集する</a>
@@ -29,9 +31,9 @@
                 </form>
             </div>
         @endforeach
-        <div class='paginate'>
-            {{ $own_posts->links() }}
-        </div>
+    </div>
+    <div class='paginate'>
+        {{ $own_posts->links() }}
     </div>
     <script>
         function buttonClick(PostId){

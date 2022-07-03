@@ -50,3 +50,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/auth/redirect', 'Auth\GoogleLoginController@getGoogleAuth');
 Route::get('/login/callback', 'Auth\GoogleLoginController@authGoogleCallback');
+
+Route::get('/underdevelopment', function () {
+    return view('underdevelopment');
+});

@@ -9,7 +9,21 @@ iframe {
 
 .preview-frame {
     width: 80%;
+    max-width: 50vh;
     margin: auto;
     margin-top: 5vh;
     margin-bottom: 5vh;
+}
+
+.preview-image {
+    max-width: 50vh;
+    width: 70%;
+    border-radius: 10px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50vh, 1fr));
 }
