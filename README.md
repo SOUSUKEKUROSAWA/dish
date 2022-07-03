@@ -50,7 +50,7 @@
 ##  こだわり
 <b>バブルのように浮かぶ選択肢：</b><br>
 SCSSを用いてランダムに振動数を設定し，ふわふわと浮かぶ選択肢を実現しています<br><br>
-<img src="https://media.giphy.com/media/WkbqikAR8FY9RtHZSx/giphy.gif" width="225"><br>
+<img src="https://media.giphy.com/media/nlMCFryVCtEN8rVEkt/giphy.gif" width="225"><br>
 <b>わかりやすい一意な操作性：</b><br>
 リレーションやhiddenタイプのinputタグを用いて，1ページに1つのフォームによるわかりやすい投稿機能を実現しています<br><br>
 <img src="https://media.giphy.com/media/KbAsTTUqWw1KMW1WLE/giphy.gif" width="225">
