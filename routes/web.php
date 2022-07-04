@@ -25,7 +25,7 @@ Route::get('/', function () {
 Route::get('/searchtag', 'TagController@searchtag');
 Route::get('/tags/randomtag', 'TagController@randomtag');
 // 料理名選択
-Route::get('/searchtag/tags/{tag}', 'TagController@searchdish'); // URIで渡されたidをさらにTagControllerに渡す
+Route::get('/searchtag/tags/{tag}', 'TagController@searchdish'); // URIで渡されたidをさらにTagControllerに渡す(ルートモデルバインディング)
 Route::get('/tags/{tag}/dishes/randomdish', 'TagController@randomdish');
 // 投稿選択
 Route::get('/searchdish/dishes/{dish}', 'DishController@searchpost');
@@ -38,7 +38,7 @@ Route::get('/auth/redirect', 'Auth\GoogleLoginController@getGoogleAuth');
 Route::get('/login/callback', 'Auth\GoogleLoginController@authGoogleCallback');
 
 /*--- レシピを投稿するユーザー用 ---*/
-Route::group(['middleware' => ['auth']], function(){ // この中のルーティングに未ログイン状態でアクセスすると強制的にログイン画面に移動する
+Route::group(['middleware' => ['auth']], function(){ // この中のルーティングに未ログイン状態でアクセスすると強制的にログイン画面に移動する(authミドルウェアキーを使用)
     // タグ名選択・作成
     Route::get('/selecttag', 'TagController@selecttag');
     Route::get('/createtag', 'TagController@createtag');
@@ -70,4 +70,9 @@ Route::group(['middleware' => ['auth']], function(){ // この中のルーティ
 /*--- メンテナンス画面用 ---*/
 Route::get('/underdevelopment', function () {
     return view('underdevelopment');
+});
+
+/*--- 上記に当てはまらないアクセス用 ---*/
+Route::get('*', function() {
+    return view('not_found');
 });

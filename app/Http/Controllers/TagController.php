@@ -27,8 +27,14 @@ class TagController extends Controller
     
     public function randomdish(Tag $tag)
     {
-        $randomdish=$tag->dishes()->get()->random(); // random()はコレクション型の関数（get()でhasManyオブジェクトからコレクションオブジェクトに変換）
-        return view('dishes/randomdish')->with(['tag' => $tag, 'randomdish' => $randomdish ]);
+        $dishes=$tag->dishes()->get(); // リレーションを用い，渡されたtag_idを持つdishesをコレクション型で取得
+        
+        if (count($dishes)!==0) { // 取得したdishesに投稿が存在すれば，ランダム選択を実行
+            $randomdish=$dishes->random(); // random()はコレクション型の関数（get()でhasManyオブジェクトからコレクションオブジェクトに変換）
+            return view('dishes/randomdish')->with(['tag' => $tag, 'randomdish' => $randomdish ]);
+        }
+        
+        return view('dishes/nodish')->with(['tag' => $tag ]); // 取得したdishesに投稿が存在しない場合，このビューを返す
     }
     /*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
     
