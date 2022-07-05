@@ -29,7 +29,7 @@
                 <small>作成日時：{{ $post->created_at }}<br></small>
                 <small>更新日時：{{ $post->updated_at }}<br></small>
                 
-                <form action="/posts/{{ $post->id }}" id="form_{{ $post->id }}" method="post" style="display:inline">
+                <form action="/posts/{{ $post->id }}" id="form_{{ $post->id }}" method="post" style="display:inline"> <!-- JavaScriptで識別できるようにidをつける -->
                     @csrf
                     @method('DELETE')
                     <button class="btn btn-primary" type="button" onclick="buttonClick( {{$post->id}} )">削除する</button>

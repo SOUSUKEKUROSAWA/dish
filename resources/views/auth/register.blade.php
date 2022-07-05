@@ -8,6 +8,7 @@
     </div>
 </div>
 <img id="top-image" src="{{asset("/img/c5caaa1a.png")}}">
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -22,6 +23,7 @@
                             </a>
                         </div>
                     </div>
+                    
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 

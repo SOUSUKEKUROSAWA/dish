@@ -56,14 +56,20 @@ Route::group(['middleware' => ['auth']], function(){ // この中のルーティ
     // コメントの投稿
     Route::get('/posts/comment/{post}', 'PostController@postcomment');
     Route::put('/posts/comment/{post}', 'PostController@updatecomment');
-    // 自身の投稿の一覧・編集・削除
+    
+    /*--- マイページ用 ---*/
+    // 一覧表示
     Route::get('/posts/myindex', 'UserController@myindex');
+    // URLの更新
     Route::get('/posts/url/{post}/editer', 'PostController@openUrlEditer');
-    Route::get('/posts/img/{post}/editer', 'PostController@openImgEditer');
-    Route::get('/posts/comment/{post}/editer', 'PostController@openCommentEditer');
     Route::put('/posts/url/{post}/edit', 'PostController@editUrl');
+    // 画像の更新
+    Route::get('/posts/img/{post}/editer', 'PostController@openImgEditer');
     Route::put('/posts/img/{post}/edit', 'PostController@editImg');
+    // コメントの編集
+    Route::get('/posts/comment/{post}/editer', 'PostController@openCommentEditer');
     Route::put('/posts/comment/{post}/edit', 'PostController@editComment');
+    // 投稿の削除
     Route::delete('/posts/{post}', 'PostController@delete');
 });
 

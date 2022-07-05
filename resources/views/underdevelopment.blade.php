@@ -8,6 +8,7 @@
         </div>
     </div>
     <img id="top-image" src="{{asset("/img/c5caaa1a.png")}}">
+    
     <div class="justify-content">
         <a class="btn btn-middle" href="{{ route('register') }}">アカウントを新規登録</a>
     </div>

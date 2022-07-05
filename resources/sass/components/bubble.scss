@@ -39,14 +39,12 @@
     100% { transform: translateY(70%); }
 }
 
-/*animation Play*/
-@for $i from 0 through 500 {
-    $random: random(10);
-    $f: $random+3;
+@for $i from 0 through 10000 { // !! ←10000個生成(アプリの規模に合わせて変更する必要がある)
+    $random: random(10); // 1~10の範囲でランダムに生成（for文が回る度に生成される）
+    $f: $random+3; // ランダム範囲を4~13に変更(1~3秒の振動数は早すぎてユーザーのストレスになる可能性があるため)
     
-    /*animation Play*/
     .shake#{$i} {
-        animation: shake $f+s ease 0s infinite normal;
+        animation: shake $f+s ease 0s infinite normal; // ランダムに生成された振動数で振動
     }
 }
 

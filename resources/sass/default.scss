@@ -1,3 +1,4 @@
+/*--- ヘッダー ---*/
 nav {
     background: linear-gradient(90deg, #CCFFFF, #FFCCCC);
 }
@@ -7,6 +8,19 @@ nav {
     left: 10%;
 }
 
+/*--- フッター ---*/
+footer {
+    height: 7vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255,255,255,0.4);
+    position: relative;
+    bottom: 0px;
+    width: 100vw;
+}
+
+/*--- コンテンツの位置調整 ---*/
 .centreren {
     text-align: center;
     height: 100%;
@@ -23,59 +37,38 @@ nav {
     justify-content: center;
 }
 
-body {
-    background: linear-gradient(90deg, #CCFFFF, #FFCCCC);
-    background-repeat: repeat-y;
-    font-family: "M PLUS Rounded 1c";
-    font-weight: bold;
+.side-by-side {
+    display: flex;
+    justify-content: space-around;
 }
 
 #app {
     height: 100vh;
 }
 
-footer {
-    height: 7vh;
+.paginate {
+    position: relative;
+    bottom: -4vh;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgba(255,255,255,0.4);
-    position: relative;
-    bottom: 0px;
-    width: 100vw;
+    justify-content: center;
 }
 
-.guide {
-    position: relative;
-    width: fit-content;
-    padding: 10px;
-    border-radius: 15px;
-    border-bottom: 5px solid #aac5de;
-    background-color: #c6e4ff;
-    text-align: center;
+.randomsearch {
+    margin-bottom: 3vh;
 }
 
-.guide:before {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 25px;
-    width: 3px;
-    background-color: #c6e4ff;
-    content: "";
-}
-
-.box-shadow {
-    border: none;
+.dropdown-menu-right {
+    min-width: 13em;
+    max-width: 70%;
     margin: auto;
-    padding: 3vw;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
-.side-by-side {
-    display: flex;
-    justify-content: space-around;
+/*--- テキスト ---*/
+body {
+    background: linear-gradient(90deg, #CCFFFF, #FFCCCC);
+    background-repeat: repeat-y;
+    font-family: "M PLUS Rounded 1c";
+    font-weight: bold;
 }
 
 h1 {
@@ -111,15 +104,36 @@ a:hover {
     transform: scale(1.05);
 }
 
+/*--- ボタン ---*/
 button:hover {
     transform: scale(1.05);
 }
 
-.paginate {
-    position: relative;
-    bottom: -4vh;
-    display: flex;
-    justify-content: center;
+.btn-mini {
+    background: linear-gradient(90deg, #CCFFFF, #FFCCCC);
+    border-radius: 5px;
+    padding: 2px;
+    border-bottom: 5px solid #aac5de;
+}
+
+.btn-middle {
+    background: #c6e4ff;
+    border-radius: 10px;
+    padding: 5px;
+    border-bottom: 5px solid #aac5de;
+    font-size: min(3.5vw,2.5vh);
+}
+
+/*--- 入力フォーム ---*/
+.input-field {
+    width: fit-content;
+    max-width: 90vw;
+    padding: 0.5em 1em;
+    margin: 2em auto;
+    color: #232323;
+    background: #fff8e8;
+    border-left: solid 10px #ffc06e;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
 }
 
 .input {
@@ -151,32 +165,32 @@ iframe {
     border: none;
 }
 
-.btn-mini {
-    background: linear-gradient(90deg, #CCFFFF, #FFCCCC);
-    border-radius: 5px;
-    padding: 2px;
-    border-bottom: 5px solid #aac5de;
+/*--- シャドウ ---*/
+.box-shadow {
+    border: none;
+    margin: auto;
+    padding: 3vw;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
-.btn-middle {
-    background: #c6e4ff;
-    border-radius: 10px;
-    padding: 5px;
-    border-bottom: 5px solid #aac5de;
-    font-size: min(3.5vw,2.5vh);
-}
-
-.input-field {
+/*--- シロクマの吹き出し ---*/
+.guide {
+    position: relative;
     width: fit-content;
-    max-width: 90vw;
-    padding: 0.5em 1em;
-    margin: 2em auto;
-    color: #232323;
-    background: #fff8e8;
-    border-left: solid 10px #ffc06e;
-    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+    padding: 10px;
+    border-radius: 15px;
+    border-bottom: 5px solid #aac5de;
+    background-color: #c6e4ff;
+    text-align: center;
 }
 
-.randomsearch {
-    margin-bottom: 3vh;
+.guide:before {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 25px;
+    width: 3px;
+    background-color: #c6e4ff;
+    content: "";
 }

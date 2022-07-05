@@ -13,7 +13,7 @@
 
 .arrows .arrow {
 	position: absolute;
-	top: 90%;/*着地点（[class:arrows]heightに対する割合）*/
+	top: 90%; // 着地点（.arrows{height:}に対する割合）
 	left: 50%;
     transform: translate(-50%, -50%);
     transform-origin: 50% 50%;
@@ -21,11 +21,11 @@
 }
 
 .arrows .arrowfirst {
-    animation: arrow-move08 2s ease-in-out infinite;
+    animation: arrow-move 2s ease-in-out infinite;
 }
 
 .arrows .arrowsecond {
-    animation: arrow-move08 2s 1s ease-in-out infinite;
+    animation: arrow-move 2s 1s ease-in-out infinite; // 1秒遅らせてスタート
 }
 
 .arrows .arrow:before, .arrows .arrow:after {
@@ -49,10 +49,10 @@
     transform-origin: top right;
 }
 
-@keyframes arrow-move08 {
+@keyframes arrow-move {
 	0% {
-		top: 40%;/*スタート地点（[class:arrows]heightに対する割合）*/
-		opacity: 0;
+		top: 40%; // スタート地点（[class:arrows]heightに対する割合）
+		opacity: 0; // 透明度を調整
 	}
 	70% {
 		opacity: 1;

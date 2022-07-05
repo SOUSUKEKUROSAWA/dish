@@ -85,9 +85,16 @@ class PostController extends Controller
     public function editImg(Post $post, PostcommentRequest $request) // デフォルトのRequest.phpがなかったため，PostcommentRequestで代用
     {
         $img = $request->file('post.img_path');
-        $path = Storage::disk('s3')->putFile('/', $img, 'public');
-        $post->img_path = Storage::disk('s3')->url($path);
-        $post->save();
+        
+        /*--- S3のサーバに画像を保存する場合 ---*/
+        if (isset($img)) { // 画像情報がセットされていれば、S3バケットの`/`フォルダへアップロード
+            $path = Storage::disk('s3')->putFile('/', $img, 'public');
+            
+            if ($path) { // アップロードが実行できたら，DBに保存処理を実行
+                $post->img_path = Storage::disk('s3')->url($path); // アップロードした画像のパスを取得
+                $post->save();
+            }
+        }
 
         return redirect('/posts/myindex');
     }
