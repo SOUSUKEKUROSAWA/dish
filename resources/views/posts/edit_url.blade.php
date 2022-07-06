@@ -8,8 +8,10 @@
         @csrf
         @method('PUT')
         <div class="justify-content input-field">
-            <input class="input url-input" type="url" name="post[url]" placeholder="ここにURLをコピー＆ペーストしてね" value="{{ old('post.url') }}"/>
-            <p class="title__error" style="color:red">{{ $errors->first('post.url') }}</p>
+            <div>
+                <input class="input url-input" type="url" name="post[url]" placeholder="ここにURLをコピー＆ペーストしてね" value="{{ old('post.url') }}"/>
+                <p class="title__error centreren" style="color:red">{{ $errors->first('post.url') }}</p>
+            </div>
             <input class="input submit-input" type="submit" value="更新"/>
         </div>
     </form>

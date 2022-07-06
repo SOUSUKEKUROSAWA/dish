@@ -5,7 +5,7 @@
         <h1 class='guide'>{{Auth::user()->name}}さん，こんにちは！<br>どんな気分の人に紹介する？</h1>
         <img id="top-image" src="{{asset("/img/c5caaa1a.png")}}">
         
-        <div class="justify-content">
+        <div class="justify-content margin-bottom">
             <a class="btn btn-middle" href="/createtag">自分でタグを作成</a>
         </div>
         

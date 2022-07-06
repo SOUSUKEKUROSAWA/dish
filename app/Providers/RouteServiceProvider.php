@@ -21,7 +21,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    public const HOME = '/selecttag';
+    public const HOME = '/'; // ログイン後frontページにリダイレクト
 
     /**
      * Define your route model bindings, pattern filters, etc.

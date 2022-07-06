@@ -6,7 +6,7 @@
         <h2 class='guide'>気になる料理名を選んでね</h2>
         <img id="top-image" src="{{asset("/img/c5caaa1a.png")}}">
         
-        <div class="justify-content randomsearch">
+        <div class="justify-content margin-bottom">
             <a class="btn btn-middle" href="/tags/{{ $tag->id }}/dishes/randomdish">迷って決められな～い</a>
         </div>
         

@@ -7,7 +7,7 @@
         <h2 class='guide'>紹介したい料理名を選んでね</h2>
         <img id="top-image" src="{{asset("/img/c5caaa1a.png")}}">
         
-        <div class="justify-content">
+        <div class="justify-content margin-bottom">
             <a class="btn btn-middle" href="/tags/{{ $tag->id }}/createdish">自分で料理名を作成</a>
         </div>
         

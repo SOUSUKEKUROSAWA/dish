@@ -9,11 +9,14 @@
     <form action="/dishes" method="POST">
         @csrf
         <div class="justify-content input-field">
-            <input class="input url-input" type="text" name="dish[dish_name]" placeholder="短く，わかりやすい料理名を入力してね" value="{{ old('dish.dish_name') }}" required/>
-            <p class="title__error" style="color:red">{{ $errors->first('dish.dish_name') }}</p>
-            <input type="hidden" name="dish[tag_id]" value="{{ $tag->id }}"/> <!-- hiddenタイプのinputタグによって，tagsテーブルとのリレーションに必要なtag_idを自動登録 -->
+            <div>
+                <input class="input url-input" type="text" name="dish[dish_name]" placeholder="短く，わかりやすい料理名を入力してね" value="{{ old('dish.dish_name') }}"/>
+                <p class="title__error centreren" style="color:red">{{ $errors->first('dish.dish_name') }}</p>
+            </div>
             <input class="input submit-input" type="submit" value="作成"/>
         </div>
+        
+        <input type="hidden" name="dish[tag_id]" value="{{ $tag->id }}"/> <!-- hiddenタイプのinputタグによって，tagsテーブルとのリレーションに必要なtag_idを自動登録 -->
     </form>
     
     <div class="justify-content">

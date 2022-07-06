@@ -10,8 +10,8 @@
         @csrf
         @method('PUT') <!-- 1つ前のpost_url.blade.phpでurlが登録された時点で，commentカラムにはNULLが登録済みのため，POSTではなくPUTにする -->
         <div class="input-field">
-            <textarea class="textarea" name="post[comment]" rows="5" cols="40" placeholder="レシピのポイント・自己流アレンジなどあれば" value="{{ old('post.comment') }}"></textarea>
-            <p class="title__error" style="color:red">{{ $errors->first('post.comment') }}</p>
+            <textarea class="textarea" name="post[comment]" rows="5" cols="40" placeholder="(※140字以下)レシピのポイント・自己流アレンジなどあれば">{{ old('post.comment') }}</textarea>
+            <p class="title__error centreren" style="color:red">{{ $errors->first('post.comment') }}</p>
             <input class="input submit-input btn-primary" type="submit" value="投稿"/>
             <input class="input submit-input btn-secondary" type="submit" value="コメントを入力せずに投稿"/>  <!-- NULLABLEであることを明示的にするためのボタン．処理は上のボタンと同じ -->
         </div>

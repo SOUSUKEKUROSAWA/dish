@@ -31,6 +31,6 @@ class GoogleLoginController extends Controller
         
         Auth::login($user, true); // ログイン処理
         
-        return redirect('/selecttag'); // レシピ紹介サイドにリダイレクト
+        return redirect('/'); // ログイン後frontページにリダイレクト
     }
 }

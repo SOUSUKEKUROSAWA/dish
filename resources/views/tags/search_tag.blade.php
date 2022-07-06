@@ -5,7 +5,7 @@
         <h1 class='guide'>今の気分に一番合うものを選んでね</h1>
         <img id="top-image" src="{{asset("/img/c5caaa1a.png")}}">
         
-        <div class="justify-content randomsearch">
+        <div class="justify-content margin-bottom">
             <a class="btn btn-middle" href="/tags/randomtag">選ぶのもめんどくさ～い</a>
         </div>
         
