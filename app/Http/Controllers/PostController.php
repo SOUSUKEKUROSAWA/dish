@@ -23,7 +23,7 @@ class PostController extends Controller
         return view('posts/post_img')->with([ 'post' => $post ]);
     }
 
-    public function updateimg(Post $post, PostImageRequest $request) // デフォルトのRequest.phpがなかったため，PostcommentRequestで代用
+    public function updateimg(Post $post, PostImageRequest $request)
     {
         $img = $request->file('post.img_path');
         
@@ -83,7 +83,7 @@ class PostController extends Controller
         return view('posts/edit_img')->with(['post' => $post]);
     }
     
-    public function editImg(Post $post, PostImageRequest $request) // デフォルトのRequest.phpがなかったため，PostcommentRequestで代用
+    public function editImg(Post $post, PostImageRequest $request)
     {
         $img = $request->file('post.img_path');
         
