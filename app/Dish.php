@@ -25,4 +25,9 @@ class Dish extends Model
     {
         return $this->orderBy('updated_at', 'DESC')->paginate($limit_count); // updated_atで降順に並べたあと、limitで件数制限をかける
     }
+    
+    public function getPosts()
+    {
+        return $this->posts()->orderBy('updated_at', 'DESC')->get(); // updated_atで降順に並べたあと、取得
+    }
 }

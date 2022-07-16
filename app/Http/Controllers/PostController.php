@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Post;
 use App\Http\Requests\PosturlRequest;
 use App\Http\Requests\PostcommentRequest;
+use App\Http\Requests\PostImageRequest;
 use Illuminate\Support\Facades\Storage;
 
 class PostController extends Controller
@@ -22,7 +23,7 @@ class PostController extends Controller
         return view('posts/post_img')->with([ 'post' => $post ]);
     }
 
-    public function updateimg(Post $post, PostcommentRequest $request) // デフォルトのRequest.phpがなかったため，PostcommentRequestで代用
+    public function updateimg(Post $post, PostImageRequest $request)
     {
         $img = $request->file('post.img_path');
         
@@ -82,7 +83,7 @@ class PostController extends Controller
         return view('posts/edit_img')->with(['post' => $post]);
     }
     
-    public function editImg(Post $post, PostcommentRequest $request) // デフォルトのRequest.phpがなかったため，PostcommentRequestで代用
+    public function editImg(Post $post, PostImageRequest $request)
     {
         $img = $request->file('post.img_path');
         

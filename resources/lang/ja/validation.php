@@ -151,6 +151,7 @@ return [
         'dish.dish_name' => '料理名',
         'post.url' => 'URL',
         'post.comment' => 'コメント',
+        'post.img_path' => '画像',
     ],
  
 ];

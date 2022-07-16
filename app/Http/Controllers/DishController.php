@@ -10,8 +10,7 @@ class DishController extends Controller
     /*--- レシピを検索するユーザー用 --------------------------------------------------*/
     public function searchpost(Dish $dish)
     {
-        $posts=$dish->posts()->orderBy('updated_at', 'DESC')->get();
-        return view('posts/search_post')->with(['dish' => $dish, 'posts' => $posts ]);
+        return view('posts/search_post')->with(['dish' => $dish, 'posts' => $dish -> getPosts() ]);
     }
     /*----------------------------------------------------------------------------------*/
     
