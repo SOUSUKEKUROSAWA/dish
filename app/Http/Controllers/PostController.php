@@ -32,7 +32,7 @@ class PostController extends Controller
             $path = Storage::disk('s3')->putFile('/', $img, 'public');
             
             if ($path) { // アップロードが実行できたら，DBに保存処理を実行
-                $post->img_path = Storage::disk('s3')->url($path); // アップロードした画像のパスを取得
+                $post->img_path = $path; // アップロードした画像のパスを取得
                 $post->save();
             }
         }
@@ -92,7 +92,7 @@ class PostController extends Controller
             $path = Storage::disk('s3')->putFile('/', $img, 'public');
             
             if ($path) { // アップロードが実行できたら，DBに保存処理を実行
-                $post->img_path = Storage::disk('s3')->url($path); // アップロードした画像のパスを取得
+                $post->img_path = $path; // アップロードした画像のパスを取得
                 $post->save();
             }
         }
@@ -114,7 +114,8 @@ class PostController extends Controller
     
     public function delete(Post $post)
     {
-        $post->delete();
+        $post->delete(); // DBからimg_pathのデータを削除
+        Storage::disk('s3')->delete($post->img_path); // S3から画像を削除
         return redirect('/users/myindex');
     }
     /*--------------------------------------------------------------------------*/
