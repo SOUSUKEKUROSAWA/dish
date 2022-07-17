@@ -15,7 +15,7 @@ class PostController extends Controller
     {
         $input = $request['post'];
         $post->fill($input)->save();
-        return redirect('/posts/img/' . $post->id );
+        return redirect('/posts/' . $post->id . '/postimg' );
     }
 
     public function postimg(Post $post)
@@ -23,7 +23,7 @@ class PostController extends Controller
         return view('posts/post_img')->with([ 'post' => $post ]);
     }
 
-    public function updateimg(Post $post, PostImageRequest $request)
+    public function storeimg(Post $post, PostImageRequest $request)
     {
         $img = $request->file('post.img_path');
         
@@ -49,7 +49,7 @@ class PostController extends Controller
         // }
         /*---------------------------------------*/
         
-        return redirect('/posts/comment/' . $post->id);
+        return redirect('/posts/' . $post->id . '/postcomment');
     }
     
     public function postcomment(Post $post)
@@ -57,33 +57,33 @@ class PostController extends Controller
         return view('posts/post_comment')->with([ 'post' => $post ]);
     }
 
-    public function updatecomment(Post $post, PostcommentRequest $request)
+    public function storecomment(Post $post, PostcommentRequest $request)
     {
         $input = $request['post'];
         $post->fill($input)->save();
-        return redirect('/posts/myindex');
+        return redirect('/users/myindex');
     }
     /*-------------------------------------------------------------------------------------------------------*/
     
     /*--- 編集・削除用 ---------------------------------------------------------*/
-    public function openUrlEditer(Post $post)
+    public function editurl(Post $post)
     {
         return view('posts/edit_url')->with(['post' => $post]);
     }
     
-    public function editUrl(Post $post, PosturlRequest $request)
+    public function updateurl(Post $post, PosturlRequest $request)
     {
         $input = $request['post'];
         $post->fill($input)->save();
-        return redirect('/posts/myindex');
+        return redirect('/users/myindex');
     }
     
-    public function openImgEditer(Post $post)
+    public function editimg(Post $post)
     {
         return view('posts/edit_img')->with(['post' => $post]);
     }
     
-    public function editImg(Post $post, PostImageRequest $request)
+    public function updateimg(Post $post, PostImageRequest $request)
     {
         $img = $request->file('post.img_path');
         
@@ -97,25 +97,25 @@ class PostController extends Controller
             }
         }
 
-        return redirect('/posts/myindex');
+        return redirect('/users/myindex');
     }
     
-    public function openCommentEditer(Post $post)
+    public function editcomment(Post $post)
     {
         return view('posts/edit_comment')->with(['post' => $post]);
     }
     
-    public function editComment(Post $post, PostcommentRequest $request)
+    public function updatecomment(Post $post, PostcommentRequest $request)
     {
         $input = $request['post'];
         $post->fill($input)->save();
-        return redirect('/posts/myindex');
+        return redirect('/users/myindex');
     }
     
     public function delete(Post $post)
     {
         $post->delete();
-        return redirect('/posts/myindex');
+        return redirect('/users/myindex');
     }
     /*--------------------------------------------------------------------------*/
 }

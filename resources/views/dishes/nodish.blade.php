@@ -9,7 +9,7 @@
     <img id="top-image" src="{{asset("/img/c5caaa1a.png")}}">
     
     <div class="side-by-side">
-        <a class="btn btn-middle" href="/searchtag">今日の気分を選び直す</a>
-        <a class="btn btn-middle" href="/tags/{{ $tag->id }}/createdish">このタグの投稿に協力する</a> <!-- コントローラから選択したtagのidを渡されているため，料理名作成に直接移動可能 -->
+        <a class="btn btn-middle" href="/tags/searchtag">今日の気分を選び直す</a>
+        <a class="btn btn-middle" href="/tags/{{ $tag->id }}/dishes/createdish">このタグの投稿に協力する</a> <!-- コントローラから選択したtagのidを渡されているため，料理名作成に直接移動可能 -->
     </div>
 @endsection

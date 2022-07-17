@@ -9,7 +9,7 @@
     <div id='openpreview' data-posts='{{json_encode($posts)}}'></div> <!-- データ属性を利用し，postインスタンスをJSON形式に変換したものを，React側で識別できるようにする -->
     
     <div class="side-by-side">
-        <a class="btn btn-middle" href="/searchtag/tags/{{ $dish->tag_id }}">料理を選び直す</a>
-        <a class="btn btn-primary" href="/selecttag">料理を他の人に紹介してみる</a>
+        <a class="btn btn-middle" href="/tags/{{ $dish->tag_id }}/dishes/searchdish">料理を選び直す</a>
+        <a class="btn btn-primary" href="/tags/selecttag">料理を他の人に紹介してみる</a>
     </div>
 @endsection

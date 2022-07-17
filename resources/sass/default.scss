@@ -42,6 +42,12 @@ footer {
     justify-content: space-around;
 }
 
+.space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 #app {
     height: 100vh;
 }
@@ -94,6 +100,7 @@ h3 {
 
 p {
     font-size: min(3vw,2vh);
+    margin: 0;
 }
 
 a {
@@ -110,10 +117,10 @@ button:hover {
 }
 
 .btn-mini {
-    background: linear-gradient(90deg, #CCFFFF, #FFCCCC);
-    border-radius: 5px;
+    background: #ffc06e;
+    border-radius: 0;
     padding: 2px;
-    border-bottom: 5px solid #aac5de;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.32);
 }
 
 .btn-middle {

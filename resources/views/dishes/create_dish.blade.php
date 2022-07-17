@@ -20,6 +20,6 @@
     </form>
     
     <div class="justify-content">
-        <a class="btn btn-middle" href="/tags/{{ $tag->id }}">戻る</a>
+        <a class="btn btn-middle" href="/tags/{{ $tag->id }}/dishes/selectdish">戻る</a>
     </div>
 @endsection

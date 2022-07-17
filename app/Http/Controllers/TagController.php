@@ -50,7 +50,8 @@ class TagController extends Controller
     {
         $input = $request['tag']; // tagをキーに持つリクエストパラメータを取得（キー名はForm内inputタグのname属性を表す）
         $tag->fill($input)->save(); // fillでtagインスタンスを上書き，saveでMySQLへのINSERT文を実行
-        return redirect('/tags/' . $tag->id); // save()が実行された時点でtagインスタンスのidは自動採番されるので，そのidをweb.phpに渡す
+        // return redirect('/tags/' . $tag->id); // save()が実行された時点でtagインスタンスのidは自動採番されるので，そのidをweb.phpに渡す
+        return redirect('/tags/' . $tag->id . '/dishes/selectdish'); // save()が実行された時点でtagインスタンスのidは自動採番されるので，そのidをweb.phpに渡す
     }
 
     public function selectdish(Tag $tag)

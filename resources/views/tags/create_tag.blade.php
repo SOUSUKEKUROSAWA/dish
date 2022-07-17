@@ -18,6 +18,6 @@
     </form>
     
     <div class="justify-content">
-        <a class="btn btn-middle" href="/selecttag">戻る</a>
+        <a class="btn btn-middle" href="/tags/selecttag">戻る</a>
     </div>
 @endsection

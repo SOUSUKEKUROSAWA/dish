@@ -6,7 +6,7 @@
     <h2 class="guide">コメントを入力してね</h3>
     <img id="top-image" src="{{asset("/img/c5caaa1a.png")}}">
     
-    <form action="/posts/comment/{{ $post->id }}" method="POST">
+    <form action="/posts/{{ $post->id }}/comment" method="POST">
         @csrf
         @method('PUT') <!-- 1つ前のpost_url.blade.phpでurlが登録された時点で，commentカラムにはNULLが登録済みのため，POSTではなくPUTにする -->
         <div class="input-field">
@@ -18,7 +18,7 @@
     </form>
     
     <div class="justify-content">
-        <a class="btn btn-middle" href="/posts/img/{{ $post->id }}">画像をアップロードし直す</a>
+        <a class="btn btn-middle" href="/posts/{{ $post->id }}/postimg">画像をアップロードし直す</a>
     </div>
     
     <div class="justify-content last-comment">

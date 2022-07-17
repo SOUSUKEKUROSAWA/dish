@@ -19,7 +19,7 @@ class DishController extends Controller
     {
         $input = $request['dish'];
         $dish->fill($input)->save();
-        return redirect('/dishes/' . $dish->id);
+        return redirect('/dishes/' . $dish->id . '/posts/posturl');
     }
 
     public function posturl(Dish $dish)

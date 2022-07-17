@@ -10,7 +10,7 @@
                 直感的なレシピ検索
             </h3>
             <p>
-                <br>「気分deご飯」は，<br>あなたの今の気分を選ぶことで，<br><br>それに合った料理と，<br>そのレシピ<br><br>が見れるサイトを教えてくれるサービスです．
+                「気分deご飯」は，<br>あなたの今の気分を選ぶことで，<br><br>それに合った料理と，<br>そのレシピ<br><br>が見れるサイトを教えてくれるサービスです．
             </p>
         </div>
         <div class="box-shadow box-shadow-front">
@@ -18,7 +18,7 @@
                 自由なレシピ紹介
             </h3>
             <p>
-                <br>このサービスは，「料理を紹介してくれる人」がいてはじめて成り立つサービスです．<br><br>今日のご飯に迷っている人のために，ぜひあなたのおすすめの料理を紹介してください．
+                このサービスは，「料理を紹介してくれる人」がいてはじめて成り立つサービスです．<br><br>今日のご飯に迷っている人のために，ぜひあなたのおすすめの料理を紹介してください．
             </p>
         </div>
     </div>
@@ -35,12 +35,12 @@
     <div class="side-by-side">
         <div class="bubble-field">
             <div class="item shake1">
-                <a class="btn bubble-name" href="/searchtag">気分de探す</a>
+                <a class="btn bubble-name" href="/tags/searchtag">気分de探す</a>
             </div>
         </div>
         <div class="bubble-field">
             <div class="item shake2">
-                <a class="btn bubble-name" href="/selecttag">おすすめを<br>紹介する</a>
+                <a class="btn bubble-name" href="/tags/selecttag">おすすめを<br>紹介する</a>
             </div>
         </div>
     </div>

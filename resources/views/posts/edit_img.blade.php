@@ -4,7 +4,7 @@
     <h1 class="guide">もう一度画像を選択してね</h1>
     <img id="top-image" src="{{asset("/img/c5caaa1a.png")}}">
     
-    <form action="/posts/img/{{ $post->id }}/edit" method="POST" enctype="multipart/form-data">
+    <form action="/posts/{{ $post->id }}/img_path/update" method="POST" enctype="multipart/form-data">
         @csrf
         @method('PUT')
         <div class="input-field">
@@ -22,6 +22,6 @@
     </div>
     
     <div class="justify-content">
-        <a class="btn btn-middle" href="/posts/myindex">一覧に戻る</a>
+        <a class="btn btn-middle" href="/users/myindex">一覧に戻る</a>
     </div>
 @endsection

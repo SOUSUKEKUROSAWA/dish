@@ -10,14 +10,14 @@
         <div class="justify-content">
             <div class="bubble-field">
                 <div class="item shake{{ $randomdish->id }}">
-                    <a class="btn bubble-name" href="/searchdish/dishes/{{ $randomdish->id }}">{{ $randomdish->dish_name }}</a>
+                    <a class="btn bubble-name" href="/dishes/{{ $randomdish->id }}/posts/searchpost">{{ $randomdish->dish_name }}</a>
                 </div>
             </div>
         </div>
         
         <div class="side-by-side">
-            <a class="btn btn-middle" href="/searchtag/tags/{{ $tag->id }}">やっぱり自分で選ぶ</a>
-            <a class="btn btn-middle" href="/selecttag">料理を他の人に紹介してみる</a>
+            <a class="btn btn-middle" href="/tags/{{ $tag->id }}/dishes/searchdish">やっぱり自分で選ぶ</a>
+            <a class="btn btn-middle" href="/tags/selecttag">料理を他の人に紹介してみる</a>
         </div>
     </div>
 @endsection

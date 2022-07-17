@@ -8,21 +8,21 @@
         <img id="top-image" src="{{asset("/img/c5caaa1a.png")}}">
         
         <div class="justify-content margin-bottom">
-            <a class="btn btn-middle" href="/tags/{{ $tag->id }}/createdish">自分で料理名を作成</a>
+            <a class="btn btn-middle" href="/tags/{{ $tag->id }}/dishes/createdish">自分で料理名を作成</a>
         </div>
         
         <div class='dishes'>
             @foreach ($dishes as $dish)
                 <div class="bubble-field">
                     <div class="item shake{{ $dish->id }}">
-                        <a class="btn bubble-name" href="/dishes/{{ $dish->id }}">{{ $dish->dish_name }}</a>
+                        <a class="btn bubble-name" href="/dishes/{{ $dish->id }}/posts/posturl">{{ $dish->dish_name }}</a>
                     </div>
                 </div>
             @endforeach
         </div>
         
         <div class="side-by-side">
-            <a class="btn btn-middle" href="/selecttag">タグを選び直す</a>
+            <a class="btn btn-middle" href="/tags/selecttag">タグを選び直す</a>
         </div>
         
         <div class='paginate'>
