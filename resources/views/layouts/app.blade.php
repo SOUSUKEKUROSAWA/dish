@@ -1,9 +1,18 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
+    <head prefix="og: https://ogp.me/ns#">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+        
+        <!-- OGP -->
+        <meta property="og:url" content="https://stark-journey-71646.herokuapp.com/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="気分deご飯" />
+        <meta property="og:description" content="気分に合わせてレシピを紹介" />
+        <meta property="og:site_name" content="気分deご飯" />
+        <meta property="og:image" content="{{asset("/img/c5caaa1a.png")}}" />
+        <meta name="twitter:card" content="summary"/>
+        
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
     
