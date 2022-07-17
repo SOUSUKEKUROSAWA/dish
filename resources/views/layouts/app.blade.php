@@ -55,7 +55,7 @@
                                                 @csrf
                                             </form>
                                             
-                                            <a class="btn" href="/posts/myindex">過去の自分の投稿を見る</a>
+                                            <a class="btn" href="/users/myindex">過去の自分の投稿を見る</a>
                                         </div>
                                     </li>
                             @endguest

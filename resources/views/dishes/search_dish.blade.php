@@ -14,7 +14,7 @@
             @foreach ($dishes as $dish)
                 <div class="bubble-field">
                     <div class="item shake{{ $dish->id }}">
-                        <a class="btn bubble-name" href="/searchdish/dishes/{{ $dish->id }}">{{ $dish->dish_name }}</a>
+                        <a class="btn bubble-name" href="/dishes/{{ $dish->id }}/posts/searchpost">{{ $dish->dish_name }}</a>
                     </div>
                 </div>
             @endforeach
@@ -24,7 +24,7 @@
             <!--    <div class="field">-->
             <!--        <div class="item shake{{ $i }}">-->
             <!--            <h3 class='dish'>-->
-            <!--                <a href="/searchdish/dishes/{{ $dishes[$i]->id }}">{{ $dishes[$i]->dish_name }}</a>-->
+            <!--                <a href="/dishes/{{ $dishes[$i]->id }}/posts/searchpost">{{ $dishes[$i]->dish_name }}</a>-->
             <!--            </h3>-->
             <!--        </div>-->
             <!--    </div>-->
@@ -35,10 +35,10 @@
     
     <div class="side-by-side">
         <div class="back">
-            <a class="btn btn-middle" href="/searchtag">今日の気分を選び直す</a>
+            <a class="btn btn-middle" href="/tags/searchtag">今日の気分を選び直す</a>
         </div>
         <div class='posting'>
-            <a class="btn btn-middle" href="/selecttag">料理を他の人に紹介してみる</a>
+            <a class="btn btn-middle" href="/tags/selecttag">料理を他の人に紹介してみる</a>
         </div>
     </div>
     

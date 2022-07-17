@@ -30,7 +30,7 @@ const Preview = (props) => {
                         </div>
                         
                         <div className="justify-content">
-                            <p>{props.comment}</p>
+                            <p><br/>{props.comment}<br/><br/></p>
                         </div>
                         
                         <small className='created-at'>作成日時：{props.createdAt}<br/></small>
@@ -50,7 +50,7 @@ const Preview = (props) => {
                         </div>
                         
                         <div className="justify-content">
-                            <p>{props.comment}</p>
+                            <p><br/>{props.comment}<br/><br/></p>
                         </div>
                         
                         <small className='created-at'>作成日時：{props.createdAt}<br/></small>

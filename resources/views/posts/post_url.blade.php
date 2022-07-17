@@ -17,10 +17,10 @@
         </div>
         
         <input type="hidden" name="post[dish_id]" value="{{ $dish->id }}"/>
-        <input type="hidden" name="post[user_id]" value="{{ Auth::user()->id }}"/> <!-- Authファサードを利用し，コントローラでインスタンス化し手渡さなくてもユーザー情報が使える -->
+        <input type="hidden" name="post[user_id]" value="{{ Auth::user()->id }}"/> <!-- Authファサードを利用し，コントローラでインスタンス化して手渡さなくてもユーザー情報が使える -->
     </form>
     
     <div class="justify-content">
-        <a class="btn btn-middle" href="/tags/{{ $dish->tag_id }}">料理を選び直す</a>
+        <a class="btn btn-middle" href="/tags/{{ $dish->tag_id }}/dishes/selectdish">料理を選び直す</a>
     </div>
 @endsection

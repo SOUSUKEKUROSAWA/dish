@@ -4,7 +4,7 @@
     <h1 class="guide">コメントを直してね</h1>
     <img id="top-image" src="{{asset("/img/c5caaa1a.png")}}">
     
-    <form action="/posts/comment/{{ $post->id }}/edit" method="POST">
+    <form action="/posts/{{ $post->id }}/comment/update" method="POST">
         @csrf
         @method('PUT')
         <div class="input-field">
@@ -15,6 +15,6 @@
     </form>
     
     <div class="justify-content">
-        <a class="btn btn-middle" href="/posts/myindex">一覧に戻る</a>
+        <a class="btn btn-middle" href="/users/myindex">一覧に戻る</a>
     </div>
 @endsection

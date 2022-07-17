@@ -8,26 +8,30 @@
     <div class="posts">
         @foreach($own_posts as $post)
             <div class="box-shadow box-shadow-searchpost preview-frame">
-                <a class="btn btn-middle" href="{{ $post->url }}" target="_blank">サイトへGO</a>
-                <a class="btn btn-mini" href="/posts/url/{{ $post->id }}/editer">URLを登録し直す</a>
+                <div class="space-between">
+                    <a class="btn btn-middle" href="{{ $post->url }}" target="_blank">サイトへGO</a>
+                    <a class="btn btn-mini" href="/posts/{{ $post->id }}/editurl">URLを登録し直す</a>
+                </div>
                 <p><br></p>
                 
-                <div class="flex-start">
+                <div class="space-between">
                     <p>画像：</p>
-                    <a class="btn btn-mini" href="/posts/img/{{ $post->id }}/editer">編集する</a>
+                    <a class="btn btn-mini" href="/posts/{{ $post->id }}/editimg">編集する</a>
                 </div>
                 <div class="justify-content">
-                    <img class='preview-image' src={{$post->img_path }}>
+                    <img class='preview-image' src={{ $post->img_path }}>
                 </div>
                 
-                <div class="flex-start">
-                    <p>コメント：<p/>
-                    <a class="btn btn-mini" href="/posts/comment/{{ $post->id }}/editer">編集する</a>
+                <div class="space-between">
+                    <p>コメント：</p>
+                    <a class="btn btn-mini" href="/posts/{{ $post->id }}/editcomment">編集する</a>
                 </div>
-                <p>{{ $post->comment }}<br></p>
+                <div class="justify-content">
+                    <p>{{ $post->comment }}<br><br></p>
+                </div>
                 
                 <small>作成日時：{{ $post->created_at }}<br></small>
-                <small>更新日時：{{ $post->updated_at }}<br></small>
+                <small>更新日時：{{ $post->updated_at }}<br><br></small>
                 
                 <form action="/posts/{{ $post->id }}" id="form_{{ $post->id }}" method="post" style="display:inline"> <!-- JavaScriptで識別できるようにidをつける -->
                     @csrf
