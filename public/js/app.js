@@ -66100,8 +66100,8 @@ var Preview = function Preview(props) {
     className: "justify-content"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "preview-image",
-    src: props.img_path
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    src: "https://soubucket1.s3.ap-northeast-1.amazonaws.com/".concat(props.img_path)
+  }), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "justify-content"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "explain"

@@ -18,7 +18,7 @@ const Preview = (props) => {
                         
                         <div className="justify-content">
                             {/*--- 投稿された画像をプレビューに使用する場合 ---*/}
-                            <img className='preview-image' src={props.img_path}/>
+                            <img className='preview-image' src={`https://soubucket1.s3.ap-northeast-1.amazonaws.com/${props.img_path}`}/> {/*--- img_pathにはS3内の画像URLと合致するパスが登録されているので，「https://~」の部分を追加してS3に接続する必要がある ---*/}
                             
                             {/*--- サイトのビューをそのままプレビューに使用する場合(失敗) ---*/}
                             {/*<Iframe srcdoc={props.url} is="x-frame-bypass" url={props.url} title={props.comment} sandbox="allow-scripts allow-same-origin allow-orientation-lock allow-pointer-lock allow-presentation allow-popups-to-escape-sandbox allow-top-navigation" allowfullscreen/>

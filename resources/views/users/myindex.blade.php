@@ -19,7 +19,7 @@
                     <a class="btn btn-mini" href="/posts/{{ $post->id }}/editimg">編集する</a>
                 </div>
                 <div class="justify-content">
-                    <img class='preview-image' src={{ $post->img_path }}>
+                    <img class='preview-image' src="https://soubucket1.s3.ap-northeast-1.amazonaws.com/{{ $post->img_path }}"> <!-- img_pathにはS3内の画像URLと合致するパスが登録されているので，「https://~」の部分を追加してS3に接続する必要がある -->
                 </div>
                 
                 <div class="space-between">
