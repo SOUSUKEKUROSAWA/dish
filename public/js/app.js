@@ -66090,8 +66090,9 @@ var Preview = function Preview(props) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "btn btn-primary",
     href: props.url,
-    target: "_blank"
-  }, "\u30B5\u30A4\u30C8\u3078GO\uFF01"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    target: "_blank",
+    rel: "noopener noreferrer"
+  }, "\u30B5\u30A4\u30C8\u3078GO\uFF01"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     className: "btn btn-secondary",
     onClick: function onClick() {
       return setShowPreview(false);
