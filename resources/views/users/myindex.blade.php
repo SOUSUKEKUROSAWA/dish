@@ -9,7 +9,7 @@
         @foreach($own_posts as $post)
             <div class="box-shadow box-shadow-searchpost preview-frame">
                 <div class="space-between">
-                    <a class="btn btn-middle" href="{{ $post->url }}" target="_blank">サイトへGO</a>
+                    <a class="btn btn-middle" href="{{ $post->url }}" target="_blank" rel="noopener noreferrer">サイトへGO</a> <!-- 「rel="noopener noreferrer"」は，新しいタブで開かれるリンクを参照できなくする指定（target="_blank"の脆弱性対策） -->
                     <a class="btn btn-mini" href="/posts/{{ $post->id }}/editurl">URLを登録し直す</a>
                 </div>
                 <p><br></p>
