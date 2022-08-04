@@ -19,7 +19,10 @@
                     <div class="form-group row mt-2">
                         <div class="col-md-8 offset-md-4">
                             <a class="btn btn-middle" href="/auth/redirect" class="btn btn-primary" role="button">
-                                Googleでログイン
+                                <div class="logo-text">
+                                    <img id="logo-image" src="{{asset("/img/google_logo.png")}}">
+                                    <p>Googleでログイン</p>
+                                </div>
                             </a>
                         </div>
                     </div>
