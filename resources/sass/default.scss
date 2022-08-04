@@ -69,6 +69,11 @@ footer {
     margin: auto;
 }
 
+.logo-text {
+    display: flex;
+    align-items: center;
+}
+
 /*--- テキスト ---*/
 body {
     background: linear-gradient(90deg, #CCFFFF, #FFCCCC);
@@ -182,6 +187,11 @@ iframe {
     width: 80%;
     height: 100%;
     border: none;
+}
+
+/*--- 画像 ---*/
+#logo-image {
+    height: 3vh;
 }
 
 /*--- シャドウ ---*/
