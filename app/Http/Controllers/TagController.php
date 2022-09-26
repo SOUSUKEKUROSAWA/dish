@@ -20,17 +20,17 @@ class TagController extends Controller
     
     public function searchdish(Tag $tag) // $tagには渡されたidが設定されている（LaravelによるDIを利用）
     {
+        $dishesCounter=count($tag->getDishesInTag());
+
+        if ($dishesCounter==0) { // 取得したdishesに投稿が存在しない場合，別のビューを返す
+            return view('dishes/nodish')->with(['tag' => $tag ]);
+        }
+
         return view('dishes/search_dish')->with(['tag' => $tag, 'dishes' => $tag -> getDishesPaginateByLimit() ]);
     }
     
     public function randomdish(Tag $tag)
     {
-        $dishesCounter=count($tag->getDishesInTag());
-        
-        if ($dishesCounter==0) { // 取得したdishesに投稿が存在しない場合，別のビューを返す
-            return view('dishes/nodish')->with(['tag' => $tag ]);
-        }
-        
         return view('dishes/randomdish')->with(['tag' => $tag, 'randomdish' => $tag -> getRandomDish() ]);
     }
     /*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -50,7 +50,6 @@ class TagController extends Controller
     {
         $input = $request['tag']; // tagをキーに持つリクエストパラメータを取得（キー名はForm内inputタグのname属性を表す）
         $tag->fill($input)->save(); // fillでtagインスタンスを上書き，saveでMySQLへのINSERT文を実行
-        // return redirect('/tags/' . $tag->id); // save()が実行された時点でtagインスタンスのidは自動採番されるので，そのidをweb.phpに渡す
         return redirect('/tags/' . $tag->id . '/dishes/selectdish'); // save()が実行された時点でtagインスタンスのidは自動採番されるので，そのidをweb.phpに渡す
     }
 

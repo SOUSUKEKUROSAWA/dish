@@ -56,7 +56,7 @@ Route::group(['middleware' => ['auth']], function(){ // この中のルーティ
     // コメントの投稿
     Route::get('/posts/{post}/postcomment', 'PostController@postcomment');
     Route::put('/posts/{post}/comment', 'PostController@storecomment');
-    
+
     /*--- マイページ用 ---*/
     // 一覧表示
     Route::get('/users/myindex', 'UserController@myindex');
