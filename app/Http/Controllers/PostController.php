@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Http\Request;
+use Auth;
 use App\Post;
 use App\Http\Requests\PosturlRequest;
 use App\Http\Requests\PostcommentRequest;
 use App\Http\Requests\PostImageRequest;
-use Illuminate\Support\Facades\Storage;
 
 class PostController extends Controller
 {
@@ -26,7 +28,7 @@ class PostController extends Controller
     public function storeimg(Post $post, PostImageRequest $request)
     {
         $img = $request->file('post.img_path');
-        
+
         /*--- S3のサーバに画像を保存する場合 ---*/
         if (isset($img)) { // 画像情報がセットされていれば、S3バケットの`/`フォルダへアップロード
             $path = Storage::disk('s3')->putFile('/', $img, 'public');
@@ -112,11 +114,16 @@ class PostController extends Controller
         return redirect('/users/myindex');
     }
     
-    public function delete(Post $post)
+    public function delete(Post $post, Request $request)
     {
-        $post->delete(); // DBからimg_pathのデータを削除
-        Storage::disk('s3')->delete($post->img_path); // S3から画像を削除
-        return redirect('/users/myindex');
+        // 投稿者による削除リクエストの場合のみ削除
+        if ($request->user()->id === $post->user_id) {
+            $post->delete(); // DBからimg_pathのデータを削除
+            Storage::disk('s3')->delete($post->img_path); // S3から画像を削除
+            return redirect('/users/myindex');
+        } else {
+            return view('not_found');
+        }
     }
     /*--------------------------------------------------------------------------*/
 }
