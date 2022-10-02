@@ -79,6 +79,6 @@ Route::get('/underdevelopment', function () {
 });
 
 /*--- 上記に当てはまらないアクセス用 ---*/
-Route::get('*', function() {
+Route::fallback(function() {
     return view('error');
 });
