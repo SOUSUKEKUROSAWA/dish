@@ -82,9 +82,15 @@ class PostController extends Controller
     /**
      * URL編集画面を表示する
      */
-    public function editurl(Post $post)
+    public function editurl(Post $post, Request $request)
     {
-        return view('posts/edit_url')->with(['post' => $post]);
+        // 投稿者によるアクセスの場合，編集画面を表示
+        if ($request->user()->id === $post->user_id) {
+            return view('posts/edit_url')->with(['post' => $post]);
+        } else {
+            // 投稿者以外によるアクセスの場合，エラービューを表示する
+            return view('error');
+        }
     }
     
     /**
@@ -92,17 +98,29 @@ class PostController extends Controller
      */ 
     public function updateurl(Post $post, PosturlRequest $request)
     {
-        $input = $request['post'];
-        $post->fill($input)->save();
-        return redirect('/users/myindex');
+        // 投稿者による更新リクエストの場合，更新を実行
+        if ($request->user()->id === $post->user_id) {
+            $input = $request['post'];
+            $post->fill($input)->save();
+            return redirect('/users/myindex');
+        } else {
+            // 投稿者以外による更新リクエストの場合，エラービューを表示する
+            return view('error');
+        }
     }
     
     /**
      * URL編集画面を表示する
      */
-    public function editimg(Post $post)
+    public function editimg(Post $post, Request $request)
     {
-        return view('posts/edit_img')->with(['post' => $post]);
+        // 投稿者によるアクセスの場合，編集画面を表示
+        if ($request->user()->id === $post->user_id) {
+            return view('posts/edit_img')->with(['post' => $post]);
+        } else {
+            // 投稿者以外によるアクセスの場合，エラービューを表示する
+            return view('error');
+        }
     }
     
     /**
@@ -111,28 +129,41 @@ class PostController extends Controller
      */ 
     public function updateimg(Post $post, PostImageRequest $request)
     {
-        $img = $request->file('post.img_path');
-        // 画像ファイルが入力されていれば、S3バケットの`/`フォルダに保存
-        if (isset($img)) {
-            // S3から元の画像を削除
-            Storage::disk('s3')->delete($post->img_path);
-            // S3へ新しい画像を保存
-            $path = Storage::disk('s3')->putFile('/', $img, 'public');
-            // S3へ画像ファイルがされていれば，DBの画像パスを更新
-            if ($path) {
-                $post->img_path = $path;
-                $post->save();
+        // 投稿者による更新リクエストの場合，更新を実行
+        if ($request->user()->id === $post->user_id) {
+            $img = $request->file('post.img_path');
+            // 画像ファイルが入力されていれば、S3バケットの`/`フォルダに保存
+            if (isset($img)) {
+                // S3から元の画像を削除
+                Storage::disk('s3')->delete($post->img_path);
+                // S3へ新しい画像を保存
+                $path = Storage::disk('s3')->putFile('/', $img, 'public');
+                // S3へ画像ファイルがされていれば，DBの画像パスを更新
+                if ($path) {
+                    $post->img_path = $path;
+                    $post->save();
+                }
             }
+            
+            return redirect('/users/myindex');
+        } else {
+            // 投稿者以外による更新リクエストの場合，エラービューを表示する
+            return view('error');
         }
-        return redirect('/users/myindex');
     }
     
     /**
      * コメント編集画面を表示する
      */
-    public function editcomment(Post $post)
+    public function editcomment(Post $post, Request $request)
     {
-        return view('posts/edit_comment')->with(['post' => $post]);
+        // 投稿者によるアクセスの場合，編集画面を表示
+        if ($request->user()->id === $post->user_id) {
+            return view('posts/edit_comment')->with(['post' => $post]);
+        } else {
+            // 投稿者以外によるアクセスの場合，エラービューを表示する
+            return view('error');
+        }
     }
     
     /**
@@ -140,9 +171,15 @@ class PostController extends Controller
      */ 
     public function updatecomment(Post $post, PostcommentRequest $request)
     {
-        $input = $request['post'];
-        $post->fill($input)->save();
-        return redirect('/users/myindex');
+        // 投稿者による更新リクエストの場合，更新を実行
+        if ($request->user()->id === $post->user_id) {
+            $input = $request['post'];
+            $post->fill($input)->save();
+            return redirect('/users/myindex');
+        } else {
+            // 投稿者以外による更新リクエストの場合，エラービューを表示する
+            return view('error');
+        }
     }
     
     /**

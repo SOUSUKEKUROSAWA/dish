@@ -6,8 +6,11 @@
     <div class="justify-content">
         <h3>考えられる原因</h3>
     </div>
-    <ul>
-        <li>意図しないアクセスが行われた</li>
-        <li>不正なリクエストが行われた</li>
-    </ul>
+    <div class="justify-content">
+        <ul>
+            <li>URLが間違っている(404エラー)</li>
+            <li>意図しないアクセスが行われた</li>
+            <li>不正なリクエストが行われた</li>
+        </ul>
+    </div>
 @endsection
