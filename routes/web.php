@@ -80,5 +80,5 @@ Route::get('/underdevelopment', function () {
 
 /*--- 上記に当てはまらないアクセス用 ---*/
 Route::get('*', function() {
-    return view('not_found');
+    return view('error');
 });

@@ -7,60 +7,103 @@ use App\Http\Requests\TagRequest;
 
 class TagController extends Controller
 {
-    /*--- レシピを検索するユーザー用 ---------------------------------------------------------------------------------------------------------------------------*/
+    /*
+    |--------------------------------------------------------------------------
+    | Tag Controller
+    |--------------------------------------------------------------------------
+    |
+    | このコントローラーでは気分タグ(tagsテーブル内のリソース)に対する処理を
+    | 行います．
+    |
+    */
+    
+    /*--- レシピ探しユーザー用 -----------------------------------------------*/
+    /**
+     * 気分タグの一覧を表示する
+     */
     public function searchtag(Tag $tag)
     {
-        return view('tags/search_tag')->with(['tags' => $tag -> getPaginateByLimit() ]); // getPaginateByLimit()はTag.php内で定義
+        return view('tags/search_tag')->with(['tags' => $tag -> getPaginateByLimit() ]);
     }
     
+    /**
+     * ランダムに選んだ気分タグを一つ表示する
+     */
     public function randomtag(Tag $tag)
     {
         return view('tags/randomtag')->with(['randomtag' => $tag -> getRandomTag() ]);
     }
     
-    public function searchdish(Tag $tag) // $tagには渡されたidが設定されている（LaravelによるDIを利用）
+    /**
+     * 渡された気分タグ内にある料理名タグの一覧を表示する
+     */
+    public function searchdish(Tag $tag)
     {
         $dishesCounter=count($tag->getDishesInTag());
 
-        if ($dishesCounter==0) { // 取得したdishesに投稿が存在しない場合，別のビューを返す
-            return view('dishes/nodish')->with(['tag' => $tag ]);
+        // 取得した気分タグ内に料理名タグが存在しない場合，別のビューを返す
+        if ($dishesCounter==0) {
+            return view('empty')->with(['tag' => $tag, 'viewType' => "tag"]);
         }
 
         return view('dishes/search_dish')->with(['tag' => $tag, 'dishes' => $tag -> getDishesPaginateByLimit() ]);
     }
     
+    /**
+     * ランダムに選んだ料理名タグを一つ表示する
+     */
     public function randomdish(Tag $tag)
     {
         return view('dishes/randomdish')->with(['tag' => $tag, 'randomdish' => $tag -> getRandomDish() ]);
     }
-    /*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    /*------------------------------------------------------------------------*/
     
-    /*--- レシピを投稿するユーザー用 ----------------------------------------------------*/
+    /*--- レシピ投稿ユーザー用 -----------------------------------------*/
+    /**
+     * 気分タグの一覧を表示する
+     */
     public function selecttag(Tag $tag)
     {
         return view('tags/select_tag')->with(['tags' => $tag -> getPaginateByLimit()]);
     }
     
+    /**
+     * 気分タグの作成ページを表示する
+     */
     public function createtag(Tag $tag)
     {
         return view('tags/create_tag');
     }
     
-    public function store(Tag $tag, TagRequest $request) // DIで渡されたidを持ったタグがインスタンス化されるタイミングでバリデーションを実行→バリデーションエラーは$errorsに格納される
+    /**
+     * ユーザーにより入力された気分タグをDBへ保存する
+     * =>DIで渡されたidを持ったタグがインスタンス化されるタイミングでバリデーションを実行
+     * =>バリデーションエラーは$errorsに格納される
+     */
+    public function store(Tag $tag, TagRequest $request)
     {
-        $input = $request['tag']; // tagをキーに持つリクエストパラメータを取得（キー名はForm内inputタグのname属性を表す）
-        $tag->fill($input)->save(); // fillでtagインスタンスを上書き，saveでMySQLへのINSERT文を実行
-        return redirect('/tags/' . $tag->id . '/dishes/selectdish'); // save()が実行された時点でtagインスタンスのidは自動採番されるので，そのidをweb.phpに渡す
+        // tagをキーに持つリクエストパラメータを取得（キー名はForm内inputタグのname属性を表す）
+        $input = $request['tag'];
+        // fillでtagインスタンスを上書き，saveでMySQLへのINSERT文を実行
+        $tag->fill($input)->save();
+        // save()が実行された時点でtagインスタンスのidは自動採番されるので，そのidをweb.phpに渡す
+        return redirect('/tags/' . $tag->id . '/dishes/selectdish');
     }
 
+    /**
+     * 料理名タグの一覧を表示する
+     */
     public function selectdish(Tag $tag)
     {
         return view('dishes/select_dish')->with(['tag' => $tag, 'dishes' => $tag -> getDishesPaginateByLimit() ]);
     }
 
+    /**
+     * 料理名タグの作成ページを表示する
+     */
     public function createdish(Tag $tag)
     {
         return view('dishes/create_dish')->with(['tag' => $tag ]);
     }
-    /*-----------------------------------------------------------------------------------*/
+    /*------------------------------------------------------------------------*/
 }
