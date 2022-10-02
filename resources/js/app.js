@@ -3,7 +3,6 @@
  * includes React and other helpers. It's a great starting point while
  * building robust, powerful web applications using React + Laravel.
  */
-
 require('./bootstrap');
 
 /**
@@ -11,10 +10,14 @@ require('./bootstrap');
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-
 require('./components/Example');
 
-/*-----------------------------------------------*/
-
+/**
+ * 投稿一覧の表示とpropsの受け渡しを行う
+ */ 
 require('./components/OpenPreview');
+
+/**
+ * previewの表示切替を行う
+ */
 require('./components/Preview');

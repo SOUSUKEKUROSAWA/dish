@@ -37,15 +37,23 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-
-    public function getOwnPaginateByLimit(int $limit_count = 5)
-    {
-        return $this::with('posts')->find(Auth::id())->posts()->orderBy('updated_at', 'DESC')->paginate($limit_count);
-        // Authファサードとリレーションを利用して，ユーザーのidと一致するuser_idを持った投稿のみをページネーションで分割して取得
-    }
-
+    
+    /**
+     * postsテーブルとのリレーション
+     * =>usersテーブルはpostsテーブルに対して一対多の関係
+     */
     public function posts()   
     {
         return $this->hasMany('App\Post');  
+    }
+
+    /**
+     * Authファサードとリレーションを利用して，
+     * ユーザーのidと一致するuser_idを持った投稿のみを
+     * ページネーションで分割して取得
+     */
+    public function getOwnPaginateByLimit(int $limit_count = 5)
+    {
+        return $this::with('posts')->find(Auth::id())->posts()->orderBy('updated_at', 'DESC')->paginate($limit_count);
     }
 }

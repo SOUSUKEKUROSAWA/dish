@@ -9,6 +9,11 @@ class Post extends Model
 {
     use SoftDeletes;
     
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
     protected $fillable = [
         'url',
         'img_path',
@@ -17,11 +22,19 @@ class Post extends Model
         'user_id',
     ];
 
+    /**
+     * dishesテーブルとのリレーション
+     * =>postsテーブルはdishesテーブルに対して多対一の関係
+     */
     public function dish()
     {
         return $this->belongsTo('App\Dish');
     }
     
+    /**
+     * usersテーブルとのリレーション
+     * =>postsテーブルはusersテーブルに対して多対一の関係
+     */
     public function user()
     {
         return $this->belongsTo('App\User');
