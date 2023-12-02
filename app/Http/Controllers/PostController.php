@@ -22,10 +22,10 @@ class PostController extends Controller
     | に対する処理を行います．後半にはマイページでの処理を記述しています．
     |
     */
-    
+
     /**
      * ユーザーにより入力されたURLをDBに保存する
-     */ 
+     */
     public function storeurl(Post $post, PosturlRequest $request)
     {
         $input = $request['post'];
@@ -59,7 +59,7 @@ class PostController extends Controller
         }
         return redirect('/posts/' . $post->id . '/postcomment');
     }
-    
+
     /**
      * コメント投稿画面を表示する
      */
@@ -70,32 +70,31 @@ class PostController extends Controller
 
     /**
      * ユーザーにより入力されたコメントをDBに保存する
-     */ 
+     */
     public function storecomment(Post $post, PostcommentRequest $request)
     {
         $input = $request['post'];
         $post->fill($input)->save();
         return redirect('/users/myindex');
     }
-    
+
     /*--- マイページ用 -------------------------------------------------------*/
     /**
      * URL編集画面を表示する
      */
     public function editurl(Post $post, Request $request)
     {
-        // 投稿者によるアクセスの場合，編集画面を表示
-        if ($request->user()->id === $post->user_id) {
-            return view('posts/edit_url')->with(['post' => $post]);
-        } else {
-            // 投稿者以外によるアクセスの場合，エラービューを表示する
+        // 投稿者以外によるアクセスの場合，エラービューを表示
+        if ($request->user()->id !== $post->user_id) {
             return view('error');
         }
+
+        return view('posts/edit_url')->with(['post' => $post]);
     }
-    
+
     /**
      * 保存していたURLをユーザーにより入力されたURLへ更新する
-     */ 
+     */
     public function updateurl(Post $post, PosturlRequest $request)
     {
         // 投稿者による更新リクエストの場合，更新を実行
@@ -108,7 +107,7 @@ class PostController extends Controller
             return view('error');
         }
     }
-    
+
     /**
      * URL編集画面を表示する
      */
@@ -122,11 +121,11 @@ class PostController extends Controller
             return view('error');
         }
     }
-    
+
     /**
      * ユーザーにより入力された画像ファイルをAWSのS3サーバに保存し，
      * 保存していた画像へのパスをユーザーにより入力された画像へのパスへ更新する
-     */ 
+     */
     public function updateimg(Post $post, PostImageRequest $request)
     {
         // 投稿者による更新リクエストの場合，更新を実行
@@ -144,14 +143,14 @@ class PostController extends Controller
                     $post->save();
                 }
             }
-            
+
             return redirect('/users/myindex');
         } else {
             // 投稿者以外による更新リクエストの場合，エラービューを表示する
             return view('error');
         }
     }
-    
+
     /**
      * コメント編集画面を表示する
      */
@@ -165,10 +164,10 @@ class PostController extends Controller
             return view('error');
         }
     }
-    
+
     /**
      * 保存していたコメントをユーザーにより入力されたコメントへ更新する
-     */ 
+     */
     public function updatecomment(Post $post, PostcommentRequest $request)
     {
         // 投稿者による更新リクエストの場合，更新を実行
@@ -181,10 +180,10 @@ class PostController extends Controller
             return view('error');
         }
     }
-    
+
     /**
      * 自身の投稿を削除する(S3に保存した画像も削除する)
-     */ 
+     */
     public function delete(Post $post, Request $request)
     {
         // 投稿者による削除リクエストの場合，削除を実行
